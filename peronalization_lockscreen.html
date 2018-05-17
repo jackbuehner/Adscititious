@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Personalization - Lock screen</title>
+<link href="css/standardui.css" rel="stylesheet" type="text/css">
+<link href="css/settings_page.css" rel="stylesheet" type="text/css">
+	<script>//This is the service worker with the Cache-first network
+
+//Add this below content to your HTML page, or add the js file to your page at the very top to register sercie worker
+if (navigator.serviceWorker.controller) {
+  console.log('[PWA Builder] active service worker found, no need to register')
+} else {
+
+//Register the ServiceWorker
+  navigator.serviceWorker.register('pwabuilder-sw.js', {
+    scope: './'
+  }).then(function(reg) {
+    console.log('Service worker has been registered for scope:'+ reg.scope);
+  });
+}</script>
+</head>
+
+<body class="body">
+<section class="titlebar_container">
+  <a href="#" onclick="history.back();return false"><img src="images/left_arrow1600.png" alt="" width="1600" height="1600" class="backarrow"></a>
+  <header class="titlebar">Surface Setup &amp; Customization</header>
+  &nbsp;
+</section>
+	<div class="sidenav"> <a href="index.html"><img src="images/settings buttons/home.png"></a>
+	<h4 class="sidebar_title">Personalization</h4>
+	<a href="peronalization_background.html"><img src="images/settings buttons/personalize/background.png"></a>
+	<a href="peronalization_lockscreen.html"><img src="images/settings buttons/personalize/lockscreen_selected.png"></a>
+	<a href="ms-settings:personalization-start"><img src="images/settings buttons/personalize/start.png"></a>
+	<a href="ms-settings:taskbar"><img src="images/settings buttons/personalize/taskbar.png"></a>
+</div>
+<section class="main">
+  <h1 class="page_title"> Lock screen</h1>
+  <h2 class="heading">Change lock screen</h2>
+  <ol>
+    <li class="li">Navigate to an image.</li>
+    <li class="li">Open the image using the Photos app.</li>
+	  <img src="images/openInPhotos.PNG">
+	  <li class="li">In the Photos app, open the menu <img src="images/....PNG"> and select <em>Set as &gt; Set as lock screen</em>.</li>
+</ol>
+  <p class="st">To view if an image was applied as the lockscreen, use the keyboard shortcut <em>Windows logo key </em><img src="images/windowsLogoKey.PNG"><em> + L</em></p> 
+</body>
+</html>

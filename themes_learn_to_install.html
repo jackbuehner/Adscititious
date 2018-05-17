@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Theme Installation Tutorial</title>
+	  <script>//This is the service worker with the Cache-first network
+
+//Add this below content to your HTML page, or add the js file to your page at the very top to register sercie worker
+if (navigator.serviceWorker.controller) {
+  console.log('[PWA Builder] active service worker found, no need to register')
+} else {
+
+//Register the ServiceWorker
+  navigator.serviceWorker.register('pwabuilder-sw.js', {
+    scope: './'
+  }).then(function(reg) {
+    console.log('Service worker has been registered for scope:'+ reg.scope);
+  });
+}</script>
+  </head>
+  <body style="background-color: #f5f7fa;">
+    <p style="background-color: #f5f7fa;"><span style="font-family: Segoe UI;"><a
+
+          href="themes.html"><img src="images/left_arrow1600.png" alt="" style="width: 27px; height: 27px;"></a></span>
+    </p>
+    <p style="background-color: #f5f7fa;"><span style="font-family: Segoe UI;">How
+        to install css Themes<br>
+      </span></p>
+    <p style="background-color: #f5f7fa;"><span style="font-family: Segoe UI;">1.
+        Install Firefox Developer or Chromium from the <a href="apps.html">App
+          Center</a><br>
+      </span></p>
+    <p style="background-color: #f5f7fa;"><span style="font-family: Segoe UI;">2.
+        Install the Stylish extension from the App Center<br>
+      </span></p>
+    <p style="background-color: #f5f7fa;"><span style="font-family: Segoe UI;">3.
+        Open the Theme Center and click on a theme</span></p>
+    <p style="background-color: #f5f7fa;"><span style="font-family: Segoe UI;">4.
+        Click <em>Install</em></span></p>
+    <img src="images/styles_install.PNG" alt="" style="width: 499px; height: 86px;">
+  </body>
+</html>

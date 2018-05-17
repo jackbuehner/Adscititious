@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Personalization - Background</title>
+<link href="css/standardui.css" rel="stylesheet" type="text/css">
+<link href="css/settings_page.css" rel="stylesheet" type="text/css">
+	<script>//This is the service worker with the Cache-first network
+
+//Add this below content to your HTML page, or add the js file to your page at the very top to register sercie worker
+if (navigator.serviceWorker.controller) {
+  console.log('[PWA Builder] active service worker found, no need to register')
+} else {
+
+//Register the ServiceWorker
+  navigator.serviceWorker.register('pwabuilder-sw.js', {
+    scope: './'
+  }).then(function(reg) {
+    console.log('Service worker has been registered for scope:'+ reg.scope);
+  });
+}</script>
+</head>
+
+<body class="body">
+<section class="titlebar_container">
+  <a href="#" onclick="history.back();return false"><img src="images/left_arrow1600.png" alt="" width="1600" height="1600" class="backarrow"></a>
+  <header class="titlebar">Surface Setup &amp; Customization</header>
+  &nbsp;
+</section>
+	<div class="sidenav"> <a href="index.html"><img src="images/settings buttons/home.png"></a>
+	<h4 class="sidebar_title">Personalization</h4>
+	<a href="peronalization_background.html"><img src="images/settings buttons/personalize/background_selected.png"></a>
+	<a href="peronalization_lockscreen.html"><img src="images/settings buttons/personalize/lockscreen.png"></a>
+	<a href="ms-settings:personalization-start"><img src="images/settings buttons/personalize/start.png"></a>
+	<a href="ms-settings:taskbar"><img src="images/settings buttons/personalize/taskbar.png"></a>
+</div>
+<section class="main">
+<h1 class="page_title">
+  Background</h1>
+<h2 class="heading">Use web image</h2>
+<ol>
+  <li class="li">Download and install Firefox from the <a href="apps.html" target="_blank">App Center</a></li>
+  <li class="li">Navigate to the picture using Firefox.</li>
+  <li class="li">Right click the image and select <em>Set As Desktop Background...</em></li>
+  <li class="li">Click <em>Set Desktop Background</em>.</li>
+</ol> 
+<h2 class="heading">Use web image</h2>
+<ol>
+  <li class="li">Download and install Firefox from the <a href="apps.html" target="_blank">App Center</a></li>
+  <li class="li">Navigate to a local image.</li>
+  <li class="li">Right click the image and select <em>Open with</em>> <em>Firefox</em>.</li>
+  <li class="li">In Firefox, right click the image and select <em>Set As Desktop Background...</em></li>
+  <li class="li">Click <em>Set Desktop Background</em>.</li>
+</ol>
+<p><a href="index.html"></a></p>
+<p>&nbsp;</p>
+&nbsp;</section>
+</body>
+</html>
