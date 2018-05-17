@@ -1,0 +1,17 @@
+.home_head {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	text-align: center;
+	font-weight: 400;
+	padding: 32px 0 6px 0;
+}
+.home_button {
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 6px 8px 6px 8px
+}
+.home_container {
+	max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}

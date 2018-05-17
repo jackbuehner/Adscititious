@@ -1,0 +1,61 @@
+@charset "utf-8";
+.sidenav {
+    height: 100%;
+    width: 320px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #e6e6e6;
+    overflow-x: hidden;
+    padding-top: 20px;
+	margin-top: 28px;
+}
+
+.main {
+    margin-left: 330px; /* Same as the width of the sidenav */
+}
+@media screen and (max-height: 450px) {
+	.sidenav {padding-top: 15px;}
+	.sidenav a {font-size: 18px;}
+}
+.page_title {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 24px;
+	font-weight: 400;
+	padding-top: 34px;
+}
+.sidebar_title {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	padding-left: 14px;
+	font-weight: 600
+}
+.heading {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 20px;
+	font-weight: 400;
+}
+.li, .st {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+		font-size: 16px;
+
+}
+#home_expanded {
+	background-image: url(images/settings buttons/home.png);
+	color: red;
+	display: block;
+	height: 35px;
+	width: 282px;
+	z-index: 2;
+	position: absolute;
+	font-size: 14px;
+	left: 10px;
+}
+#range-logo {
+    background-image:url(http://ran.ge/content/uploads/2009/11/logo-trimmed.png);
+    display:block;
+    height:100px;
+    width:460px;
+}
+.body {
+}
