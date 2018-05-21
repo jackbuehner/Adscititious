@@ -36,6 +36,10 @@
 	color: black;
 	text-decoration: none;
 }
+.topnavright {
+	float: right;
+	padding-right: 12px;
+}
 .small_banner, .small_banner_image {
     position: relative;
     text-align: center;
@@ -122,4 +126,7 @@
 }
 .banner_button-1:hover {
 	background-color: #FFFFFF;
+}
+.howInstallAppsAll {
+	padding-left: 4px;
 }
