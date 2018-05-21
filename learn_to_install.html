@@ -17,11 +17,17 @@ if (navigator.serviceWorker.controller) {
     console.log('Service worker has been registered for scope:'+ reg.scope);
   });
 }</script>
+  <link href="css/app_center.css" rel="stylesheet" type="text/css">
+  <link href="css/standardui.css" rel="stylesheet" type="text/css">
   </head>
-  <body>
-    <p> <span style="font-family: Segoe UI;"><a href="apps.html"><img src="images/left_arrow1600.png"
-
-            alt="" style="width: 27px; height: 27px;"></a></span></p>
+  <body id="body">
+<section class="appbar_container"> <a href="#" onclick="history.back();return false"><img src="images/left_arrow1600.png" alt="" width="1600" height="1600" class="apparrow"></a>
+  <header class="appbar">App Center</header>
+  <nav class="topnav"><a href="app_center.html" class="topnavlink">Home</a> &nbsp; <a href="app_center_UWP apps.html" class="topnavlink">UWP Apps</a> &nbsp; &nbsp; <a href="app_center_win32.html" class="topnavlink">Classic Apps</a> &nbsp; &nbsp; <a href="app_center_games.html" class="topnavlink">Games</a> &nbsp; &nbsp; <a href="app_center_browsers.html" class="topnavlink">Browsers</a> &nbsp; &nbsp; <a href="app_center_framework.html" class="topnavlink">Frameworks &amp; Extensions</a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="apps.html" class="topnavright topnavlink"><strong>Help</strong></a></nav>
+	&nbsp;
+</section>
+<section class="howInstallAppsAll">
+    <p> <span style="font-family: Segoe UI;"><a href="apps.html"></a></span></p>
     <p><span style="font-family: Segoe UI;">How to install Microsoft Store Apps</span></p>
     <ol>
       <li><span style="font-family: Segoe UI;">Open the App Center</span></li>
@@ -52,6 +58,6 @@ if (navigator.serviceWorker.controller) {
       <li><span style="font-family: Segoe UI;">The app should now be available
           in the 'All apps' section of Start.</span></li>
     </ol>
-    <div style="margin-left: 40px;"></div>
+  </section>
   </body>
 </html>
