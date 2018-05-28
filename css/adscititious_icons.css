@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('https://i.icomoon.io/public/temp/554fc0f9d9/Adscititious/icomoon.eot?q3efoe');
-  src:  url('https://i.icomoon.io/public/temp/554fc0f9d9/Adscititious/icomoon.eot?q3efoe#iefix') format('embedded-opentype'),
-    url('https://i.icomoon.io/public/temp/554fc0f9d9/Adscititious/icomoon.ttf?q3efoe') format('truetype'),
-    url('https://i.icomoon.io/public/temp/554fc0f9d9/Adscititious/icomoon.woff?q3efoe') format('woff'),
-    url('https://i.icomoon.io/public/temp/554fc0f9d9/Adscititious/icomoon.svg?q3efoe#icomoon') format('svg');
+  src:  url('https://i.icomoon.io/public/temp/554fc0f9d9/Adscititious/icomoon.eot?h2vr6x');
+  src:  url('https://i.icomoon.io/public/temp/554fc0f9d9/Adscititious/icomoon.eot?h2vr6x#iefix') format('embedded-opentype'),
+    url('https://i.icomoon.io/public/temp/554fc0f9d9/Adscititious/icomoon.ttf?h2vr6x') format('truetype'),
+    url('https://i.icomoon.io/public/temp/554fc0f9d9/Adscititious/icomoon.woff?h2vr6x') format('woff'),
+    url('https://i.icomoon.io/public/temp/554fc0f9d9/Adscititious/icomoon.svg?h2vr6x#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-home:before {
+  content: "\e901";
+}
 .icon-message:before {
   content: "\e900";
 }
