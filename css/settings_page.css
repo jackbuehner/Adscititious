@@ -11,7 +11,6 @@
     padding-top: 20px;
 	margin-top: 28px;
 }
-
 .main {
     margin-left: 330px; /* Same as the width of the sidenav */
 }
@@ -19,26 +18,34 @@
 	.sidenav {padding-top: 15px;}
 	.sidenav a {font-size: 18px;}
 }
+/*page title text style*/
 .page_title {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	font-size: 24px;
 	font-weight: 400;
 	padding-top: 34px;
 }
+/*side navigation section heading text style*/
 .sidebar_title {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	padding-left: 14px;
-	font-weight: 600
+	font-weight: 700
 }
+/*heading text style*/
 .heading {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	font-size: 20px;
 	font-weight: 400;
 }
+/*list item text style*/
 .li, .st {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 		font-size: 16px;
-
+}
+/*paragraph text style*/
+.p {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 16px;
 }
 #home_expanded {
 	background-image: url(images/settings buttons/home.png);
@@ -58,4 +65,43 @@
     width:460px;
 }
 .body {
+}
+/*side navigation options setup - the navigation is a list with specific styles*/
+.sidenav_list {
+	list-style-type: none;
+	padding: 0;
+}
+.sidenav_list_item {
+	line-height: 3.2;
+	font-family: "Segoe UI";
+	font-weight: 600;
+	font-size: 15px;
+	padding-left: 16px;
+	border-left: 4px solid transparent;
+}
+.list_onedrive::before {
+	font-family: 'icomoon';
+	content: "\eaaf";
+	padding-right: 16px;
+	margin-left: -4px
+}
+.list_mail::before {
+	font-family: 'icomoon';
+	content: "\e900";
+	padding-right: 16px;
+	margin-left: -4px;
+}
+.sidenav_list_item_active {
+	border: solid transparent;
+	border-width: 0 0 0 4px;
+    border-image: url('../images/settings buttons/select_overlay.png') 1 stretch;
+}
+/*remove underline and link color for side navigation buttons*/
+.sidenav_a {
+	text-decoration: none;
+	color: inherit;
+}
+/*remove link underline*/
+.anu {
+	text-decoration: none;
 }
