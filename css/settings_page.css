@@ -9,7 +9,7 @@
     background-color: #e6e6e6;
     overflow-x: hidden;
     padding-top: 20px;
-	margin-top: 28px;
+	/*margin-top: 28px;*/
 }
 .main {
     margin-left: 330px; /* Same as the width of the sidenav */
@@ -71,6 +71,13 @@
 	list-style-type: none;
 	padding: 0;
 }
+.sidenav_list_home {
+	list-style-type: none;
+	padding: 0;
+	margin-top: -5px;
+	margin-top: 23px;
+	margin-bottom: -10px;
+}
 .sidenav_list_item {
 	line-height: 3.2;
 	font-family: "Segoe UI";
@@ -79,17 +86,33 @@
 	padding-left: 16px;
 	border-left: 4px solid transparent;
 }
+.sidenav_list_item:hover{
+	background-color: #C7C7C7;
+}
+.list_home::before {
+	font-family: 'icomoon';
+	content: "\e901";
+	padding-right: 16px;
+	margin-left: -4px;
+	font-size: 17px;
+	display: inline-block;
+	transform: translateY(4%); 
+}
 .list_onedrive::before {
 	font-family: 'icomoon';
 	content: "\eaaf";
 	padding-right: 16px;
-	margin-left: -4px
+	margin-left: -4px;
+	display: inline-block;
+	transform: translateY(3%); 
 }
 .list_mail::before {
 	font-family: 'icomoon';
 	content: "\e900";
 	padding-right: 16px;
 	margin-left: -4px;
+	display: inline-block;
+	transform: translateY(3%); 
 }
 .sidenav_list_item_active {
 	border: solid transparent;
