@@ -1,4 +1,20 @@
 @charset "utf-8";
+
+:root {
+	--sideNavBackground: #e6e6e6;
+	--sideNavItemBackgroundHover: #C7C7C7;
+	--bodyTextColor: #111;
+	--bodyBackgroundColor: #fff;
+	/*color of theme switch button*/
+	--themeButton: #e6e6e6;
+	/*visibility of element when light theme*/
+	--showLight: inherit;
+	/*visibility of element when dark theme*/
+	--showDark: inherit;
+	--regTextColor: #212121;
+}
+
+/*sidenav*/
 .sidenav {
     height: 100%;
     width: 320px;
@@ -6,7 +22,7 @@
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #e6e6e6;
+    background-color: var(--sideNavBackground);
     overflow-x: hidden;
     padding-top: 20px;
 	/*margin-top: 28px;*/
@@ -24,28 +40,33 @@
 	font-size: 24px;
 	font-weight: 400;
 	padding-top: 34px;
+	color: var(--bodyTextColor);
 }
 /*side navigation section heading text style*/
 .sidebar_title {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	padding-left: 14px;
-	font-weight: 700
+	font-weight: 700;
+	color: var(--bodyTextColor);
 }
 /*heading text style*/
 .heading {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	font-size: 20px;
 	font-weight: 400;
+	color: var(--bodyTextColor);
 }
 /*list item text style*/
-.li, .st {
+.li, .st, .li.em {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
-		font-size: 16px;
+	font-size: 16px;
+	color: var(--regTextColor);
 }
 /*paragraph text style*/
 .p {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	font-size: 16px;
+	color: var(--regTextColor);
 }
 #home_expanded {
 	background-image: url(images/settings buttons/home.png);
@@ -65,11 +86,14 @@
     width:460px;
 }
 .body {
+	color: var(--mainTextColor);
+	background-color: var(--bodyBackgroundColor);
 }
 /*side navigation options setup - the navigation is a list with specific styles*/
 .sidenav_list {
 	list-style-type: none;
 	padding: 0;
+	color: var(--bodyTextColor);
 }
 .sidenav_list_home {
 	list-style-type: none;
@@ -77,6 +101,7 @@
 	margin-top: -5px;
 	margin-top: 23px;
 	margin-bottom: -10px;
+	color: var(--bodyTextColor);
 }
 .sidenav_list_item {
 	line-height: 3.2;
@@ -87,7 +112,7 @@
 	border-left: 4px solid transparent;
 }
 .sidenav_list_item:hover{
-	background-color: #C7C7C7;
+	background-color: var(--sideNavItemBackgroundHover);
 }
 .list_home::before {
 	font-family: 'icomoon';
@@ -127,4 +152,22 @@
 /*remove link underline*/
 .anu {
 	text-decoration: none;
+}
+/*buttons to change theme*/
+.theme_b {
+	background-color: var(--themeButton);
+	border-color: var(--themeButton);
+	border-style: solid;
+	float: right;
+	margin-left: 8px;
+	margin-top: -14px;
+	color: var(--bodyTextColor);
+}
+#light {
+	display: inherit;
+	display: var(--showLight);
+}
+#dark {
+	display: inherit;
+	display: var(--showDark);
 }
