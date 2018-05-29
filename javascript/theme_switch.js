@@ -42,7 +42,7 @@ function darkTheme() {
 	document.body.style.setProperty("--invertImage100", "invert(100%)");
 	document.body.style.setProperty("--regTextColor", "rgb(189,189,189)");
 	document.body.style.setProperty("--imageButtons", "invert(96%) hue-rotate(190deg) saturate(320%)");
-	document.cookie="theme=dark";
+	document.cookie="theme=dark; max-age=31536000;";
 	document.cookie="theme=light; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 }
 //light theme changes
