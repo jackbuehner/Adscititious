@@ -5,27 +5,17 @@
 <title>Home</title>
 <link href="css/home.css" rel="stylesheet" type="text/css">
 <link href="css/standardui.css" rel="stylesheet" type="text/css">
-	<script>//This is the service worker with the Cache-first network
-
-//Add this below content to your HTML page, or add the js file to your page at the very top to register sercie worker
-if (navigator.serviceWorker.controller) {
-  console.log('[PWA Builder] active service worker found, no need to register')
-} else {
-
-//Register the ServiceWorker
-  navigator.serviceWorker.register('pwabuilder-sw.js', {
-    scope: './'
-  }).then(function(reg) {
-    console.log('Service worker has been registered for scope:'+ reg.scope);
-  });
-}</script>
+<script type="text/javascript" src="javascript/theme_switch.js"> </script>
 </head>
-
-<body>
+<body class="body" onLoad="restoreTheme()">
 <section class="titlebar_container">
   <a href="#" onclick="history.back();return false"><img src="images/left_arrow1600.png" alt="" width="1600" height="1600" class="backarrow"></a>
   <header class="titlebar">Adscititious: Windows 10 Customization</header>
   &nbsp;</section>
+	<div>
+		<input name="theme" type="submit" class="theme_b" id="light" onclick="lightTheme()" value="Enable Light Theme">
+		<input name="theme" type="submit" class="theme_b" id="dark" onclick="darkTheme()" value="Enable Dark Theme">
+	</div>
 <section class="home_container">
   <h1 class="home_head">Adscititious: Windows 10 Customization</h1>
   <section class="buttonbox">
@@ -45,6 +35,7 @@ if (navigator.serviceWorker.controller) {
 		<h3 class="desch">What is the Theme center?</h3>
 		<p class="descp">The Theme Center is a showcase for userstyles that modify the design of the website ussing css styles. Each userstyle is installed using the Stylish browser extension. <a href="themes_learn_to_install.html">Learn how to enable themes</a>.</p>
 	</section>
+
 </section>
 </body>
 </html>

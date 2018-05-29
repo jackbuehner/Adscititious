@@ -7,7 +7,67 @@
 	<link href="css/adscititious_icons.css" rel="stylesheet" type="text/css">
 	<link href="css/standardui.css" rel="stylesheet" type="text/css">
   </head>
-<body class="body">
+	<script>
+		function getCookie(cname) {
+			var name = cname + "=";
+			var decodedCookie = decodeURIComponent(document.cookie);
+			var ca = decodedCookie.split(';');
+			for(var i = 0; i <ca.length; i++) {
+				var c = ca[i];
+				while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				}
+			}
+			return "";
+		}
+	</script>
+  </head>
+	<script>
+		function alertCookie() {
+  			alert(document.cookie);
+		}
+		function restoreTheme() {
+			var theme = getCookie("theme");
+			if (theme=="dark") {
+				//alert("dark");
+				darkTheme();
+			} else {
+				//alert("light");
+				lightTheme();
+			}
+		}
+		function darkTheme() {
+			document.body.style.setProperty("--sideNavBackground", "rgb(33,33,33)");
+			document.body.style.setProperty("--bodyBackgroundColor", "rgb(17,17,17)");
+			document.body.style.setProperty("--sideNavItemBackgroundHover", "rgb(64,64,64)");
+			document.body.style.setProperty("--bodyTextColor", "rgb(238,238,238)");
+			document.body.style.setProperty("--showLight", "inherit");
+			document.body.style.setProperty("--showDark", "none");
+			document.body.style.setProperty("--themeButton", "rgb(33,33,33)");
+			document.body.style.setProperty("--invertImage100", "invert(100%)");
+			document.body.style.setProperty("--regTextColor", "rgb(189,189,189)");
+			document.cookie="theme=dark";
+			document.cookie="theme=light; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        }
+        function lightTheme() {
+			document.body.style.setProperty("--sideNavBackground", "rgb(230,230,230)");
+			document.body.style.setProperty("--bodyBackgroundColor", "rgb(255,255,255)");
+			document.body.style.setProperty("--sideNavItemBackgroundHover", "rgb(199,199,199)");
+			document.body.style.setProperty("--bodyTextColor", "rgb(17,17,17)");
+			document.body.style.setProperty("--showLight", "none");
+			document.body.style.setProperty("--showDark", "inherit");
+			document.body.style.setProperty("--themeButton", "rgb(230,230,230)");
+			document.body.style.setProperty("--invertImage100", "invert(0%)");
+			document.body.style.setProperty("--regTextColor", "rgb(33,33,33)");
+			document.cookie="theme=light";
+			document.cookie="theme=dark; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+			
+		}
+   </script>
+<body class="body" onLoad="restoreTheme()">
 	<section class="titlebar_container">
   <a href="#" onclick="history.back();return false"><img src="images/left_arrow1600.png" alt="" width="1600" height="1600" class="backarrow"></a>
   <header class="titlebar">Adscititious: Windows 10 Customization</header>
