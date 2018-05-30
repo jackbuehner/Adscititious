@@ -171,3 +171,6 @@
 	display: inherit;
 	display: var(--showDark);
 }
+a {
+	color: #0063b1;
+}

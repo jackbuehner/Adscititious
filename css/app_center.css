@@ -146,3 +146,15 @@
 .howInstallAppsAll {
 	padding-left: 4px;
 }
+.page_banner {
+	color: white;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	text-align: center;
+	padding-bottom: 1.8%;
+	padding-left: 18%;
+	padding-right: 18%;
+}
+.page_banner_head {
+	padding-top: 3.4%;
+	margin-bottom: -1%;
+}
