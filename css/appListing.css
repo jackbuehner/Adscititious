@@ -1,4 +1,9 @@
 @charset "utf-8";
+:root {
+	--appCardBackground: #FAFAFA;
+	--appCardBackgroundHover: #FFFFFF;
+	--appCardTextColor: #111;
+}
 .app_name {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	font-size: 16px;
@@ -32,7 +37,7 @@
 }
 .appListing {
 	width: 150px;
-	background-color: #FAFAFA;
+	background-color: var(--appCardBackground);
 	min-height: 252px;
 	display: inline-block;
 	margin-left: auto;
@@ -40,11 +45,12 @@
 	margin-bottom: 12px;
 }
 .appListing:hover {
-	background-color: #FFFFFF;
+	background-color: var(--appCardBackgroundHover);
 }
 .sectionh {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: var(--bodyTextColor);
 }
 .applink {
-	color: #000000;
+	color: var(--appCardTextColor);
 }

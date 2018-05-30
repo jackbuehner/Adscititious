@@ -1,4 +1,11 @@
 @charset "utf-8";
+:root {
+	--bodyTextColor: #111;
+	--appbodyBackgroundColor: #f0f0f0;
+	--appbarBackgroundColor: #E7E7E7;
+	--regTextColor: #212121;
+	--invertImage100: invert(0%);
+}
 .appbar_container {
 	margin-top: -88px;
 	margin-left: -8px;
@@ -6,8 +13,15 @@
 	filter: opacity(96%);
 	position: fixed;
 	z-index: 5;
-	background-color: #F0F0F0;
+	background-color: var(--appbarBackgroundColor);
 	width: 100%;
+}
+@supports (-webkit-backdrop-filter: blur(22px)) or (backdrop-filter: blur(22px)) {
+	.appbar_container {
+		filter: opacity(80%);
+		backdrop-filter: blur(22px);
+		-webkit-backdrop-filter: blur(22px);
+	}
 }
 .apparrow {
 	display: inline-block;
@@ -15,6 +29,7 @@
 	width: 20px;
 	padding-left: 12px;
 	margin-bottom: -6px;
+	filter: var(--invertImage100);
 }
 .appbar {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
@@ -24,6 +39,7 @@
 	padding-left: 24px;
 	font-size: 12px;
 	font-weight: 500;
+	color: var(--bodyTextColor);
 }
 .topnav {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
@@ -33,7 +49,7 @@
 	margin-bottom: -5px;
 }
 .topnavlink {
-	color: black;
+	color: var(--bodyTextColor);
 	text-decoration: none;
 }
 .topnavright {
@@ -104,7 +120,7 @@
 	min-width: 1071px;
 }
 #body {
-	background-color: #F0F0F0;
+	background-color: var(--appbodyBackgroundColor);
 	padding-top: 80px;
 }
 .top_section {
