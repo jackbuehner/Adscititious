@@ -51,12 +51,27 @@
 .topnavlink {
 	color: var(--bodyTextColor);
 	text-decoration: none;
+	filter: contrast(60%);
 }
+.topnavlink:hover {
+	filter: contrast(90%);
+}
+.topnavlink_selected {
+	filter: contrast(100%);
+	border-bottom: 2px solid #0078D7;
+	padding-bottom: 8px;
+}
+/*.topnavlink_selected:hover {
+	margin-left: -4px;
+	padding-left: 4px;
+	margin-right: -4px;
+	padding-right: 4px;
+}*/
 .topnavright {
 	float: right;
-	padding-right: 12px;
+	margin-right: 12px;
 }
-.small_banner, .small_banner_image {
+/*.small_banner, .small_banner_image {
     position: relative;
     text-align: center;
 	float: left
@@ -118,12 +133,13 @@
 	background-color: #F0F0F0;
 	padding-top: 80px;
 	min-width: 1071px;
-}
+}*/
 #body {
 	background-color: var(--appbodyBackgroundColor);
 	padding-top: 80px;
+	color: var(--bodyTextColor);
 }
-.top_section {
+/*.top_section {
 	max-width: 1063px;
     margin-left: auto;
     margin-right: auto;
@@ -142,7 +158,7 @@
 }
 .banner_button-1:hover {
 	background-color: #FFFFFF;
-}
+}*/
 .howInstallAppsAll {
 	padding-left: 4px;
 }
@@ -158,3 +174,4 @@
 	padding-top: 3.4%;
 	margin-bottom: -1%;
 }
+

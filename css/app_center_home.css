@@ -17,11 +17,13 @@
 .c1r {
 	display: inline-block;
 	width: 32.8%;
+	margin-left: 67.4%;
 }
 .c2r {
 	display: inline-block;
 	width: 32.8%;
 	vertical-align: top;
+	position: relative;
 }
 .c2r .bb1 {
 	max-height: 10%;
@@ -51,5 +53,7 @@
 div {
 	display:inline;
 }
-
+.relative {
+	position: absolute;
+}
 
