@@ -1,29 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>install</title>
-	  <script>//This is the service worker with the Cache-first network
-
-//Add this below content to your HTML page, or add the js file to your page at the very top to register sercie worker
-if (navigator.serviceWorker.controller) {
-  console.log('[PWA Builder] active service worker found, no need to register')
-} else {
-
-//Register the ServiceWorker
-  navigator.serviceWorker.register('pwabuilder-sw.js', {
-    scope: './'
-  }).then(function(reg) {
-    console.log('Service worker has been registered for scope:'+ reg.scope);
-  });
-}</script>
-  <link href="css/app_center.css" rel="stylesheet" type="text/css">
-  <link href="css/standardui.css" rel="stylesheet" type="text/css">
-  </head>
-  <body id="body">
-<section class="appbar_container"> <a href="#" onclick="history.back();return false"><img src="images/left_arrow1600.png" alt="" width="1600" height="1600" class="apparrow"></a>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>install</title>
+<script type="text/javascript" src="javascript/theme_switch.js"> </script>
+<link href="css/app_center.css" rel="stylesheet" type="text/css">
+<link href="css/standardui.css" rel="stylesheet" type="text/css">
+</head>
+<body id="body" onLoad="restoreTheme()"><section class="appbar_container"> <a href="#" onclick="history.back();return false"><img src="images/left_arrow1600.png" alt="" width="1600" height="1600" class="apparrow"></a>
   <header class="appbar">App Center</header>
-  <nav class="topnav"><a href="app_center.html" class="topnavlink">Home</a> &nbsp; <a href="app_center_UWP apps.html" class="topnavlink">UWP Apps</a> &nbsp; &nbsp; <a href="app_center_win32.html" class="topnavlink">Classic Apps</a> &nbsp; &nbsp; <a href="app_center_games.html" class="topnavlink">Games</a> &nbsp; &nbsp; <a href="app_center_browsers.html" class="topnavlink">Browsers</a> &nbsp; &nbsp; <a href="app_center_framework.html" class="topnavlink">Frameworks &amp; Extensions</a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="apps.html" class="topnavright topnavlink"><strong>Help</strong></a></nav>
+  <nav class="topnav"><a href="app_center_home2.html" class="topnavlink">Home</a> &nbsp; <a href="app_center_UWP apps.html" class="topnavlink">UWP Apps</a> &nbsp; &nbsp; <a href="app_center_win32.html" class="topnavlink">Classic Apps</a> &nbsp; &nbsp; <a href="app_center_games.html" class="topnavlink">Games</a> &nbsp; &nbsp; <a href="app_center_browsers.html" class="topnavlink">Browsers</a> &nbsp; &nbsp; <a href="app_center_framework.html" class="topnavlink">Frameworks &amp; Extensions</a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="learn_to_install.html" class="topnavright topnavlink topnavlink_selected">Help</a></nav>
 	&nbsp;
 </section>
 <section class="howInstallAppsAll">
