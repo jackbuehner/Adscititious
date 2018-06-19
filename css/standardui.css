@@ -27,7 +27,7 @@
 	align-items: center;
 	position: fixed;
 	z-index: 5;
-	width: 94%;
+	width: 100%;
 	height: 32px;
 	margin: -20px 0 0 42px;
 	-webkit-user-select: none;
@@ -39,4 +39,37 @@
 .titlebar_button {
 	-webkit-app-region: no-drag;
 	z-index: 99;
+}
+.titlebar_win_buttons {
+	float: right;
+	height: 32px;
+	width: 138px;
+	margin: -20px 0 0 85.2%;
+	-webkit-user-select: none;
+	-webkit-app-region: no-drag;
+}
+.window_buttons {
+	display: inline-block;
+	float: right;
+	height: 14px;
+	padding: 9px 16px;
+	filter: var(--invertImage100);
+	-webkit-app-region: no-drag;
+}
+.window_buttons:hover {
+	background-color: #E81123;
+	filter: none;
+	-webkit-app-region: no-drag;
+}
+.window_buttons_b {
+	display: inline-block;
+	float: right;
+	height: 10px;
+	padding: 11px 18px;
+	filter: var(--invertImage100);
+	-webkit-app-region: no-drag;
+}
+.window_buttons_b:hover {
+	background-color: hsla(0,0%,0%,0.20);
+	-webkit-app-region: no-drag;
 }
