@@ -56,7 +56,6 @@
 		filter: opacity(80%);
 		backdrop-filter: blur(22px);
 		-webkit-backdrop-filter: blur(22px);
-		padding-bottom: 20px;
 	}
 }
 .topnav {
