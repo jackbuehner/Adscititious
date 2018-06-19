@@ -15,6 +15,8 @@
 	z-index: 5;
 	background-color: var(--appbarBackgroundColor);
 	width: 100%;
+	-webkit-user-select: none;
+	-webkit-app-region: drag;
 }
 @supports (-webkit-backdrop-filter: blur(22px)) or (backdrop-filter: blur(22px)) {
 	.appbar_container {
