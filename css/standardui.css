@@ -8,7 +8,7 @@
 .titlebar {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	display: inline-block;
-	margin-left: 60px;
+	margin-left: 10px;
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 32px;
@@ -28,9 +28,9 @@
 	align-items: center;
 	position: fixed;
 	z-index: 5;
-	width: 100%;
+	width: 94%;
 	height: 32px;
-	margin: -20px 0 0 -8px;
+	margin: -20px 0 0 42px;
 	-webkit-user-select: none;
 	-webkit-app-region: drag;
 }
@@ -40,4 +40,5 @@
 .titlebar_button {
 	-webkit-app-region: no-drag;
 	z-index: 99;
+	background-color: var(--bodyBackgroundColor);
 }
