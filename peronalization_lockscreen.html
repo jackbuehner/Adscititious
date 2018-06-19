@@ -6,28 +6,15 @@
 <link href="css/standardui.css" rel="stylesheet" type="text/css">
 <link href="css/settings_page.css" rel="stylesheet" type="text/css">
 <link href="css/adscititious_icons.css" rel="stylesheet" type="text/css">
-<script>//This is the service worker with the Cache-first network
-
-//Add this below content to your HTML page, or add the js file to your page at the very top to register sercie worker
-if (navigator.serviceWorker.controller) {
-  console.log('[PWA Builder] active service worker found, no need to register')
-} else {
-
-//Register the ServiceWorker
-  navigator.serviceWorker.register('pwabuilder-sw.js', {
-    scope: './'
-  }).then(function(reg) {
-    console.log('Service worker has been registered for scope:'+ reg.scope);
-  });
-}</script>
+<script type="text/javascript" src="javascript/theme_switch.js"> </script>
 </head>
-
-<body class="body">
-<section class="titlebar_container">
-  <a href="#" onclick="history.back();return false"><img src="images/left_arrow1600.png" alt="" width="1600" height="1600" class="backarrow"></a>
-  <header class="titlebar">Adscititious: Windows 10 Customization</header>
-  &nbsp;
-</section>
+<body class="body" onLoad="restoreTheme()">
+	<div class="titlebar_button">
+		<a href="#" onclick="history.back();return false"><img src="images/back.svg" alt="" class="backarrow titlebar_button"></a>
+	</div>
+	<div class="titlebar_container">
+		<header class="titlebar">Adscititious: Windows 10 Customization</header>
+  	</div>
 	<div class="sidenav">
 		<ul class="sidenav_list_home">
 			<a href="index.html" class="sidenav_a"><li class="sidenav_list_item list_home">Home</li></a>
