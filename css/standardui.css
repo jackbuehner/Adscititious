@@ -24,6 +24,16 @@
 	display: flex;
 	align-items: center;
 	position: fixed;
-	margin-top: -14px;
+	margin: -20px 0 0 -6px;
+	padding: 5px 0 3px 6px;
 	z-index: 5;
+	width: 100%;
+	-webkit-user-select: none;
+	-webkit-app-region: drag;
+}
+.titlebar_container_background {
+	background-color: var(--bodyBackgroundColor);
+}
+.titlebar_button {
+	-webkit-app-region: no-drag;
 }
