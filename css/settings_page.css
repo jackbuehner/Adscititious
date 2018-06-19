@@ -160,8 +160,9 @@
 	border-style: solid;
 	float: right;
 	margin-left: 8px;
-	margin-top: -14px;
+	margin-top: 14px;
 	color: var(--bodyTextColor);
+	z-index: 99;
 }
 #light {
 	display: inherit;
