@@ -11,10 +11,9 @@
 	height: 32px;
 	width: 100%;
 	margin: -88px 0 0 -8px;
-	filter: opacity(96%);
-	background-color: var(--appbarBackgroundColor);
 	-webkit-user-select: none;
 	-webkit-app-region: drag;
+	z-index: 5;
 }
 .title {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
@@ -24,7 +23,6 @@
 	font-weight: 500;
 	line-height: 32px;
 	color: var(--bodyTextColor);
-	z-index: 5;
 }
 .appbar_win_buttons {
 	float: right;
@@ -32,6 +30,7 @@
 	width: 138px;
 	margin: -88px 0 0 85.2%;
 	-webkit-user-select: none;
+	-webkit-app-region: no-drag;
 }
 .window_buttons {
 	display: inline-block;
@@ -39,20 +38,21 @@
 	height: 14px;
 	padding: 9px 16px;
 	filter: var(--invertImage100);
+	-webkit-app-region: no-drag;
 }
 .topnav_container {
-	margin: -54px 0 0 -8px;
-	padding: 10px 0 14px 0;
+	margin: -88px 0 0 -8px;
+	padding: 44px 0 14px 0;
 	filter: opacity(96%);
 	position: fixed;
-	z-index: 5;
+	z-index: 4;
 	background-color: var(--appbarBackgroundColor);
 	width: 100%;
 	-webkit-user-select: none;
 	-webkit-app-region: drag;
 }
 @supports (-webkit-backdrop-filter: blur(22px)) or (backdrop-filter: blur(22px)) {
-	.topnav_container, .appbar_titlebar {
+	.topnav_container {
 		filter: opacity(80%);
 		backdrop-filter: blur(22px);
 		-webkit-backdrop-filter: blur(22px);
@@ -63,19 +63,23 @@
 	font-weight: normal;
 	padding-left: 12px;
 	margin-bottom: -5px;
+	-webkit-app-region: no-drag;
 }
 .topnavlink {
 	color: var(--bodyTextColor);
 	text-decoration: none;
 	filter: contrast(60%);
+	-webkit-app-region: no-drag;
 }
 .topnavlink:hover {
 	filter: contrast(90%);
+	-webkit-app-region: no-drag;
 }
 .topnavlink_selected {
 	filter: contrast(100%);
 	border-bottom: 2px solid #0078D7;
 	padding-bottom: 8px;
+	-webkit-app-region: no-drag;
 }
 /*.topnavlink_selected:hover {
 	margin-left: -4px;
@@ -86,6 +90,7 @@
 .topnavright {
 	float: right;
 	margin-right: 12px;
+	-webkit-app-region: no-drag;
 }
 /*.small_banner, .small_banner_image {
     position: relative;
