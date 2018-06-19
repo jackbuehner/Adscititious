@@ -17,11 +17,10 @@
 .backarrow {
 	display: inline-block;
 	position: fixed;
-	height: 20px;
-	width: 20px;
+	height: 13px;
 	filter: var(--invertImage100);
 	margin: -20px 0 0 -8px;
-	padding: 6px 15px;
+	padding: 9px 18px;
 }
 .titlebar_container {
 	display: flex;
@@ -40,5 +39,4 @@
 .titlebar_button {
 	-webkit-app-region: no-drag;
 	z-index: 99;
-	background-color: var(--bodyBackgroundColor);
 }
