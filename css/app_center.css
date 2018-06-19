@@ -11,9 +11,10 @@
 	height: 32px;
 	width: 100%;
 	margin: -88px 0 0 -8px;
+	filter: opacity(96%);
+	background-color: var(--appbarBackgroundColor);
 	-webkit-user-select: none;
 	-webkit-app-region: drag;
-	z-index: 5;
 }
 .title {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
@@ -23,6 +24,7 @@
 	font-weight: 500;
 	line-height: 32px;
 	color: var(--bodyTextColor);
+	z-index: 5;
 }
 .appbar_win_buttons {
 	float: right;
@@ -39,18 +41,18 @@
 	filter: var(--invertImage100);
 }
 .topnav_container {
-	margin: -88px 0 0 -8px;
-	padding: 44px 0 14px 0;
+	margin: -54px 0 0 -8px;
+	padding: 10px 0 14px 0;
 	filter: opacity(96%);
 	position: fixed;
-	z-index: 4;
+	z-index: 5;
 	background-color: var(--appbarBackgroundColor);
 	width: 100%;
 	-webkit-user-select: none;
 	-webkit-app-region: drag;
 }
 @supports (-webkit-backdrop-filter: blur(22px)) or (backdrop-filter: blur(22px)) {
-	.topnav_container {
+	.topnav_container, .appbar_titlebar {
 		filter: opacity(80%);
 		backdrop-filter: blur(22px);
 		-webkit-backdrop-filter: blur(22px);
