@@ -1,22 +1,37 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>App Center - UWP</title>
-<link href="css/app_center.css" rel="stylesheet" type="text/css">
-<link href="css/appListing.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="javascript/theme_switch.js"> </script>
+	<meta charset="utf-8">
+	<title>App Center - UWP</title>
+	<link href="css/app_center.css" rel="stylesheet" type="text/css">
+	<link href="css/appListing.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="javascript/theme_switch.js"> </script>
 </head>
 
 <body id="body" onLoad="restoreTheme()">
-<section class="appbar_container"> <a href="#" onclick="history.back();return false"><img src="images/left_arrow1600.png" alt="" width="1600" height="1600" class="apparrow"></a>
-  <header class="appbar">App Center</header>
-  <nav class="topnav"><a href="app_center_home2.html" class="topnavlink">Home</a> &nbsp; <a href="app_center_UWP apps.html" class="topnavlink topnavlink_selected">UWP Apps</a> &nbsp; &nbsp; <a href="app_center_win32.html" class="topnavlink">Classic Apps</a> &nbsp; &nbsp; <a href="app_center_games.html" class="topnavlink">Games</a> &nbsp; &nbsp; <a href="app_center_browsers.html" class="topnavlink">Browsers</a> &nbsp; &nbsp; <a href="app_center_framework.html" class="topnavlink">Frameworks &amp; Extensions</a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="learn_to_install.html" class="topnavright topnavlink">Help</a></nav>
-	&nbsp;
-</section>
+	<div class="appbar_titlebar">
+		<header class="title">App Center</header>
+	</div>
+	<div style="position:fixed;width:100%;margin-left:-8px;height:32px;z-index:99;">
+		<div class="appbar_win_buttons">
+			<img class="window_buttons" src="images/close.svg" onclick="history.back();return false"> </img>
+			<img class="window_buttons" src="images/close.svg" onclick="history.back();return false"> </img>
+			<img class="window_buttons" src="images/close.svg" onclick="history.back();return false"> </img>
+		</div>
+	</div>
+	<section class="topnav_container">
+  		<nav class="topnav">
+			<a href="app_center_home2.html" class="topnavlink">Home</a> &nbsp;
+			<a href="app_center_UWP apps.html" class="topnavlink topnavlink_selected">UWP Apps</a> &nbsp; &nbsp; 
+			<a href="app_center_win32.html" class="topnavlink">Classic Apps</a> &nbsp; &nbsp; 
+			<a href="app_center_games.html" class="topnavlink">Games</a> &nbsp; &nbsp; <a href="app_center_browsers.html" class="topnavlink">Browsers</a> &nbsp; &nbsp; 
+			<a href="app_center_framework.html" class="topnavlink">Frameworks &amp; Extensions</a> &nbsp; &nbsp; &nbsp; &nbsp; 
+			<a href="learn_to_install.html" class="topnavright topnavlink">Help</a></nav>
+	</section>
 <div class="page_banner" style="background-color:#0078D7;">
-	<h1 class="page_banner_head">Universal Windows Platform Apps</h1>
-	<p>Explore a variety of apps to enhance your Windows 10 experience.</p>
+  <h1 class="page_banner_head">Universal Windows Platform Apps</h1>
+  <p>Explore a variety of apps to enhance your Windows 10 experience.</p>
 </div>
 <section>
   <h2 class="sectionh">Productivity</h2>
@@ -153,5 +168,9 @@
 	  	<p class="price"> Free </p>
 	</section></a>
 </section>
+<div>
+  <input name="theme" type="submit" class="theme_b" id="light" onclick="lightTheme()" value="Enable Light Theme">
+  <input name="theme" type="submit" class="theme_b" id="dark" onclick="darkTheme()" value="Enable Dark Theme">
+</div>
 </body>
 </html>
