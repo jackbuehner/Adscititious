@@ -56,13 +56,15 @@
 		filter: opacity(80%);
 		backdrop-filter: blur(22px);
 		-webkit-backdrop-filter: blur(22px);
+		padding-bottom: 20px;
 	}
 }
 .topnav {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	font-weight: normal;
-	padding-left: 12px;
+	padding-left: 4px;
 	margin-bottom: -5px;
+	display: inline-block;
 	-webkit-app-region: no-drag;
 }
 .topnavlink {
@@ -70,6 +72,7 @@
 	text-decoration: none;
 	filter: contrast(60%);
 	-webkit-app-region: no-drag;
+	margin: 0 8px;
 }
 .topnavlink:hover {
 	filter: contrast(90%);
@@ -88,8 +91,11 @@
 	padding-right: 4px;
 }*/
 .topnavright {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: normal;
 	float: right;
 	margin-right: 12px;
+	margin-bottom: -5px;
 	-webkit-app-region: no-drag;
 }
 /*.small_banner, .small_banner_image {
