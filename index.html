@@ -8,10 +8,12 @@
 <script type="text/javascript" src="javascript/theme_switch.js"> </script>
 </head>
 <body class="body" onLoad="restoreTheme()">
-<section class="titlebar_container">
-  <a href="#" onclick="history.back();return false"><img src="images/left_arrow1600.png" alt="" width="1600" height="1600" class="backarrow"></a>
-  <header class="titlebar">Adscititious: Windows 10 Customization</header>
-  &nbsp;</section>
+	<div class="titlebar_button">
+		<a href="#" onclick="history.back();return false"><img src="images/left_arrow1600.png" alt="" width="1600" height="1600" class="backarrow titlebar_button"></a>
+	</div>
+	<div class="titlebar_container titlebar_container_background">
+		<header class="titlebar">Adscititious: Windows 10 Customization</header>
+  	</div>
 	<div>
 		<input name="theme" type="submit" class="theme_b" id="light" onclick="lightTheme()" value="Enable Light Theme">
 		<input name="theme" type="submit" class="theme_b" id="dark" onclick="darkTheme()" value="Enable Dark Theme">
