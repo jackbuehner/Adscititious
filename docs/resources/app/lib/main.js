@@ -5100,6 +5100,7 @@ function createMainWindow(inpOptions, onAppQuit, setDockBadge) {
     minHeight: options.minHeight,
     maxWidth: options.maxWidth,
     maxHeight: options.maxHeight,
+	backgroundColor: '#111111',
     x: options.x,
     y: options.y,
     autoHideMenuBar: !options.showMenuBar,

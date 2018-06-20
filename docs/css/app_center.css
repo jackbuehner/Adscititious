@@ -46,7 +46,7 @@
 	-webkit-app-region: no-drag;
 }
 .topnav_container {
-	margin: -88px 0 0 -8px;
+	margin: -89px 0 0 -8px;
 	padding: 44px 0 14px 0;
 	filter: opacity(96%);
 	position: fixed;
@@ -55,6 +55,8 @@
 	width: 100%;
 	-webkit-user-select: none;
 	-webkit-app-region: drag;
+	border: 1px solid #0063B1;
+	border-bottom: none;
 }
 @supports (-webkit-backdrop-filter: blur(22px)) or (backdrop-filter: blur(22px)) {
 	.topnav_container {

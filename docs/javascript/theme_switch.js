@@ -22,12 +22,12 @@ function alertCookie() {
 //restore theme based on cookie
 function restoreTheme() {
 	var theme = getCookie("theme");
-	if (theme=="dark") {
+	if (theme=="light") {
 		//alert("dark");
-		darkTheme();
+		lightTheme();
 	} else {
 		//alert("light");
-		lightTheme();
+		darkTheme();
 	}
 }
 //dark theme changes
@@ -43,7 +43,7 @@ function darkTheme() {
 	document.body.style.setProperty("--themeButton", "rgb(33,33,33)");
 	document.body.style.setProperty("--invertImage100", "invert(100%)");
 	document.body.style.setProperty("--regTextColor", "rgb(189,189,189)");
-	document.body.style.setProperty("--imageButtons", "invert(96%) hue-rotate(190deg) saturate(320%)");
+	document.body.style.setProperty("--imageButtons", "invert(94%) hue-rotate(190deg) saturate(320%)");
 	document.body.style.setProperty("--appCardBackground", "rgb(31,31,31)");
 	document.body.style.setProperty("--appCardBackgroundHover", "rgb(0,0,0)");
 	document.body.style.setProperty("--appCardTextColor", "rgb(255,255,255)");
@@ -70,3 +70,33 @@ function lightTheme() {
 	document.cookie="theme=light";
 	document.cookie="theme=dark; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 }
+
+//active vs inactive - titlebar
+$(window).on("blur focus", function(e) {
+var prevType = $(this).data("prevType");
+
+if (prevType != e.type) {   //  reduce double fire issues
+	switch (e.type) {
+		case "blur":
+			$("focuscolor").css("color", "#888");
+			$("buttonfocuscolor").css("opacity", ".5");
+			$("html").css("border-color", "#373737")
+			$("borderC").css("border-color", "#373737")
+			$("buttonfocuscolor").css("border-color", "#373737")
+			$("borderCB").css("background-color", "#373737")
+			break;
+		case "focus":
+			$("focuscolor").css("color", "var(--bodyTextColor)");
+			$("buttonfocuscolor").css("opacity", "1");
+			$("html").css("border-color", "#0063B1")
+			$("borderC").css("border-color", "#0063B1")
+			$("buttonfocuscolor").css("border-color", "#0063B1")
+			$("borderCB").css("background-color", "#0063B1")
+			break;
+	}
+}
+
+$(this).data("prevType", e.type);
+})
+
+

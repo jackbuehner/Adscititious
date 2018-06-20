@@ -7,6 +7,7 @@
 	font-weight: 400;
 	padding: 32px 0 6px 0;
 	color: var(--bodyTextColor);
+	cursor: default;
 }
 .home_button {
 	display: inline-block;
@@ -15,6 +16,7 @@
 	padding: 6px 8px 6px 8px;
 	text-align: center;
 	filter: var(--imageButtons);
+	cursor: default;
 }
 .home_container {
 	max-width: 662px;
@@ -30,10 +32,12 @@
 .desch {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	color: var(--bodyTextColor);
+	cursor: default;
 }
 .descp {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	color: var(--regTextColor);
+	cursor: default;
 }
 a {
 	color: #0063b1;

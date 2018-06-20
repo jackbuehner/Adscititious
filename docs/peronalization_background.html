@@ -1,28 +1,31 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Personalization - Background</title>
-<link href="css/standardui.css" rel="stylesheet" type="text/css">
-<link href="css/settings_page.css" rel="stylesheet" type="text/css">
-<link href="css/adscititious_icons.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="javascript/theme_switch.js"> </script>
+	<meta charset="utf-8">
+	<title>Personalization - Background</title>
+	<link href="css/standardui.css" rel="stylesheet" type="text/css">
+	<link href="css/settings_page.css" rel="stylesheet" type="text/css">
+	<link href="css/adscititious_icons.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript/theme_switch.js"> </script>
 </head>
+
 <body class="body" onLoad="restoreTheme()">
-	<div class="titlebar_button">
-		<a href="#" onclick="history.back();return false"><img src="images/back.svg" alt="" class="backarrow titlebar_button"></a>
-	</div>
-	<div class="titlebar_container">
-		<header class="titlebar">Adscititious: Windows 10 Customization</header>
-  	</div>
+	<borderC class="titlebar_container">
+		<focuscolor class="titlebar">Adscititious: Windows 10 Customization</focuscolor>
+  	</borderC>
+	<buttonfocuscolor class="titlebar_button reg_cursor">
+		<a href="#" onclick="history.back();return false"><img src="images/back.svg" alt="" class="backarrow titlebar_button reg_cursor"></a>
+	</buttonfocuscolor>
 	<div style="position:fixed;width:100%;margin-left:-8px;height:32px;z-index:99;margin-top:-40px;">
-		<div class="titlebar_win_buttons">
-			<a href="#" onclick="window.close()"><img src="images/close.svg" alt="" class="window_buttons"></a>
-			<a href="#" onclick="window.maximize()"><img src="images/maximize.svg" alt="" class="window_buttons_b"></a>
-			<a href="#" onclick="window.minimize()"><img src="images/minimize.svg" alt="" class="window_buttons_b"></a>
-		</div>
+		<buttonfocuscolor class="titlebar_win_buttons reg_cursor">
+			<a href="#" onclick="window.close()"><img src="images/close.svg" alt="" class="window_buttons reg_cursor"></a>
+			<a href="#" onclick="window.maximize()"><img src="images/maximize.svg" alt="" class="window_buttons_b reg_cursor"></a>
+			<a href="#" onclick="window.minimize()"><img src="images/minimize.svg" alt="" class="window_buttons_b reg_cursor"></a>
+		</buttonfocuscolor>
 	</div>
-	<div class="sidenav">
+	<borderCB class="bBorder"></borderCB>
+	<borderC class="sidenav">
 		<ul class="sidenav_list_home">
 			<a href="index.html" class="sidenav_a"><li class="sidenav_list_item list_home">Home</li></a>
 		</ul>
@@ -31,7 +34,7 @@
 	<a href="peronalization_lockscreen.html"><img src="images/settings buttons/personalize/lockscreen.png"></a>
 	<a href="ms-settings:personalization-start"><img src="images/settings buttons/personalize/start.png"></a>
 	<a href="ms-settings:taskbar"><img src="images/settings buttons/personalize/taskbar.png"></a>
-</div>
+</borderC>
 <section class="main">
 <h1 class="page_title">
   Background</h1>

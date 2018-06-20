@@ -8,7 +8,7 @@
 .titlebar {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	display: inline-block;
-	margin-left: 10px;
+	margin-left: 60px;
 	font-size: 12px;
 	font-weight: 500;
 	line-height: 32px;
@@ -20,7 +20,11 @@
 	height: 13px;
 	filter: var(--invertImage100);
 	margin: -20px 0 0 -8px;
-	padding: 9px 18px;
+	padding: 11px 18px 9px 18px;
+}
+.backarrow:hover {
+	background-color: hsla(0,0%,0%,0.15);
+	-webkit-app-region: no-drag;
 }
 .titlebar_container {
 	display: flex;
@@ -29,9 +33,11 @@
 	z-index: 5;
 	width: 100%;
 	height: 32px;
-	margin: -20px 0 0 42px;
+	margin: -20px 0 0 -9px;
 	-webkit-user-select: none;
 	-webkit-app-region: drag;
+	border: 1px solid #0063B1;
+	border-bottom: none;
 }
 .titlebar_container_background {
 	background-color: var(--bodyBackgroundColor);
@@ -44,9 +50,15 @@
 	float: right;
 	height: 32px;
 	width: 138px;
-	margin: 20px 0 0 85.2%;
+	margin: 20px 1px 0 85.2%;
 	-webkit-user-select: none;
 	-webkit-app-region: no-drag;
+	border: 1px solid #0063B1;
+	border-bottom: none;
+	border-left: none;
+}
+.titlebar_win_buttons:hover {
+	opacity: 1 !important;
 }
 .window_buttons {
 	display: inline-block;
@@ -78,4 +90,24 @@
 }
 .body, #body, #bodyhome {
 	-webkit-user-select: none;
+	background-color: var(--bodyBackgroundColor);
+}
+html {
+	border-left: 1px solid #0063B1;
+	border-right: 1px solid #0063B1;
+}
+p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover; {
+	cursor: default;
+}
+.reg_cursor {
+	cursor: default;
+}
+.bBorder {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background-color: #0063B1;
+	z-index: 5;
 }
