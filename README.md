@@ -11,4 +11,4 @@ Adscititious /ˌadsɪˈtɪʃəs/ (adj) - Forming an addition or supplement; not 
 
 
 ## Download
-Go to the <a href="https://github.com/jackbuehner/Adscititious/releases" Releases Page</a>
+Go to the [Releases](https://github.com/jackbuehner/Adscititious/releases) Page</a>
