@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>App Center</title>
+	  <script>//This is the service worker with the Cache-first network
+
+//Add this below content to your HTML page, or add the js file to your page at the very top to register sercie worker
+if (navigator.serviceWorker.controller) {
+  console.log('[PWA Builder] active service worker found, no need to register')
+} else {
+
+//Register the ServiceWorker
+  navigator.serviceWorker.register('pwabuilder-sw.js', {
+    scope: './'
+  }).then(function(reg) {
+    console.log('Service worker has been registered for scope:'+ reg.scope);
+  });
+}</script>
+  </head>
+  <body>
+    <h1> </h1>
+    <p style="background-color: #f5f7fa;"> </p>
+    <p style="background-color: #f5f7fa;"> </p>
+    <table style="width: 100%;" border="0">
+      <tbody>
+        <tr>
+          <td style="vertical-align: middle; text-align: center;"> <a href="index.html"><img
+
+                src="images/home.png" alt="" style="width: 25px; height: 25px;"></a><br>
+          </td>
+          <td style="height: 16.9333px; text-align: left; vertical-align: middle;"><span
+
+              style="font-family: Segoe UI;">Surface 3 Setup &amp; Customization</span></td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top; width: 33.8667px;"><span style="font-family: Segoe UI;"><a
+
+                href="apps.html"></a></span><br>
+          </td>
+          <td style="width: 1676.13px;">
+            <h1><span style="font-family: Segoe UI;">App Center<br>
+              </span></h1>
+            <h2><span style="font-family: Segoe UI;">Microsoft Store Apps</span></h2>
+            <img src="images/appIcons/OneNote.PNG" alt="">&nbsp;<img src="images/appIcons/Groove.PNG"
+
+              alt="groove">&nbsp;<img src="images/appIcons/mailandcalendar.PNG"
+
+              alt="mail and calendar">&nbsp;<img src="images/appIcons/Plex.PNG"
+
+              alt="plex">&nbsp;<img src="images/appIcons/Surface.PNG" alt="surface">&nbsp;<img
+
+              src="images/appIcons/GPMDP.PNG" alt=""><br>
+            <br>
+            <h5><a href="learn_to_install.html"><span
+
+                  style="font-family: Segoe UI;">Click here to learn how to
+                  install Microsoft Store Apps</span></a></h5>
+            <p></p>
+            <h2><span style="font-family: Segoe UI;">Portable Apps</span></h2>
+            <img src="images/appIcons/stylish.png" alt="" style="width: 140px; height: 140px;">
+            <br>
+            <h2><span style="font-family: Segoe UI;">Browsers</span></h2>
+            <h5><span style="font-family: Segoe UI;">Install a browser to use
+                extensions</span></h5>
+            <p><a href="https://download.mozilla.org/?product=firefox-devedition-stub&amp;os=win&amp;lang=en-US&amp;attribution_code=c291cmNlPXd3dy5nb29nbGUuY29tJm1lZGl1bT1yZWZlcnJhbCZjYW1wYWlnbj0obm90IHNldCkmY29udGVudD0obm90IHNldCkmdGltZXN0YW1wPTE1MjYzMjQ1MTc.&amp;attribution_sig=f1949546ee9eb757ec9adadca9759b6c933795e119c5fe5552d99c8411a833ee"><img
+
+                  src="images/download%20Firefox%20Developer%20Edition.png" alt=""></a>
+              (Recommeded Version)</p>
+            <a href="Applications/Firefox%20Setup%2060.0.exe"><img src="images/download%20Firefox%20Stable.png"
+
+                alt=""></a> (Offline Firefox)<br>
+            <p><a href="https://github.com/henrypp/chromium/releases/download/v66.0.3359.139-r540276-win64/chromium-sync.exe"><img
+
+                  src="images/download%20Chromium.png" alt=""></a></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <p><br>
+    </p>
+    <span style="font-family: Segoe UI;" class="head1"></span><br>
+    <p style="background-color: #f5f7fa;"></p>
+    <p style="background-color: #f5f7fa;"> </p>
+    <h1><br>
+      <span style="font-family: Segoe UI;"></span></h1>
+    <br>
+  </body>
+</html>

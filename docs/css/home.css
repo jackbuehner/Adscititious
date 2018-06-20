@@ -1,0 +1,40 @@
+:root {
+	--imageButtons: none;
+}
+.home_head {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	text-align: center;
+	font-weight: 400;
+	padding: 32px 0 6px 0;
+	color: var(--bodyTextColor);
+}
+.home_button {
+	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 6px 8px 6px 8px;
+	text-align: center;
+	filter: var(--imageButtons);
+}
+.home_container {
+	max-width: 662px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.buttonbox {
+	text-align: center;
+}
+.descriptionbox {
+	padding: 10px;
+}
+.desch {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: var(--bodyTextColor);
+}
+.descp {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: var(--regTextColor);
+}
+a {
+	color: #0063b1;
+}

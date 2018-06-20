@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html slick-uniqueid="3"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+
+
+<!--meta name="viewport" content="width=device-width, maximum-scale=0.5" /-->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta charset="utf-8">
+<meta name="description" content="Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor.">
+<meta name="keywords" content="online javascript editor, testing javascript online, online ide, online code editor, html, css, coffeescript, scss online editor">
+<meta name="author" content="JSFiddle">
+<meta name="copyright" content="share alike">
+<!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+
+
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+
+
+
+
+
+  <meta name="google-site-verification" content="9m4aWTtDLfQ1kJNm3NtNsCrtpsOx_QoOPQRJ7jAwup8">
+
+
+<script src="Edit%20fiddle%20-%20JSFiddle_files/xml.js"></script><script src="Edit%20fiddle%20-%20JSFiddle_files/css.js"></script><script src="Edit%20fiddle%20-%20JSFiddle_files/htmlmixed.js"></script><script src="Edit%20fiddle%20-%20JSFiddle_files/javascript.js"></script><script async="" src="Edit%20fiddle%20-%20JSFiddle_files/analytics.js"></script><script>
+  window.NEXT_APP = true;
+
+  var EditorConfig = {
+    shell: false,
+    paths: {
+      favorite:    "/_make_favourite/",
+      media:       "/mooshellmedia/",
+      addResource: "/_add_external_resource/",
+      render:      "//fiddle.jshell.net/Jp5AQ/2/show/'"
+    },
+    values: {
+      html: "\u003Cdiv\u003E\u000A    \u003Cimg src\u003D\u0027http://www.vanpaul.com/logo_design/images/stackoverflow.jpg\u0027 /\u003E\u000A\u003C/div\u003E",
+      js:   "",
+      css:  "div {\u000A    border: solid 1px green\u003B\u000A    width: 500px\u003B\u000A    height: 200px\u003B\u000A}\u000A\u000Adiv img {\u000A    max\u002Dwidth: 100%\u003B\u000A    max\u002Dheight: 100%\u003B\u000A    outline: solid 1px red\u003B\u000A}"
+    },
+    fiddle: {
+      id:   "5220188",
+      slug: "Jp5AQ",
+      
+        resources: []
+      
+    },
+    panels: {
+      html: "html",
+      js:   "javascript",
+      css:  "css"
+    },
+    user: {
+      id:       "None",
+      username: ""
+    },
+    showHelloBar: false
+  }
+</script>
+
+
+<!-- 
+  <script type="text/javascript" src="/js/_dist-editor.js?update_23_04_2018_1"></script>
+
+ -->
+
+
+
+  <link id="skeleton-theme" rel="stylesheet" type="text/css" href="Edit%20fiddle%20-%20JSFiddle_files/dist-skeleton-dark.css">
+
+
+
+<!--  -->
+
+
+  <script type="text/javascript">
+  </script>
+
+  
+
+
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  var GA_LOCAL_STORAGE_KEY = 'ga:clientId';
+  if (window.localStorage) {
+    ga('create', 'UA-366077-13', {
+      'storage': 'none',
+      'clientId': localStorage.getItem(GA_LOCAL_STORAGE_KEY)
+    });
+    ga(function(tracker) {
+      localStorage.setItem(GA_LOCAL_STORAGE_KEY, tracker.get('clientId'));
+    });
+    ga('send', 'pageview', '/[fiddle]/[revision]/'); // where `url_structure` is for example `/[user]/[fiddle]/[revision]/embedded/js,css/`
+  }
+</script>
+
+  
+
+
+<link rel="icon" href="http://jsfiddle.net/img/favicon.png">
+
+<title>Edit fiddle - JSFiddle</title>
+
+  <script id="_carbonads_projs" type="text/javascript" src="Edit%20fiddle%20-%20JSFiddle_files/CKYIEKQ7.json"></script></head>
+
+  <body class="fullyLoaded">
+    <div id="hello-bar">
+  <a class="closeHb" href="#">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>Close
+  </a>
+
+  <div class="hbBody">
+    <section>
+      <h3>Start with a boilerplate:</h3>
+      <ul class="boilerplates">
+        <li><a href="http://jsfiddle.net/">Empty</a></li>
+        <li><a href="http://jsfiddle.net/boilerplate/jquery">jQuery</a></li>
+        <li><a href="http://jsfiddle.net/boilerplate/vue">Vue</a></li>
+        <li><a href="http://jsfiddle.net/boilerplate/react-jsx">React</a></li>
+        <li><a href="http://jsfiddle.net/boilerplate/react-jsx">React + JSX</a></li>
+        <li><a href="http://jsfiddle.net/boilerplate/preact">Preact</a></li>
+        <li><a href="http://jsfiddle.net/boilerplate/typescript">TypeScript</a></li>
+        <li><a href="http://jsfiddle.net/boilerplate/coffeescript">CoffeeScript</a></li>
+        <li><a href="http://jsfiddle.net/boilerplate/scss">SCSS</a></li>
+        <li><a href="http://jsfiddle.net/boilerplate/responsive-css-grid">CSS Grid (responsive)</a></li>
+        <li><a href="http://jsfiddle.net/boilerplate/bootstrap">Bootstrap</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>Links:</h3>
+      <ul>
+        <li>👍🏻 <a href="https://trello.com/b/LakLkQBW/jsfiddle-roadmap" target="_blank">Roadmap</a> (vote for features)</li>
+        <li>🐞 <a href="https://github.com/jsfiddle/jsfiddle-issues/issues" target="_blank">Bug tracker</a></li>
+        <li>☁️ <a href="https://jsfiddle.net/about" target="_blank">About</a></li>
+        <li>🎛 <a href="http://status.jsfiddle.net/" target="_blank">Service status</a></li>
+      </ul>
+    </section>
+
+    <!-- <section>
+      <h3>Worth checking out:</h3>
+      <ul class="articles">
+        <li><a href="https://julian.is/article/css-grid-at-scale/?utm_source=jsfiddle&amp;utm_medium=editor" target="_blank">Adopting CSS Grid at scale</a> <span>via julian.is</span></li>
+        <li><a href="https://changelog.com/news/show-mdn-browser-compatibility-data-on-the-command-line-NRR2/?utm_source=jsfiddle&amp;utm_medium=editor" target="_blank">Show MDN browser compatibility data on the command line</a> <span>via changelog.com</span></li>
+        <li>🙋 <a href="https://trello.com/b/VVZC5uQY/jsfiddle-links-inbox" target="_blank">Suggest a link</a></li>
+        <li><a href="" target="_blank">Demos for docs</a></li>
+        <li><a href="" target="_blank">Bug reporting (test-case) for Github Issues</a></li>
+        <li><a href="" target="_blank">Presenting code answers on Stack Overflow</a></li>
+        <li><a href="" target="_blank">Live code collaboration</a></li>
+        <li><a href="" target="_blank">Code snippets hosting</a></li>
+        <li>... or just a code playground</li>
+      </ul>
+    </section> -->
+  </div>
+</div>
+
+
+
+    <form method="post" id="show-result" target="result" action="//fiddle.jshell.net/_display/">
+      
+      
+      <div style="display:none"><input name="csrfmiddlewaretoken" value="C5tvp7HZn4TqaISL4GiSCKon4rXfmMUQ" type="hidden"></div>
+      <header>
+        <h1>
+          <span class="title">JSFiddle</span>
+          <div class="changelog-badge">
+            <a title="JSFiddle" href="http://jsfiddle.net/">
+              <svg width="46px" height="33px" viewBox="0 0 46 33">
+                <g class="asd" stroke-width="1.6" fill="none" fill-rule="evenodd">
+                  <path d="M23.4888889,20.543316 C21.4404656,18.4187374 19.0750303,15.6666667 16.4832014,15.6666667 C13.8721947,15.6666667 11.7555556,17.6366138 11.7555556,20.0666667 C11.7555556,22.4967196 13.8721947,24.4666667 16.4832014,24.4666667 C18.8347252,24.4666667 19.9845474,23.0125628 20.6429148,22.312473" id="Oval-1" stroke-linecap="round"></path>
+                  <path d="M22.5111111,19.5900174 C24.5595344,21.7145959 26.9249697,24.4666667 29.5167986,24.4666667 C32.1278053,24.4666667 34.2444444,22.4967196 34.2444444,20.0666667 C34.2444444,17.6366138 32.1278053,15.6666667 29.5167986,15.6666667 C27.1652748,15.6666667 26.0154526,17.1207706 25.3570852,17.8208603" id="Oval-1-Copy" stroke-linecap="round"></path>
+                  <path d="M45,22.7331459 C45,19.1499462 42.7950446,16.079593 39.6628004,14.7835315 C39.6774469,14.5246474 39.7003932,14.2674038 39.7003932,14.0035978 C39.7003932,6.82243304 33.8412885,1 26.611593,1 C21.3985635,1 16.9102123,4.03409627 14.8051788,8.41527616 C13.7828502,7.62878013 12.503719,7.15547161 11.1134367,7.15547161 C7.77825654,7.15547161 5.07450503,9.84159999 5.07450503,13.1544315 C5.07450503,13.7760488 5.16938207,14.3779791 5.3477444,14.9418479 C2.74863428,16.4787471 1,19.2867709 1,22.5105187 C1,27.3287502 4.89630545,31.2367856 9.72803666,31.31094 L36.3341301,31.3109406 C41.1201312,31.3406346 45,27.4870665 45,22.7331459 L45,22.7331459 Z" id="Shape-path" stroke-linejoin="round"></path>
+                </g>
+              </svg>
+            </a>
+          </div>
+        </h1>
+        
+          
+
+<div id="actions">
+  <nav class="actionCont collapsed">
+    <div class="actionItem">
+      <a class="aiButton" id="run" title="Run (CTRL + Return)" href="#run">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-play"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+        Run</a>
+    </div>
+
+    
+    
+
+    
+    
+      <div class="actionItem hidden ">
+        <a class="aiButton" id="savenew" title="Save new fiddle (CTRL + S)" href="#save">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-upload-cloud"><polyline points="16 16 12 12 8 16"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path><polyline points="16 16 12 12 8 16"></polyline></svg>
+          Save</a>
+      </div>
+      <div class="actionItem visible ">
+        <a class="aiButton" id="update" title="Update (CTRL + S)" href="#update">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-upload-cloud"><polyline points="16 16 12 12 8 16"></polyline><line x1="12" y1="12" x2="12" y2="21"></line><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path><polyline points="16 16 12 12 8 16"></polyline></svg>
+        Update</a>
+      </div>
+      <div class="actionItem visible">
+        <a class="aiButton" id="fork" title="Fork into a new fiddle" href="#fork">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shuffle"><polyline points="16 3 21 3 21 8"></polyline><line x1="4" y1="20" x2="21" y2="3"></line><polyline points="21 16 21 21 16 21"></polyline><line x1="15" y1="15" x2="21" y2="21"></line><line x1="4" y1="4" x2="9" y2="9"></line></svg>
+          Fork</a>
+      </div>
+    
+
+    
+
+    <div class="actionItem " style="display: block;">
+      <a class="aiButton" id="tidy" title="Tidy messy code" href="#tidy">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-left"><line x1="17" y1="10" x2="3" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="17" y1="18" x2="3" y2="18"></line></svg>
+        Tidy</a>
+    </div>
+
+    <div class="actionItem ">
+      <a class="aiButton" id="collaborate" title="Collaborate on code" href="#collaborate">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        Collaborate</a>
+    </div>
+
+    
+
+    
+      <div class="actionItem dropdown visible ">
+        <a class="aiButton dropdownTrigger" id="share" title="Embed this fiddle" href="#embed" data-popover-trigger="embed">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+          Embed</a>
+      </div> <!-- /actionItem -->
+    
+  </nav>
+
+  <div id="app-updates" class=""><div class="bodyCont"><div class="body"><strong class="badge">New</strong> Highlighting matching tags<p>Setting option allows you to highlight the closing of the currently selected HTML tag and vice versa.</p><div class="dismissUpdate"><a href="">Got it</a></div></div></div></div>
+
+<script>
+  var updates = [
+    {
+      id: 7,
+      badge: "New",
+      title: "Highlighting matching tags",
+      body: "Setting option allows you to highlight the closing of the currently selected HTML tag and vice versa.",
+      highlight: {
+        target: "[data-popover-trigger='editor-settings']"
+      }
+    },
+    // {
+    //   id: 6,
+    //   badge: "New",
+    //   title: "Change font size",
+    //   body: "Sitting four meters away from the screen? No probs, you can now change the editor font size!",
+    //   highlight: {
+    //     target: "[data-popover-trigger='editor-settings']"
+    //   }
+    // },
+    // {
+    //   id: 5,
+    //   badge: "Update",
+    //   title: "Exporting to Github Gist",
+    //   body: "One-click-export to Github Gist has 🚀. Just click, wait a moment and get the Gist link back.",
+    //   highlight: {
+    //     target: "[data-popover-trigger='export']"
+    //   }
+    // },
+    // {
+    //   id: 4,
+    //   badge: "New",
+    //   title: "Added CoffeeScript 2",
+    //   body: "CofffeScript has come a long way, we've been using the 1.x branch forever, now added 2.x branch as the new default.",
+    //   highlight: {
+    //     target: ".windowLabel[data-popover-trigger='js']"
+    //   }
+    // },
+    // {
+    //   id: 3,
+    //   badge: "Update",
+    //   title: "Option to auto-run valid code",
+    //   body: "When <strong>Only auto-run validating code</strong> option and code validation is enabled JSFiddle will not try to auto-run code that doesn't validate.",
+    //   highlight: {
+    //     target: "[data-popover-trigger='editor-settings']"
+    //   }
+    // },
+    // {
+    //   id: 2,
+    //   badge: "Update",
+    //   title: "Redesigned settings",
+    //   body: "The old Layout and Editor Settings menus have been redesigned and merged together."
+    // },
+    // {
+    //   id: 1,
+    //   badge: "New stuff",
+    //   title: "Auto-run (beta) and auto-save",
+    //   body: "Small but a highly requested update – Auto-run and Auto-save are now available.<br> Auto-run is in beta, and off by default (enable in Editor Settings - sliders icon in the top right)."
+    // }
+  ]
+
+  var UpdatesWidget = function(options){
+    if (updates.length <= 0) return false
+
+    var currentUpdate = updates[0]
+    var lastSeenId    = window.localStorage.getItem("JSFIDDLE_last_seen_update")
+    var template      = {}
+
+    var element = {
+      updates:     document.querySelector("#app-updates"),
+      highlighter: document.createElement("div")
+    }
+
+    // generic template for the widget
+    template.title   = "<strong class='badge'>#{badge}</strong> #{title}"
+    template.body    = "<p>#{body}</p>"
+    template.dismiss = "<div class='dismissUpdate'><a href=''>Got it</a></div>"
+    template.full    = template.title + template.body + template.dismiss
+    template.body    = "<div class='body'>" + template.full + "</div>"
+    template.update  = "<div class='bodyCont'>" + template.body + "</div>"
+
+    // inject the highlighter
+    element.highlighter.id = "app-updates-highlighter"
+    document.body.appendChild(element.highlighter)
+
+    var dismissUpdate = function(event){
+      event.preventDefault()
+      event.stopPropagation()
+
+      window.localStorage.setItem("JSFIDDLE_last_seen_update", currentUpdate.id)
+      element.updates.classList.add("hidden")
+
+      Track.ui("Update dismissed")
+    }
+
+    var showHighlighter = function(event){
+      event.preventDefault()
+      event.stopPropagation()
+
+      var target  = document.querySelector(currentUpdate.highlight.target)
+      var rect    = target.getBoundingClientRect()
+      var visible = !element.updates.classList.contains("hidden")
+
+      element.highlighter.style.top    = rect.top + "px"
+      element.highlighter.style.left   = rect.left + "px"
+      element.highlighter.style.width  = rect.width + "px"
+      element.highlighter.style.height = rect.height + "px"
+
+      // only highlight before updater is dismissed
+      if (visible){
+        element.highlighter.classList.add("show")
+      }
+    }
+
+    var hideHighlighter = function(event){
+      element.highlighter.classList.remove("show")
+    }
+
+    // update the title
+    var update = template.update
+      .replace("#{badge}", currentUpdate.badge)
+      .replace("#{title}", currentUpdate.title)
+      .replace("#{body}",  currentUpdate.body)
+
+    element.updates.innerHTML = update
+
+    // dismiss update and save ID for future reference
+    var dismiss = document.querySelector(".dismissUpdate a")
+    dismiss.addEventListener("click", dismissUpdate)
+
+    // manage highlighter
+    if (currentUpdate.highlight){
+      element.updates.addEventListener("mouseover", showHighlighter)
+      element.updates.addEventListener("mouseout", hideHighlighter)
+    }
+
+    // remove hidden class if user hasn't seen the latest update
+    if (parseInt(lastSeenId) !== currentUpdate.id){
+      element.updates.classList.remove("hidden")
+    }
+  }
+
+  window.addEventListener("DOMContentLoaded", UpdatesWidget)
+</script>
+
+
+<ul class="actionCont dropdown right">
+  <li class="actionItem hidden draftTriggerCont">
+    <a class="aiButton dropdownTrigger applyDraft" href="#" data-popover-trigger="draft">Unsaved draft</a>
+  </li> <!-- /actionItem -->
+
+  <li class="actionItem">
+    <a class="aiButton dropdownTrigger" href="#" title="Editor settings" data-popover-trigger="editor-settings">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sliders"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+      Settings
+    </a>
+  </li> <!-- /actionItem -->
+
+  
+
+
+  <li class="actionItem"><a class="aiButton" id="login" href="http://jsfiddle.net/user/login/">Sign in</a></li>
+
+
+
+
+</ul>
+
+<div class="dropdownCont hidden" data-popover-ref="draft" data-popover-position="left">
+  <div class="dcWrapper diffCont">
+    <h4>Diff between the <strong>saved</strong> and <strong>locally drafted</strong> fiddle:</h4>
+    <div class="diffPanels">
+      <div class="diffWrap" id="diff-html"></div>
+      <div class="diffWrap" id="diff-js"></div>
+      <div class="diffWrap" id="diff-css"></div>
+    </div> <!-- /diffCont -->
+    <p><a class="apply" href="#" id="apply-draft">Apply local draft version</a> or <a href="#" id="discard-draft">discard it</a></p>
+  </div> <!-- /dcWrapper -->
+</div> <!-- /dropdownCont -->
+
+<div class="dropdownCont hidden" data-popover-ref="editor-settings" data-popover-position="left">
+  <div class="dcWrapper editorSettings">
+    <div id="editor-options">
+      <h3>General</h3>
+
+      <div class="fieldsCont">
+        <p>
+          <label class="checkboxCont">
+            <input name="darkTheme" checked="checked" type="checkbox">
+            <span class="checkbox"></span>
+            Dark theme
+          </label>
+        </p>
+        <p>
+          <label class="checkboxCont">
+            <input name="lineNumbers" checked="checked" type="checkbox">
+            <span class="checkbox"></span>
+            Line numbers
+          </label>
+        </p>
+        <p>
+          <label class="checkboxCont">
+            <input name="lineWrapping" checked="checked" type="checkbox">
+            <span class="checkbox"></span>
+            Line wrapping
+          </label>
+        </p>
+        <p>
+          <label class="checkboxCont">
+            <input name="indentWithTabs" type="checkbox">
+            <span class="checkbox"></span>
+            Indent with tabs
+          </label>
+        </p>
+      </div> <!-- /fieldsCont -->
+
+      <div class="selectPairs">
+        <div class="selectPair">
+          <span class="label">Indent size:</span>
+          <div class="selectCont">
+            <select name="indentUnit">
+              <option value="2" selected="selected">2 spaces</option>
+              <option value="3">3 spaces</option>
+              <option value="4">4 spaces</option>
+            </select>
+          </div>
+        </div> <!-- /selectPair -->
+
+        <div class="selectPair">
+          <span class="label">Key map:</span>
+          <div class="selectCont">
+            <select name="keyMap">
+              <option value="default" selected="selected">Default</option>
+              <option value="sublime">Sublime Text</option>
+              <option value="vim">VIM</option>
+              <option value="emacs">EMACS</option>
+            </select>
+          </div>
+        </div> <!-- /selectPair -->
+
+        <div class="selectPair">
+          <span class="label">Font size:</span>
+          <div class="selectCont">
+            <select name="fontSize">
+              <option value="1" selected="selected">Default</option>
+              <option value="2">Big</option>
+              <option value="3">Bigger</option>
+              <option value="4">Jabba</option>
+            </select>
+          </div>
+        </div> <!-- /selectPair -->
+      </div> <!-- /selectPairs -->
+
+      <h3>Behavior</h3>
+      <div class="fieldsCont">
+        <p>
+          <label class="checkboxCont">
+            <input name="autoRun" type="checkbox">
+            <span class="checkbox"></span>
+            Auto-run code <small>(beta)</small>
+          </label>
+        </p>
+        <p>
+          <label class="checkboxCont">
+            <input name="autoRunValid" type="checkbox">
+            <span class="checkbox"></span>
+            Only auto-run code that validates
+          </label>
+        </p>
+        <p>
+          <label class="checkboxCont">
+            <input name="autoSave" type="checkbox">
+            <span class="checkbox"></span>
+            Auto-save code (bumps the version)
+          </label>
+        </p>
+        <p>
+          <label class="checkboxCont">
+            <input name="autoCloseTags" checked="checked" type="checkbox">
+            <span class="checkbox"></span>
+            Auto-close HTML tags
+          </label>
+        </p>
+        <p>
+          <label class="checkboxCont">
+            <input name="clearConsole" type="checkbox">
+            <span class="checkbox"></span>
+            Clear console on run
+          </label>
+        </p>
+        <p>
+          <label class="checkboxCont">
+            <input name="codeLinting" checked="checked" type="checkbox">
+            <span class="checkbox"></span>
+            Live code validation
+          </label>
+        </p>
+        <p>
+          <label class="checkboxCont">
+            <input name="matchTags" type="checkbox">
+            <span class="checkbox"></span>
+            Highlight matching tags
+          </label>
+        </p>
+      </div> <!-- /fieldsCont -->
+
+      <h3>Boilerplates</h3>
+      <div class="fieldsCont">
+        <p>
+          <label class="checkboxCont">
+            <input name="reduceHelloBar" type="checkbox">
+            <span class="checkbox"></span>
+            Show boilerplates bar less often
+          </label>
+        </p>
+      </div> <!-- /fieldsCont -->
+    </div> <!-- /editor-options -->
+
+    <h3>Editor layout</h3>
+    <div id="layout">
+      <label>
+        <input name="editor_mode" value="grid_1" checked="checked" type="radio">
+        <span class="gridMode grid_1"></span>
+        Classic
+      </label>
+      <label>
+        <input name="editor_mode" value="grid_2" type="radio">
+        <span class="gridMode grid_2"></span>
+        Columns
+      </label>
+      <label>
+        <input name="editor_mode" value="grid_3" type="radio">
+        <span class="gridMode grid_3"></span>
+        Bottom results
+      </label>
+      <label>
+        <input name="editor_mode" value="grid_4" type="radio">
+        <span class="gridMode grid_4"></span>
+        Right results
+      </label>
+    </div>
+  </div> <!-- /dcWrapper -->
+</div> <!-- /dropdownCont -->
+
+</div>
+
+
+
+<div class="dropdownCont center hidden" data-popover-ref="embed">
+  <div class="dcWrapper embed">
+    <div id="creator">
+      <section>
+        <h3>Tabs:</h3>
+        <div class="inlineFields">
+          <label class="inputCont_checkbox checkboxCont">
+            <input name="tabs" value="js" checked="checked" type="checkbox">
+            <span class="checkbox"><i class="bts bt-check"></i></span> JavaScript
+          </label>
+          <label class="inputCont_checkbox checkboxCont">
+            <input name="tabs" value="html" checked="checked" type="checkbox">
+            <span class="checkbox"><i class="bts bt-check"></i></span> HTML
+          </label>
+          <label class="inputCont_checkbox checkboxCont">
+            <input name="tabs" value="css" checked="checked" type="checkbox">
+            <span class="checkbox"><i class="bts bt-check"></i></span> CSS
+          </label>
+          <label class="inputCont_checkbox checkboxCont">
+            <input name="tabs" value="result" checked="checked" type="checkbox">
+            <span class="checkbox"><i class="bts bt-check"></i></span> Result
+          </label>
+        </div> <!-- /inlineFields -->
+      </section>
+
+      <section class="noborder">
+        <h3>Visual:</h3>
+        <div class="inlineFields">
+          <label class="inputCont_checkbox checkboxCont">
+            <input name="skin" value="light" checked="checked" type="radio">
+            <span class="radio"></span> Light
+          </label>
+          <label class="inputCont_checkbox checkboxCont">
+            <input name="skin" value="dark" type="radio">
+            <span class="radio"></span> Dark
+          </label>
+        </div> <!-- /inlineFields -->
+        <label class="inputCont_text">
+          <input name="accentColor" maxlength="7" placeholder="Accent color" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;" type="text">
+        </label>
+        <label class="inputCont_text">
+          <input name="fontColor" maxlength="7" placeholder="Font color" type="text">
+        </label>
+        <label class="inputCont_text">
+          <input name="menuColor" maxlength="7" placeholder="Menu background" type="text">
+        </label>
+        <label class="inputCont_text">
+          <input name="bodyColor" maxlength="7" placeholder="Code background" type="text">
+        </label>
+      </section>
+
+      <section class="noborder">
+        <h3>Embed code <a href="#" class="codeTypeToggle">Prefer iframe?</a>:</h3>
+        <div class="embedCodeWrap">
+<textarea class="embedCode" id="share_embedded_dropdown" data-view="embed" data-pattern-value="&lt;script async src=&quot;{embedSrc}&quot;&gt;&lt;/script&gt;">&lt;script async src="{embedSrc}"&gt;&lt;/script&gt;
+</textarea>
+        </div> <!-- /embedCodeWrap -->
+
+        <div class="embedCodeWrap hidden">
+<textarea class="embedCode" data-view="embedded" data-pattern-value="&lt;iframe width=&quot;100%&quot; height=&quot;300&quot; src=&quot;{embedSrc}&quot; allowpaymentrequest allowfullscreen=&quot;allowfullscreen&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;">&lt;iframe width="100%" height="300" src="{embedSrc}" allowfullscreen allowpaymentrequest frameborder="0"&gt;&lt;/iframe&gt;
+</textarea>
+          <p><strong>No autoresizing</strong> to fit the code</p>
+          <p><strong>Render blocking</strong> of the parent page</p>
+        </div> <!-- /embedCodeWrap -->
+      </section>
+    </div> <!-- /creator -->
+
+    <div id="preview"></div> <!-- /preview -->
+  </div> <!-- /dcWrapper -->
+</div> <!-- /dropdownCont -->
+
+        
+        <div id="progressbar"><div class="pb"></div></div>
+      </header>
+
+      
+        <div id="sidebar">
+          <section id="s-cont">
+            
+
+            <div class="sidebarItem opened">
+  <h3 class="toggler" title="Posted on 03 Apr 2012">
+    Fiddle meta
+  </h3>
+  <div class="body">
+    <p>
+      <label>
+        <input id="id_title" name="title" maxlength="255" placeholder="Untitled fiddle" type="text">
+      </label>
+    </p>
+    <p>
+      <label>
+        <textarea id="id_description" rows="10" cols="40" name="description" placeholder="No description"></textarea>
+      </label>
+    </p>
+    <p class="metaInfo">Add title to make the fiddle public.</p>
+  </div> <!-- /body -->
+</div> <!-- /sidebarItem -->
+
+            
+
+<script type="text/javascript">
+  var resources = []
+  
+</script>
+
+<div class="sidebarItem">
+  
+    <h3 class="toggler ">
+      Resources <strong class="resourcesLabel">URL</strong> <strong class="resourcesLabel">cdnjs</strong> <em id="resource-counter" class="hidden">0</em>
+    </h3>
+  
+
+  <div class="body">
+    <ul id="external_resources_list">
+      
+    </ul>
+
+    <div id="external-resources-form">
+      <input id="external_resource" name="q" placeholder="JavaScript/CSS URL" autocomplete="off" type="text">
+      <a id="add_external_resource" class="submit" href="#" title="Add resource">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+      </a>
+    </div>
+    <input value="" id="external_resources_id" name="add_external_resources" type="hidden">
+
+    <ul class="resourcesInfo">
+      <li>Paste a direct CSS/JS URL</li>
+      <li>Type a library name to fetch from CDNJS</li>
+    </ul>
+  </div> <!-- /body -->
+</div> <!-- /sidebarItem -->
+
+            <div class="sidebarItem">
+  <h3 class="toggler">
+    Async requests
+  </h3>
+  <div class="body">
+    <p><code>/echo</code> simulates Async calls:<br>
+      JSON: <code>/echo/json/</code><br>
+      JSONP: <code>//jsfiddle.net/echo/jsonp/</code><br>
+      HTML: <code>/echo/html/</code><br>
+      XML: <code>/echo/xml/</code>
+    </p>
+    <p>See <a href="http://doc.jsfiddle.net/use/echo.html" target="_new">docs</a> for more info.</p>
+  </div> <!-- /body -->
+</div> <!-- /sidebarItem -->
+
+            <div class="sidebarItem">
+  <h3 class="toggler">
+    Other (links, license)
+  </h3>
+  <div class="body">
+    <p class="maintainers">Created and maintained by <a title="Piotr's twitter" href="http://twitter.com/zalun" target="_blank">Piotr</a> and <a title="UX and UI Designer" href="http://twitter.com/oskar" target="_blank">@oskar</a>.</p>
+    <p>Hosted on <a href="https://m.do.co/c/52e7a0ad196d" target="_blank"><strong>DigitalOcean</strong></a></p>
+    <p><strong>License</strong></p>
+    <p>All code belongs to the poster and no license is enforced.</p>
+    <p>JSFiddle or its authors are not responsible or liable for any loss or damage of any kind during the usage of provided code.</p>
+    <p><strong>Links</strong></p>
+    <p>
+      <a href="https://github.com/jsfiddle/jsfiddle-issues/issues" target="_blank">Bug tracker</a><br>
+      <a href="https://trello.com/b/LakLkQBW/jsfiddle-roadmap" target="_blank">Roadmap</a> (vote for features)<br>
+      <a href="https://jsfiddle.net/about" target="_blank">About JSFiddle</a><br>
+      <!-- <a href="http://doc.jsfiddle.net/" target="_blank">Docs</a><br> -->
+      <a href="http://status.jsfiddle.net/" target="_blank">Status page</a> by <a href="https://updown.io/r/bzxdq" target="_blank">updown.io</a>
+    </p>
+  </div> <!-- /body -->
+</div> <!-- /sidebarItem -->
+
+<style media="screen">
+  .maintainers {
+    position: absolute;
+    top: -900em;
+    left: -900em;
+  }
+</style>
+
+            
+
+            <!-- <h3 class="toggler">Report fiddle</h3>
+<div class="element">
+  <div class="elementBody">
+    <div class="ebCont" id="reporting">
+      <textarea name="report_reason" placeholder="Reason for reporting?"></textarea>
+      
+        <input type="text" name="report_email" placeholder="Your e-mail">
+      
+      <p class="submitCont">
+        <a href="#">Send report</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+  var reporting  = document.querySelector("#reporting")
+  var url        = document.location.href
+  var email      = reporting.querySelector("input[name='report_email']")
+  var reason     = reporting.querySelector("textarea")
+  var submitCont = reporting.querySelector(".submitCont")
+  var submit     = reporting.querySelector(".submitCont a")
+
+  submit.addEventListener("click", function(event){
+    event.preventDefault()
+    event.stopPropagation()
+
+    if (reason.value === "" || reason.value.length < 10){
+      alert("Pleade describe the reason for reporting this fiddle.")
+    } else {
+      new Request.JSON({
+        url: "/_report_fiddle/",
+        method: "post",
+        data: {
+          url:    url,
+          reason: reason.value,
+          email:  email.value
+        },
+        onRequest: function(){
+          submitCont.innerHTML = "Sending ..."
+        },
+        onSuccess: function(response){
+          submitCont.innerHTML = "Sent"
+        }
+      }).send()
+    }
+  })
+</script>
+
+<style>
+  #reporting textarea,
+  #reporting input {
+    margin-bottom: 10px;
+  }
+
+  #reporting .submitCont {
+    text-align: right;
+  }
+</style>
+ -->
+          </section>
+          <section id="s-bottom">
+            <div class="twitterCont">
+  
+    <!-- <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=jsfiddlenet" id="_carbonads_js"></script> -->
+    <script async="" type="text/javascript" src="Edit%20fiddle%20-%20JSFiddle_files/carbon.js" id="_carbonads_js"></script>
+  
+</div>
+<div id="keep-us-running" class="show color_4">
+  <p>Like JSFiddle?</p>
+  <p>If you don't mind tech-related ads, and want to keep us running, whitelist JSFiddle in your ad blocker.</p>
+  <p>Thank you! ❤️</p>
+</div>
+
+          </section>
+        </div>
+        <div id="content">
+          
+
+
+<input name="version" value="2" id="id_version" type="hidden">
+<input id="id_slug" name="slug" value="Jp5AQ" type="hidden">
+
+<div id="editor">     <div class="panel-v left" style="width: calc(50% - 0.5px);">       <div class="panel-h panel" style="height: calc(50% - 0.5px);">         <textarea id="id_code_html" name="code_html" style="display: none;">&lt;div&gt;
+
+    &lt;img 
+src='https://store-images.s-microsoft.com/image/apps.34303.13756631990520576.5a231ef9-bab0-4a99-941d-0ee6fef8a9df.e0317572-48fe-4653-95cb-2b540a3c1583?w=1922&amp;h=1080&amp;q=60'
+ /&gt;
+&lt;/div&gt;</textarea>   <div class="windowLabelCont">     <a href="#" class="windowLabel" data-panel="html" data-popover-trigger="html">       <span class="label">HTML</span>       <svg width="8" height="7" viewBox="-0.019531 -52.792969 30.039062 25.195312">         <path d="M29.941406 -52.500000C29.785156 -52.656250 29.589844 -52.753906 29.355469 -52.792969L0.644531 -52.792969C0.410156 -52.753906 0.214844 -52.656250 0.058594 -52.500000C-0.019531 -52.265625 0.000000 -52.050781 0.117188 -51.855469L14.472656 -27.890625C14.628906 -27.734375 14.804688 -27.636719 15.000000 -27.597656C15.234375 -27.636719 15.410156 -27.734375 15.527344 -27.890625L29.882812 -51.855469C30.000000 -52.089844 30.019531 -52.304688 29.941406 -52.500000ZM29.941406 -52.500000"></path>       </svg>     </a>   </div>       <div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 54.4px; left: 97.4px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: medium none currentcolor;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 50px; margin-bottom: -17px; border-right-width: 13px; min-height: 75px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: medium none currentcolor;" role="presentation"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 47.4px; top: 50.4px; height: 16.8px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;" class=""><div class="CodeMirror-gutter-wrapper" style="left: -50px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div><div style="position: relative;" class=""><div class="CodeMirror-gutter-wrapper" style="left: -50px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">img</span> <span class="cm-attribute">src</span>=<span class="cm-string">'https://store-images.s-microsoft.com/image/apps.34303.13756631990520576.5a231ef9-bab0-4a99-941d-0ee6fef8a9df.e0317572-48fe-4653-95cb-2b540a3c1583?w=1922&amp;h=1080&amp;q=60'</span> <span class="cm-tag cm-bracket">/&gt;</span></span></pre></div><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -50px; width: 50px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -50px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 75px;"></div><div class="CodeMirror-gutters" style="height: 88px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 34px;"></div></div></div></div></div>       <div class="gutter gutter-vertical" style="height: 1px;"></div><div class="panel-h panel" style="height: calc(50% - 0.5px);">         <textarea id="id_code_js" name="code_js" style="display: none;"></textarea>   <div class="windowLabelCont">     <a href="#" class="windowLabel" data-panel="js" data-popover-trigger="js">       <span class="label">JavaScript + jQuery 1.7.1</span>       <svg width="8" height="7" viewBox="-0.019531 -52.792969 30.039062 25.195312">         <path d="M29.941406 -52.500000C29.785156 -52.656250 29.589844 -52.753906 29.355469 -52.792969L0.644531 -52.792969C0.410156 -52.753906 0.214844 -52.656250 0.058594 -52.500000C-0.019531 -52.265625 0.000000 -52.050781 0.117188 -51.855469L14.472656 -27.890625C14.628906 -27.734375 14.804688 -27.636719 15.000000 -27.597656C15.234375 -27.636719 15.410156 -27.734375 15.527344 -27.890625L29.882812 -51.855469C30.000000 -52.089844 30.019531 -52.304688 29.941406 -52.500000ZM29.941406 -52.500000"></path>       </svg>     </a>   </div>       <div class="CodeMirror cm-s-default CodeMirror-wrap"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 4px; left: 54px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: medium none currentcolor;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 50px; margin-bottom: -17px; border-right-width: 13px; min-height: 25px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: medium none currentcolor;" role="presentation"><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style=""><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 16.8px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation"><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -50px; width: 50px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -50px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 25px;"></div><div class="CodeMirror-gutters" style="height: 38px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 34px;"></div></div></div></div></div>     </div>     <div class="gutter gutter-horizontal" style="width: 1px;"></div><div class="panel-v right" style="width: calc(50% - 0.5px);">       <div class="panel-h panel" style="height: calc(50% - 0.5px);">         <textarea id="id_code_css" name="code_css" style="display: none;">div {
+    border: solid 1px green;
+    width: 500px;
+    height: 200px;
+}
+
+div img {
+    max-width: 100%;
+    max-height: 100%;
+    outline: solid 1px red;
+}</textarea>   <div class="windowLabelCont">     <a href="#" class="windowLabel" data-panel="css" data-popover-trigger="css">       <span class="label">CSS</span>       <svg width="8" height="7" viewBox="-0.019531 -52.792969 30.039062 25.195312">         <path d="M29.941406 -52.500000C29.785156 -52.656250 29.589844 -52.753906 29.355469 -52.792969L0.644531 -52.792969C0.410156 -52.753906 0.214844 -52.656250 0.058594 -52.500000C-0.019531 -52.265625 0.000000 -52.050781 0.117188 -51.855469L14.472656 -27.890625C14.628906 -27.734375 14.804688 -27.636719 15.000000 -27.597656C15.234375 -27.636719 15.410156 -27.734375 15.527344 -27.890625L29.882812 -51.855469C30.000000 -52.089844 30.019531 -52.304688 29.941406 -52.500000ZM29.941406 -52.500000"></path>       </svg>     </a>   </div>       <div class="CodeMirror cm-s-default CodeMirror-wrap CodeMirror-focused"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 37.6px; left: 140.8px;"><textarea style="position: absolute; bottom: -1em; padding: 0px; width: 1px; height: 1em; outline: medium none currentcolor;" autocorrect="off" autocapitalize="off" spellcheck="false" tabindex="0" wrap="off">4</textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="true"><div class="CodeMirror-sizer" style="margin-left: 50px; margin-bottom: -17px; border-right-width: 13px; min-height: 193px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines" role="presentation"><div style="position: relative; outline: medium none currentcolor;" role="presentation"><div class="CodeMirror-measure"><pre><span>xxxxxxxxxx</span></pre><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>11</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors" style="visibility: hidden;"><div class="CodeMirror-cursor" style="left: 90.8001px; top: 33.6px; height: 16.8px;">&nbsp;</div></div><div class="CodeMirror-code" role="presentation" style=""><div style="position: relative;" class=""><div class="CodeMirror-gutter-wrapper" style="left: -50px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">1</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tag">div</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -50px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">2</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-property">border</span>: <span class="cm-atom">solid</span> <span class="cm-number">1px</span> <span class="cm-keyword">green</span>;</span></pre></div><div style="position: relative;" class="CodeMirror-activeline"><div class="CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -50px; width: 50px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -50px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">3</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-property">width</span>: <span class="cm-number">400px</span>;</span></pre></div><div style="position: relative;" class=""><div class="CodeMirror-gutter-wrapper" style="left: -50px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">4</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-property">height</span>: <span class="cm-number">200px</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -50px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">5</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">}</span></pre></div><div style="position: relative;" class=""><div class="CodeMirror-gutter-wrapper" style="left: -50px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">6</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span cm-text="">​</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -50px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">7</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation"><span class="cm-tag">div</span> <span class="cm-tag">img</span> {</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -50px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">8</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-property">max-width</span>: <span class="cm-number">100%</span>;</span></pre></div><div style="position: relative;" class=""><div class="CodeMirror-gutter-wrapper" style="left: -50px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">9</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-property">max-height</span>: <span class="cm-number">100%</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -50px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">10</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">    <span class="cm-property">outline</span>: <span class="cm-atom">solid</span> <span class="cm-number">1px</span> <span class="cm-keyword">red</span>;</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -50px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 16px; width: 21px;">11</div></div><pre class=" CodeMirror-line " role="presentation"><span role="presentation">}</span></pre></div></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom: 0px solid transparent; top: 193px;"></div><div class="CodeMirror-gutters" style="height: 206px; left: 0px;"><div class="CodeMirror-gutter CodeMirror-lint-markers"></div><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 34px;"></div></div></div></div></div>       <div class="gutter gutter-vertical" style="height: 1px;"></div><div class="panel-h panel resultsPanel" style="height: calc(50% - 0.5px);">   <iframe name="result" allow="midi; geolocation; microphone; camera; encrypted-media;" sandbox="allow-forms allow-scripts allow-same-origin allow-modals allow-popups" allowfullscreen="" allowpaymentrequest="" src="//fiddle.jshell.net/Jp5AQ/2/show/" '="" frameborder="0"></iframe>       </div>     </div></div>
+
+<div class="windowSettings html hidden" data-panel="html" data-popover-ref="html">
+  <h3>Language</h3>
+<div class="selectCont">
+  <select name="panel_html" class="panelChoice" id="panel_html_choice" disabled="disabled" data-panel_id="id_code_html" data-panel="html">
+    
+      <option data-mime-type="text/html" value="0" selected="selected">HTML</option>
+    
+  </select>
+  <label>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </label>
+</div> <!-- /selectCont -->
+
+<h3>Doctype</h3>
+<div class="selectCont">
+  <select name="doctype">
+    
+      <option id="dtd_XHTML 1.0 Strict" value="1">XHTML 1.0 Strict</option>
+    
+      <option id="dtd_XHTML 1.0 Transitional" value="2">XHTML 1.0 Transitional</option>
+    
+      <option selected="selected" id="dtd_HTML 5" value="3">HTML 5</option>
+    
+      <option id="dtd_HTML 4.01 Strict" value="4">HTML 4.01 Strict</option>
+    
+      <option id="dtd_HTML 4.01 Transitional" value="5">HTML 4.01 Transitional</option>
+    
+      <option id="dtd_HTML 4.01 Frameset" value="6">HTML 4.01 Frameset</option>
+    
+  </select>
+  <label>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </label>
+</div>
+
+<h3>Body tag</h3>
+<p>
+  <label>
+    <input id="id_body_tag" name="body_tag" value="&lt;body&gt;" maxlength="255" type="text">
+  </label>
+</p>
+
+</div> <!-- /windowSettings -->
+
+<div class="windowSettings js hidden" data-panel="js" data-popover-ref="js">
+  
+
+
+<h3>Language</h3>
+<div class="selectCont">
+  <select name="panel_js" class="panelChoice" id="panel_js_choice" data-panel_id="id_code_js" data-panel="js">
+    
+      <option data-mime-type="text/javascript" value="0" selected="selected">JavaScript</option>
+    
+      <option data-mime-type="text/coffeescript" value="1">CoffeeScript</option>
+    
+      <option data-mime-type="application/javascript" value="2">JavaScript 1.7</option>
+    
+      <option data-mime-type="text/jsx" value="3">Babel + JSX</option>
+    
+      <option data-mime-type="text/typescript" value="4">TypeScript</option>
+    
+      <option data-mime-type="text/coffeescript" value="5">CoffeeScript 2</option>
+    
+      <option data-mime-type="text/javascript" value="6">Vue</option>
+    
+      <option data-mime-type="text/jsx" value="7">React</option>
+    
+      <option data-mime-type="text/jsx" value="8">Preact</option>
+    
+  </select>
+  <label>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </label>
+</div> <!-- /selectCont -->
+
+<h3>Frameworks &amp; Extensions</h3>
+<div class="panelExtrasChoice">
+  
+    
+      
+<div class="selectCont">
+  <select name="js_lib" id="js_lib">
+    
+    <optgroup label="AngularJS">
+      
+        <option value="281">AngularJS 2.0.0-alpha.47</option>
+      
+        <option value="283">AngularJS 1.4.8</option>
+      
+        <option value="180">AngularJS 1.2.1</option>
+      
+        <option value="137">AngularJS 1.1.1</option>
+      
+        
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="Bonsai">
+      
+        <option value="120">Bonsai 0.4.1</option>
+      
+    </optgroup>
+    
+    <optgroup label="Brick">
+      
+        <option value="176">Brick edge</option>
+      
+    </optgroup>
+    
+    <optgroup label="CreateJS">
+      
+        <option value="279">CreateJS 2015.05.21</option>
+      
+        <option value="170">CreateJS 2013.09.25</option>
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="D3">
+      
+        <option value="386">D3 4.13.0</option>
+      
+        <option value="134">D3 3.x</option>
+      
+    </optgroup>
+    
+    <optgroup label="Dojo">
+      
+        <option value="87">Dojo (nightly)</option>
+      
+        <option value="356">Dojo 1.12.2</option>
+      
+        <option value="358">Dojo 1.11.4</option>
+      
+        <option value="360">Dojo 1.10.8</option>
+      
+        
+      
+        
+      
+        
+      
+        <option value="362">Dojo 1.9.11</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        <option value="364">Dojo 1.8.14</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        <option value="366">Dojo 1.7.12</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        <option value="368">Dojo 1.6.5</option>
+      
+        
+      
+        
+      
+        
+      
+        <option value="370">Dojo 1.5.6</option>
+      
+        
+      
+        
+      
+        
+      
+        <option value="372">Dojo 1.4.8</option>
+      
+        
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="Ember">
+      
+        <option value="190">Ember (latest)</option>
+      
+        
+      
+        
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="Enyo">
+      
+        <option value="115">Enyo (nightly)</option>
+      
+        <option value="299">Enyo 2.7.0</option>
+      
+        <option value="238">Enyo 2.5.1</option>
+      
+        <option value="214">Enyo 2.4.0</option>
+      
+        <option value="145">Enyo 2.2.0</option>
+      
+        <option value="121">Enyo 2.1</option>
+      
+        <option value="116">Enyo 2.0.1</option>
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="ExtJS">
+      
+        <option value="338">ExtJS 6.2.0</option>
+      
+        <option value="256">ExtJS 5.1.0</option>
+      
+        <option value="258">ExtJS 5.0.0</option>
+      
+        <option value="147">ExtJS 4.2.0</option>
+      
+        <option value="80">ExtJS 4.1.1</option>
+      
+        <option value="107">ExtJS 4.1.0</option>
+      
+        
+      
+        <option value="109">ExtJS 3.4.0</option>
+      
+        <option value="23">ExtJS 3.1.0</option>
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="FabricJS">
+      
+        <option value="380">FabricJS 1.7.20</option>
+      
+        <option value="378">FabricJS 1.7.15</option>
+      
+        <option value="342">FabricJS 1.7.7</option>
+      
+        
+      
+        <option value="250">FabricJS 1.5.0</option>
+      
+        
+      
+        
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="Glow">
+      
+        
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="Inferno">
+      
+        <option value="336">Inferno 1.0.0-beta9</option>
+      
+    </optgroup>
+    
+    <optgroup label="JSBlocks">
+      
+        <option value="252">JSBlocks (edge)</option>
+      
+    </optgroup>
+    
+    <optgroup label="KineticJS">
+      
+        <option value="139">KineticJS 4.3.1</option>
+      
+        <option value="124">KineticJS 4.0.5</option>
+      
+    </optgroup>
+    
+    <optgroup label="Knockout.js">
+      
+        <option value="388">Knockout.js 3.4.2</option>
+      
+        
+      
+        <option value="172">Knockout.js 3.0.0</option>
+      
+        <option value="163">Knockout.js 2.3.0</option>
+      
+        <option value="122">Knockout.js 2.2.1</option>
+      
+        <option value="117">Knockout.js 2.1.0</option>
+      
+        <option value="104">Knockout.js 2.0.0</option>
+      
+    </optgroup>
+    
+    <optgroup label="Lo-Dash">
+      
+        <option value="167">Lo-Dash 2.2.1</option>
+      
+    </optgroup>
+    
+    <optgroup label="Minified">
+      
+        <option value="164">Minified 1.0 beta1</option>
+      
+    </optgroup>
+    
+    <optgroup label="MithrilJS">
+      
+        <option value="273">MithrilJS 0.2.0</option>
+      
+    </optgroup>
+    
+    <optgroup label="Mootools">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        <option value="59">Mootools (nightly)</option>
+      
+        <option value="327">Mootools 1.6.0 (compat)</option>
+      
+        <option value="325">Mootools 1.6.0</option>
+      
+        <option value="329">Mootools 1.5.2 (compat)</option>
+      
+        <option value="263">Mootools 1.5.2</option>
+      
+        
+      
+        
+      
+        <option value="216">Mootools 1.5.1</option>
+      
+        
+      
+        <option value="208">Mootools 1.5.0</option>
+      
+        <option value="96">Mootools 1.4.5 (compat)</option>
+      
+        <option value="95">Mootools 1.4.5</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        <option value="63">Mootools 1.3.2 (compat)</option>
+      
+        <option value="62">Mootools 1.3.2</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="No-Library">
+      
+        <option value="11">No-Library (pure JS)</option>
+      
+    </optgroup>
+    
+    <optgroup label="OpenUI5">
+      
+        <option value="271">OpenUI5 (latest, mobile)</option>
+      
+    </optgroup>
+    
+    <optgroup label="Paper.js">
+      
+        <option value="158">Paper.js 0.22</option>
+      
+    </optgroup>
+    
+    <optgroup label="Pixi">
+      
+        <option value="331">Pixi 4.0.0</option>
+      
+        <option value="315">Pixi 3.0.11</option>
+      
+    </optgroup>
+    
+    <optgroup label="Processing.js">
+      
+        <option value="206">Processing.js 1.4.7</option>
+      
+        <option value="135">Processing.js 1.4.1</option>
+      
+        <option value="81">Processing.js 1.3.6</option>
+      
+        <option value="67">Processing.js 1.2.3</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="Prototype">
+      
+        
+      
+        <option value="265">Prototype 1.7.3</option>
+      
+        
+      
+        
+      
+        <option value="4">Prototype 1.6.1.0</option>
+      
+    </optgroup>
+    
+    <optgroup label="RactiveJS">
+      
+        
+      
+        
+      
+        <option value="287">RactiveJS 0.7.3</option>
+      
+    </optgroup>
+    
+    <optgroup label="Raphael">
+      
+        <option value="76">Raphael 2.1.0</option>
+      
+        <option value="36">Raphael 1.5.2 (min)</option>
+      
+        <option value="30">Raphael 1.4</option>
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="React">
+      
+        <option value="285">React 0.14.3</option>
+      
+        <option value="192">React 0.9.0</option>
+      
+        <option value="184">React 0.8.0</option>
+      
+        <option value="166">React 0.4.0</option>
+      
+        <option value="159">React 0.3.2</option>
+      
+    </optgroup>
+    
+    <optgroup label="RightJS">
+      
+        <option value="136">RightJS 2.3.1</option>
+      
+        <option value="45">RightJS 2.1.1</option>
+      
+    </optgroup>
+    
+    <optgroup label="Riot">
+      
+        <option value="382">Riot 3.7.4</option>
+      
+    </optgroup>
+    
+    <optgroup label="Shipyard">
+      
+        <option value="99">Shipyard (nightly)</option>
+      
+        <option value="105">Shipyard 0.2</option>
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="The X Toolkit">
+      
+        <option value="106">The X Toolkit edge</option>
+      
+    </optgroup>
+    
+    <optgroup label="Thorax">
+      
+        <option value="174">Thorax 2.0.0rc6</option>
+      
+        <option value="143">Thorax 2.0.0rc3</option>
+      
+    </optgroup>
+    
+    <optgroup label="Three.js">
+      
+        <option value="82">Three.js r54</option>
+      
+    </optgroup>
+    
+    <optgroup label="Underscore">
+      
+        <option value="267">Underscore 1.8.3</option>
+      
+        <option value="160">Underscore 1.4.4</option>
+      
+        <option value="133">Underscore 1.4.3</option>
+      
+        <option value="111">Underscore 1.3.3</option>
+      
+    </optgroup>
+    
+    <optgroup label="Vue">
+      
+        <option value="236">Vue (edge)</option>
+      
+        <option value="344">Vue 2.2.1</option>
+      
+        <option value="289">Vue 1.0.12</option>
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="WebApp Install">
+      
+        <option value="142">WebApp Install 0.1</option>
+      
+    </optgroup>
+    
+    <optgroup label="YUI">
+      
+        
+      
+        <option value="230">YUI 3.17.2</option>
+      
+        <option value="204">YUI 3.16.0</option>
+      
+        <option value="182">YUI 3.14.0</option>
+      
+        <option value="153">YUI 3.10.1</option>
+      
+        
+      
+        <option value="130">YUI 3.8.0</option>
+      
+        <option value="123">YUI 3.7.3</option>
+      
+        <option value="118">YUI 3.6.0</option>
+      
+        <option value="102">YUI 3.5.0</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        <option value="9">YUI 2.8.0r4</option>
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="Zepto">
+      
+        <option value="90">Zepto 1.0rc1</option>
+      
+    </optgroup>
+    
+    <optgroup label="jQuery">
+      
+        
+      
+        
+      
+        <option value="46">jQuery (edge)</option>
+      
+        <option value="384">jQuery 3.3.1</option>
+      
+        <option value="376">jQuery 3.2.1</option>
+      
+        
+      
+        <option value="333">jQuery 3.1.1</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        <option value="319">jQuery 2.2.4</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        <option value="248">jQuery 2.1.3</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        <option value="131">jQuery 1.9.1</option>
+      
+        
+      
+        
+      
+        <option value="83" selected="selected">jQuery 1.7.1</option>
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </optgroup>
+    
+    <optgroup label="jQuery Slim">
+      
+        <option value="335">jQuery Slim 3.1.1 Slim</option>
+      
+        <option value="323">jQuery Slim 3.1.0 Slim</option>
+      
+        <option value="313">jQuery Slim 3.0.0 Slim</option>
+      
+    </optgroup>
+    
+    <optgroup label="jTypes">
+      
+        <option value="165">jTypes 2.1.0</option>
+      
+    </optgroup>
+    
+    <optgroup label="qooxdoo">
+      
+        <option value="126">qooxdoo 2.1</option>
+      
+        <option value="127">qooxdoo 2.0.3</option>
+      
+    </optgroup>
+    
+    <optgroup label="svg.js">
+      
+        <option value="346">svg.js 2.5.0</option>
+      
+        <option value="348">svg.js 2.4.0</option>
+      
+        <option value="350">svg.js 2.3.7</option>
+      
+        <option value="352">svg.js 2.2.5</option>
+      
+        <option value="269">svg.js 2.1.1</option>
+      
+        <option value="354">svg.js 2.0.5</option>
+      
+        
+      
+    </optgroup>
+    
+  </select>
+  <label>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </label>
+</div>
+
+<ul id="js_dependency">
+  
+  <li>
+    <label class="checkboxCont">
+      <input id="dep_100" name="js_dependency[100]" value="100" type="checkbox">
+      <span class="checkbox"><i class="bts bt-check"></i></span>
+      jQuery UI 1.8.16
+    </label>
+  </li>
+
+  <li>
+    <label class="checkboxCont">
+      <input id="dep_101" name="js_dependency[101]" value="101" type="checkbox">
+      <span class="checkbox"><i class="bts bt-check"></i></span>
+      jQuery Lint (June 2011)
+    </label>
+  </li>
+
+  <li>
+    <label class="checkboxCont">
+      <input id="dep_122" name="js_dependency[122]" value="122" type="checkbox">
+      <span class="checkbox"><i class="bts bt-check"></i></span>
+      Bootstrap 2.0.2 (js only)
+    </label>
+  </li>
+
+  <li>
+    <label class="checkboxCont">
+      <input id="dep_123" name="js_dependency[123]" value="123" type="checkbox">
+      <span class="checkbox"><i class="bts bt-check"></i></span>
+      jQuery Mobile 1.0.1
+    </label>
+  </li>
+
+
+</ul>
+
+    
+  
+</div>
+
+<!-- <div class="panelExtrasChoice">
+  <div class="selectCont">
+    <select name="js_lib" id="js_lib">
+      <optgroup label="CreateJS">
+          <option value="279">CreateJS 2015.05.21</option>
+          <option value="170">CreateJS 2013.09.25</option>
+      </optgroup>
+
+      <optgroup label="D3">
+          <option value="134">D3 3.x</option>
+      </optgroup>
+
+      <optgroup label="Dojo">
+          <option value="87">Dojo (nightly)</option>
+          <option value="356">Dojo 1.12.2</option>
+      </optgroup>
+    </select>
+  </div>
+
+  <ul id="js_dependency">
+    <li>
+      <label class="checkboxCont">
+        <input id="dep_119" type="checkbox" name="js_dependency[119]" value="119">
+        <span class="checkbox"><i class="bts bt-check"></i></span>Mootools More 1.4.0.1 (compat)
+      </label>
+    </li>
+    <li>
+      <label class="checkboxCont">
+        <input id="dep_165" type="checkbox" name="js_dependency[165]" value="165">
+        <span class="checkbox"><i class="bts bt-check"></i></span>PowerTools 1.2.0
+      </label>
+    </li>
+  </ul>
+</div> -->
+
+<h3>Load type</h3>
+<div class="selectCont">
+  <select name="js_wrap" id="id_js_wrap">
+<option value="l">onLoad</option>
+<option value="d" selected="selected">onDomready</option>
+<option value="h">No wrap - in &lt;head&gt;</option>
+<option value="b">No wrap - in &lt;body&gt;</option>
+</select>
+  <label>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </label>
+</div>
+
+
+  <h3>Framework &lt;script&gt; attribute</h3>
+  <p class="libraryTagAttributes">
+    <label>
+      <input id="id_js_lib_option" name="js_lib_option" maxlength="255" placeholder="ie. data-type=&quot;&quot;" type="text">
+    </label>
+  </p>
+
+
+</div> <!-- /windowSettings -->
+
+<div class="windowSettings css hidden" data-panel="css" data-popover-ref="css">
+  <h3>Language</h3>
+<div class="selectCont">
+  <select name="panel_css" class="panelChoice" id="panel_css_choice" data-panel_id="id_code_css" data-panel="css">
+    
+      
+        <option data-mime-type="text/css" value="0" selected="selected">CSS</option>
+      
+    
+      
+        <option data-mime-type="text/x-scss" value="1">SCSS</option>
+      
+    
+  </select>
+  <label>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </label>
+</div> <!-- /selectCont -->
+
+<h3>Options</h3>
+<p id="normalize_check">
+  <label class="checkboxCont">
+    <input name="normalize_css" id="id_normalize_css" value="1" checked="checked" type="checkbox">
+    <span class="checkbox"><i class="bts bt-check"></i></span> Normalized CSS</label>
+</p>
+
+</div> <!-- /windowSettings -->
+
+        </div>
+      
+
+      <div id="loader">
+        <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 33">
+          <g class="asd" stroke-width="1" fill="none" fill-rule="evenodd">
+            <path class="cloud" d="M45,22.7331459 C45,19.1499462 42.7950446,16.079593 39.6628004,14.7835315 C39.6774469,14.5246474 39.7003932,14.2674038 39.7003932,14.0035978 C39.7003932,6.82243304 33.8412885,1 26.611593,1 C21.3985635,1 16.9102123,4.03409627 14.8051788,8.41527616 C13.7828502,7.62878013 12.503719,7.15547161 11.1134367,7.15547161 C7.77825654,7.15547161 5.07450503,9.84159999 5.07450503,13.1544315 C5.07450503,13.7760488 5.16938207,14.3779791 5.3477444,14.9418479 C2.74863428,16.4787471 1,19.2867709 1,22.5105187 C1,27.3287502 4.89630545,31.2367856 9.72803666,31.31094 L36.3341301,31.3109406 C41.1201312,31.3406346 45,27.4870665 45,22.7331459 L45,22.7331459 Z" id="Shape-path" stroke-linejoin="round"></path>
+
+            <path class="loop" d="M25.3570852,17.8208603
+            C26.0154526,17.1207706 27.1652748,15.6666667 29.5167986,15.6666667
+            C32.1278053,15.6666667 34.2444444,17.6366138 34.2444444,20.0666667
+            C34.2444444,22.4967196 32.1278053,24.4666667 29.5167986,24.4666667
+            C26.9249697,24.4666667 24.5595344,21.7145959 23.4888889,20.543316
+            C21.4404656,18.4187374 19.0750303,15.6666667 16.4832014,15.6666667
+            C13.8721947,15.6666667 11.7555556,17.6366138 11.7555556,20.0666667
+            C11.7555556,22.4967196 13.8721947,24.4666667 16.4832014,24.4666667
+            C18.8347252,24.4666667 19.9845474,23.0125628 20.6429148,22.312473
+            L25.3570852,17.8208603" stroke-linecap="round"></path>
+          </g>
+        </svg>
+        <span class="shadow"></span>
+      </div>
+
+      <input name="base64encoded" value="false" type="hidden">
+    </form>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", function(){
+        var loadEditor = function(){
+          var csrfToken = Cookie.read("csrftoken")
+
+          Layout.skin = "light"
+
+          $extend(Layout, new Events())
+
+          Actions = new EditorActions({
+            example_id:          EditorConfig.fiddle.id,
+            exampleSaveUrl:      "/_save/",
+            loadDependenciesURL: "/_get_dependencies/{lib_id}/",
+            loadLibraryVersionsURL: "/_get_library_versions/{group_id}/"
+          })
+
+          Layout.render()
+
+          
+
+          // all fully loaded
+          document.body.classList.add("fullyLoaded")
+        }
+
+        
+          var themeHref = "/css/dist-editor-dark.css?update_23_04_2018_1"
+        
+
+        var script = document.createElement("script")
+        script.src = "/js/_dist-editor.js?update_23_04_2018_1"
+        script.onload = loadEditor
+
+        var styleEditor    = document.createElement("link")
+        styleEditor.rel    = "stylesheet"
+        styleEditor.type   = "text/css"
+        styleEditor.id     = "editor-theme"
+        styleEditor.href   = themeHref
+        styleEditor.onload = function(){
+          document.body.appendChild(script)
+        }
+        document.body.appendChild(styleEditor)
+      })
+
+    </script>
+
+    
+
+  
+
+<div id="app-updates-highlighter" style="top: 0px; left: 1758px; width: 93px; height: 59px;" class=""></div><link rel="stylesheet" type="text/css" id="editor-theme" href="Edit%20fiddle%20-%20JSFiddle_files/dist-editor-dark.css"><script src="Edit%20fiddle%20-%20JSFiddle_files/_dist-editor.js"></script><div class="autocomplete-suggestions "></div></body></html>
