@@ -7,11 +7,26 @@
 <link href="css/app_center.css" rel="stylesheet" type="text/css">
 <link href="css/standardui.css" rel="stylesheet" type="text/css">
 </head>
-<body id="body" onLoad="restoreTheme()"><section class="appbar_container"> <a href="#" onclick="history.back();return false"><img src="images/left_arrow1600.png" alt="" width="1600" height="1600" class="apparrow"></a>
-  <header class="appbar">App Center</header>
-  <nav class="topnav"><a href="app_center_home2.html" class="topnavlink">Home</a> &nbsp; <a href="app_center_UWP apps.html" class="topnavlink">UWP Apps</a> &nbsp; &nbsp; <a href="app_center_win32.html" class="topnavlink">Classic Apps</a> &nbsp; &nbsp; <a href="app_center_games.html" class="topnavlink">Games</a> &nbsp; &nbsp; <a href="app_center_browsers.html" class="topnavlink">Browsers</a> &nbsp; &nbsp; <a href="app_center_framework.html" class="topnavlink">Frameworks &amp; Extensions</a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="learn_to_install.html" class="topnavright topnavlink topnavlink_selected">Help</a></nav>
-	&nbsp;
-</section>
+<body id="body" onLoad="restoreTheme()">
+<div class="appbar_titlebar">
+		<header class="title">App Center</header>
+	</div>
+	<div style="position:fixed;width:100%;margin-left:-8px;height:32px;z-index:99;margin-top:-99px;">
+		<div class="appbar_win_buttons">
+			<a href="#" onclick="window.close()"><img src="images/close.svg" alt="" class="window_buttons"></a>
+			<a href="#" onclick="window.maximize()"><img src="images/maximize.svg" alt="" class="window_buttons_b"></a>
+			<a href="#" onclick="window.minimize()"><img src="images/minimize.svg" alt="" class="window_buttons_b"></a>
+		</div>
+	</div>
+	<div>
+		<a href="#" onclick="history.back();return false"><img src="images/back.svg" alt="" class="back"></a>
+	</div>
+	<section class="topnav_container">
+  		<nav class="topnav"><a href="app_center_home2.html" class="topnavlink">Home</a>&nbsp;<a href="app_center_UWP apps.html" class="topnavlink">UWP Apps</a>&nbsp;<a href="app_center_win32.html" class="topnavlink">Classic Apps</a>&nbsp;<a href="app_center_games.html" class="topnavlink">Games</a>&nbsp;<a href="app_center_browsers.html" class="topnavlink">Browsers</a>&nbsp;<a href="app_center_framework.html" class="topnavlink">Frameworks &amp; Extensions</a></nav>
+		<nav class="topnavright">
+		<a href="learn_to_install.html" class="topnavlink topnavlink_selected">Help</a>
+    	</nav>
+	</section>
 <section class="howInstallAppsAll">
     <p> <span style="font-family: Segoe UI;"><a href="apps.html"></a></span></p>
     <p><span style="font-family: Segoe UI;">How to install Microsoft Store Apps</span></p>
