@@ -57,8 +57,8 @@
 	-webkit-app-region: no-drag;
 }
 .window_buttons:hover {
-	background-color: #E81123;
-	filter: none;
+	background-color: #17EEDC;
+	filter: invert(100%);
 	-webkit-app-region: no-drag;
 }
 .window_buttons_b {
@@ -70,6 +70,12 @@
 	-webkit-app-region: no-drag;
 }
 .window_buttons_b:hover {
-	background-color: hsla(0,0%,0%,0.20);
+	background-color: hsla(0,0%,0%,0.12);
 	-webkit-app-region: no-drag;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+.body, #body, #bodyhome {
+	-webkit-user-select: none;
 }
