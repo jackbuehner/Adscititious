@@ -32,7 +32,6 @@
 	-webkit-user-select: none;
 	-webkit-app-region: no-drag;
 }
-
 .back {
 	width: 16px;
 	padding: 15px;
@@ -40,6 +39,7 @@
 	margin: -56px 0 0 -8px;
 	z-index: 6;
 	filter: var(--invertImage100);
+	-webkit-app-region: no-drag;
 }
 .back:hover {
 	background-color: hsla(0,0%,0%,0.10);
