@@ -1,17 +1,17 @@
 @charset "utf-8";
 
 :root {
-	--sideNavBackground: #e6e6e6;
-	--sideNavItemBackgroundHover: #C7C7C7;
-	--bodyTextColor: #111;
-	--bodyBackgroundColor: #fff;
+	--sideNavBackground: rgb(33,33,33);
+	--sideNavItemBackgroundHover: rgb(64,64,64);
+	--bodyTextColor: rgb(238,238,238);
+	--bodyBackgroundColor: rgb(17,17,17);
 	/*color of theme switch button*/
-	--themeButton: #e6e6e6;
+	--themeButton: rgb(33,33,33);
 	/*visibility of element when light theme*/
 	--showLight: inherit;
 	/*visibility of element when dark theme*/
 	--showDark: inherit;
-	--regTextColor: #212121;
+	--regTextColor: rgb(189,189,189);
 }
 
 /*sidenav*/
