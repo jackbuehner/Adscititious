@@ -6,7 +6,7 @@
 	--bodyTextColor: rgb(238,238,238);
 	--bodyBackgroundColor: rgb(17,17,17);
 	/*color of theme switch button*/
-	--themeButton: rgb(33,33,33);
+	--themeButton: #e6e6e6;
 	/*visibility of element when light theme*/
 	--showLight: inherit;
 	/*visibility of element when dark theme*/

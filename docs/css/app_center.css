@@ -1,9 +1,9 @@
 @charset "utf-8";
 :root {
-	--bodyTextColor: #111;
-	--appbodyBackgroundColor: #f0f0f0;
-	--appbarBackgroundColor: #E7E7E7;
-	--regTextColor: #212121;
+	--bodyTextColor: rgb(238,238,238);
+	--appbodyBackgroundColor: rgb(46,46,46);
+	--appbarBackgroundColor: rgb(50,50,50);
+	--regTextColor: rgb(189,189,189);
 	--invertImage100: invert(0%);
 }
 .appbar_titlebar {

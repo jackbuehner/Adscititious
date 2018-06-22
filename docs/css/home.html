@@ -1,0 +1,29 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Home</title>
+	<link href="css/home.css" rel="stylesheet" type="text/css">
+	<link href="css/standardui.css" rel="stylesheet" type="text/css">
+	<link href="css/base.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript/theme_switch.js"> </script>
+</head>
+
+<body class="baseBody" onLoad="restoreTheme()">
+	<borderC class="titlebar_containerBase titlebar_container_backgroundBase">
+		<focuscolor class="titlebarBase">Adscititious: Windows 10 Customization</focuscolor>
+  	</borderC>
+	<buttonfocuscolor class="titlebar_buttonBase reg_cursor">
+		<a href="#" onclick="history.back();return false"><img src="images/back.svg" alt="" class="backarrowBase titlebar_buttonBase reg_cursor"></a>
+	</buttonfocuscolor>
+	<div style="position:fixed;width:100%;margin-left:-8px;height:32px;z-index:9999;margin-top:-40px;">
+		<buttonfocuscolor class="titlebar_win_buttonsBase reg_cursor">
+			<a href="#" onclick="window.close()"><img src="images/close.svg" alt="" class="window_buttonsBase reg_cursor"></a>
+			<a href="#" onclick="window.maximize()"><img src="images/maximize.svg" alt="" class="window_buttons_bBase reg_cursor"></a>
+			<a href="#" onclick="window.minimize()"><img src="images/minimize.svg" alt="" class="window_buttons_bBase reg_cursor"></a>
+		</buttonfocuscolor>
+	</div>
+
+	<iframe class="iframe_a" src="index.html" name="iframe_a"></iframe>
+
+	</body>
