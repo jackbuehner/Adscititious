@@ -112,3 +112,23 @@ p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover; {
 	background-color: #0063B1;
 	z-index: 5;
 }
+.animate-zoom {
+	animation: animatezoom 0.1s, opac 0.1s;
+
+}
+@keyframes animatezoom {
+	from {
+    	transform: scale(0.99)
+    }
+    to {
+    	transform: scale(1)
+    }
+}
+@keyframes opac {
+	from {
+		opacity:0
+	}
+	to {
+		opacity:1
+	}
+}

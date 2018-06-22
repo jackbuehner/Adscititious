@@ -9,7 +9,7 @@
 	z-index: 999;
 	border: none;
 	margin: -8px 0 0 -9;
-	background: hsla(0,0%,0%,0.00)
+	background: hsla(0,0%,0%,0.00);
 }
 .titlebarBase {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
