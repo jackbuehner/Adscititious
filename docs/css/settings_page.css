@@ -115,6 +115,21 @@
 .sidenav_list_item:hover{
 	background-color: var(--sideNavItemBackgroundHover);
 }
+.settingsSidenavHome {
+	margin-top: 26px;
+	margin-bottom: -7px;
+	color: var(--bodyTextColor);
+	display: block;
+	font-family: "Segoe UI";
+	font-weight: 550;
+	font-size: 15px;
+	line-height: 46px;
+	padding-left: 18px;
+	border-left: 4px solid transparent;
+}
+.settingsSidenavHome:hover{
+	background-color: var(--sideNavItemBackgroundHover);
+}
 .settingsSidenavItem {
 	display: block;
 	font-family: "Segoe UI";
