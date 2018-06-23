@@ -1,13 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Personalization - Background</title>
-	<link href="css/standardui.css" rel="stylesheet" type="text/css">
-	<link href="css/settings_page.css" rel="stylesheet" type="text/css">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Adscititious</title>
+ 	<link href="css/settings_page.css" rel="stylesheet" type="text/css">
 	<link href="css/adscititious_icons.css" rel="stylesheet" type="text/css">
+	<link href="css/standardui.css" rel="stylesheet" type="text/css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="javascript/theme_switch.js"> </script>
+	
 </head>
 
 <body class="body" onLoad="restoreTheme()">
@@ -25,37 +26,40 @@
 		</buttonfocuscolor>
 	</div>
 	<borderCB class="bBorder"></borderCB>
-	<borderC class="sidenav">
-		<ul class="sidenav_list_home">
-			<a href="index.html" class="sidenav_a"><li class="sidenav_list_item list_home">Home</li></a>
-		</ul>
-	<h4 class="sidebar_title">Personalization</h4>
-	<a href="peronalization_background.html"><img src="images/settings buttons/personalize/background_selected.png"></a>
-	<a href="peronalization_lockscreen.html"><img src="images/settings buttons/personalize/lockscreen.png"></a>
-	<a href="ms-settings:personalization-start"><img src="images/settings buttons/personalize/start.png"></a>
-	<a href="ms-settings:taskbar"><img src="images/settings buttons/personalize/taskbar.png"></a>
-</borderC>
-<section class="main">
-<h1 class="page_title">
-  Background</h1>
-<h2 class="heading">Use web image</h2>
-<ol>
-  <li class="li">Download and install Firefox from the <a href="apps.html" target="_blank">App Center</a></li>
-  <li class="li">Navigate to the picture using Firefox.</li>
-  <li class="li">Right click the image and select <em>Set As Desktop Background...</em></li>
-  <li class="li">Click <em>Set Desktop Background</em>.</li>
-</ol> 
-<h2 class="heading">Use web image</h2>
-<ol>
-  <li class="li">Download and install Firefox from the <a href="apps.html" target="_blank">App Center</a></li>
-  <li class="li">Navigate to a local image.</li>
-  <li class="li">Right click the image and select <em>Open with</em>> <em>Firefox</em>.</li>
-  <li class="li">In Firefox, right click the image and select <em>Set As Desktop Background...</em></li>
-  <li class="li">Click <em>Set Desktop Background</em>.</li>
-</ol>
-<p><a href="index.html"></a></p>
-<p>&nbsp;</p>
-&nbsp;</section>
+	<section class="section-animation-fix animate-zoom">
+		<borderC class="sidenav">
+				<a href="index.html" class="settingsTab anu settingsSidenavHome list_home">Home</a>
+				<h4 class="sidebar_title">Personalization</h4>
+				<nav class="sidenav_list">
+					<a href="peronalization_background.html" class="settingsTab sidenav_a settingsSidenavItem background">Background</a>
+					<a href="peronalization_lockscreen.html" class="settingsTab sidenav_a settingsSidenavItem lockscreen">Lock screen</a>
+					<a href="ms-settings:personalization-start" class="settingsTab sidenav_a settingsSidenavItem start">Start</a>
+					<a href="ms-settings:taskbar" class="settingsTab sidenav_a settingsSidenavItem taskbar">Taskbar</a>
+				</nav>
+		</borderC>
+		<main id="content">
+			<section class="main">
+				<h1 class="page_title">Background</h1>
+					<h2 class="heading">Use web image</h2>
+						<ol>
+							<li class="li">Download and install Firefox from the <a href="apps.html" target="_blank">App Center</a></li>
+							<li class="li">Navigate to the picture using Firefox.</li>
+							<li class="li">Right click the image and select <em>Set As Desktop Background...</em></li>
+							<li class="li">Click <em>Set Desktop Background</em>.</li>
+						</ol> 
+					<h2 class="heading">Use web image</h2>
+						<ol>
+							<li class="li">Download and install Firefox from the <a href="apps.html" target="_blank">App Center</a></li>
+							<li class="li">Navigate to a local image.</li>
+							<li class="li">Right click the image and select <em>Open with</em>> <em>Firefox</em>.</li>
+							<li class="li">In Firefox, right click the image and select <em>Set As Desktop Background...</em></li>
+							<li class="li">Click <em>Set Desktop Background</em>.</li>
+						</ol>
+			</section>
+		</main>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="javascript/script.js"></script>
+<script src="javascript/fluent_reveal.js"></script>
 </body>
-	
 </html>

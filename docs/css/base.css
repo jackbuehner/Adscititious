@@ -1,11 +1,17 @@
 @charset "utf-8";
-@import url("settings_page.css");
-@import url("app_center.css");
 :root {
-	--invertImage100: invert(100%);
-	--bodyTextColor: rgb(238,238,238);
+	--bodyBackgroundColor: #fff;
 }
-.titlebar {
+.iframe_a {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+	border: none;
+	margin: -8px 0 0 -9;
+	background: hsla(0,0%,0%,0.00);
+}
+.titlebarBase {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	display: inline-block;
 	margin-left: 60px;
@@ -14,53 +20,53 @@
 	line-height: 32px;
 	color: var(--bodyTextColor);
 }
-.backarrow {
+.backarrowBase {
 	display: inline-block;
 	position: fixed;
 	height: 13px;
 	filter: var(--invertImage100);
-	margin: -20px 0 0 -8px;
+	margin: -8px 0 0 -8px;
 	padding: 11px 18px 9px 18px;
 }
-.backarrow:hover {
+.backarrowBase:hover {
 	background-color: hsla(0,0%,0%,0.15);
 	-webkit-app-region: no-drag;
 }
-.titlebar_container {
+.titlebar_containerBase {
 	display: flex;
 	align-items: center;
 	position: fixed;
 	z-index: 5;
 	width: 100%;
 	height: 32px;
-	margin: -20px 0 0 -9px;
+	margin: -8px 0 0 -9px;
 	-webkit-user-select: none;
 	-webkit-app-region: drag;
 	border: 1px solid #0063B1;
 	border-bottom: none;
 }
-.titlebar_container_background {
-	background-color: var(--bodyBackgroundColor);
+.titlebar_container_bawckgroundBase {
+	background-color: transparent;
 }
-.titlebar_button {
+.titlebar_buttonBase {
 	-webkit-app-region: no-drag;
 	z-index: 99;
 }
-.titlebar_win_buttons {
+.titlebar_win_buttonsBase {
 	float: right;
-	height: 32px;
+	height: 20px;
 	width: 138px;
-	margin: 20px 1px 0 85.2%;
+	margin: 33px 2px 0 85.2%;
 	-webkit-user-select: none;
 	-webkit-app-region: no-drag;
-	border: 1px solid #0063B1;
+	border: 1px hidden #0063B1;
 	border-bottom: none;
 	border-left: none;
 }
-.titlebar_win_buttons:hover {
+.titlebar_win_buttonsBase:hover {
 	opacity: 1 !important;
 }
-.window_buttons {
+.window_buttonsBase {
 	display: inline-block;
 	float: right;
 	height: 14px;
@@ -68,12 +74,12 @@
 	filter: var(--invertImage100);
 	-webkit-app-region: no-drag;
 }
-.window_buttons:hover {
+.window_buttonsBase:hover {
 	background-color: #17EEDC;
 	filter: invert(100%);
 	-webkit-app-region: no-drag;
 }
-.window_buttons_b {
+.window_buttons_bBase {
 	display: inline-block;
 	float: right;
 	height: 10px;
@@ -81,29 +87,23 @@
 	filter: var(--invertImage100);
 	-webkit-app-region: no-drag;
 }
-.window_buttons_b:hover {
+.window_buttons_bBase:hover {
 	background-color: hsla(0,0%,0%,0.12);
 	-webkit-app-region: no-drag;
 }
 ::-webkit-scrollbar {
     width: 0px;
 }
-.body, #body, #bodyhome {
+.baseBody {
 	-webkit-user-select: none;
 	background-color: var(--bodyBackgroundColor);
-	background-color:#111;
+	background-color: #111;
 }
 html {
 	border-left: 1px solid #0063B1;
 	border-right: 1px solid #0063B1;
 }
-p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover; {
-	cursor: default;
-}
-.reg_cursor {
-	cursor: default;
-}
-.bBorder {
+.bBorderBase {
 	position: fixed;
 	bottom: 0;
 	left: 0;
@@ -111,28 +111,4 @@ p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover; {
 	height: 1px;
 	background-color: #0063B1;
 	z-index: 5;
-}
-.animate-zoom {
-	animation: animatezoom 0.2s, opac 0s;
-	animation-timing-function: ease-out;
-
-}
-@keyframes animatezoom {
-	from {
-    	transform: scale(0.98)
-    }
-    to {
-    	transform: scale(1)
-    }
-}
-@keyframes opac {
-	from {
-		opacity:0.5
-	}
-	to {
-		opacity:1
-	}
-}
-.section-animation-fix {
-	margin-top: -4px;
 }

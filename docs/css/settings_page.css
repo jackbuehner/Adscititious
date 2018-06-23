@@ -6,7 +6,7 @@
 	--bodyTextColor: rgb(238,238,238);
 	--bodyBackgroundColor: rgb(17,17,17);
 	/*color of theme switch button*/
-	--themeButton: rgb(33,33,33);
+	--themeButton: #e6e6e6;
 	/*visibility of element when light theme*/
 	--showLight: inherit;
 	/*visibility of element when dark theme*/
@@ -115,6 +115,25 @@
 .sidenav_list_item:hover{
 	background-color: var(--sideNavItemBackgroundHover);
 }
+.settingsSidenavHome {
+	margin-top: 26px;
+	margin-bottom: -7px;
+	color: var(--bodyTextColor);
+	display: block;
+	font-family: "Segoe UI";
+	font-weight: 550;
+	font-size: 15px;
+	line-height: 46px;
+	padding-left: 22px;
+}
+.settingsSidenavItem {
+	display: block;
+	font-family: "Segoe UI";
+	font-weight: 550;
+	font-size: 15px;
+	line-height: 46px;
+	padding-left: 22px;
+}
 .list_home::before {
 	font-family: 'icomoon';
 	content: "\e901";
@@ -139,6 +158,38 @@
 	margin-left: -4px;
 	display: inline-block;
 	transform: translateY(3%); 
+}
+.background:before {
+  	content: "\e902";
+	font-family: 'icomoon';
+	padding-right: 16px;
+	margin-left: -4px;
+	display: inline-block;
+	transform: translateY(3%);	
+}
+.lockscreen:before {
+  	content: "\e903";
+	font-family: 'icomoon';
+	padding-right: 16px;
+	margin-left: -4px;
+	display: inline-block;
+	transform: translateY(3%);
+}
+.start:before {
+  	content: "\e904";
+	font-family: 'icomoon';
+	padding-right: 16px;
+	margin-left: -4px;
+	display: inline-block;
+	transform: translateY(3%);
+}
+.taskbar:before {
+  	content: "\e905";
+	font-family: 'icomoon';
+	padding-right: 16px;
+	margin-left: -4px;
+	display: inline-block;
+	transform: translateY(3%);
 }
 .sidenav_list_item_active {
 	border: solid transparent;
