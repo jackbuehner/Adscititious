@@ -124,11 +124,7 @@
 	font-weight: 550;
 	font-size: 15px;
 	line-height: 46px;
-	padding-left: 18px;
-	border-left: 4px solid transparent;
-}
-.settingsSidenavHome:hover{
-	background-color: var(--sideNavItemBackgroundHover);
+	padding-left: 22px;
 }
 .settingsSidenavItem {
 	display: block;
@@ -136,11 +132,7 @@
 	font-weight: 550;
 	font-size: 15px;
 	line-height: 46px;
-	padding-left: 18px;
-	border-left: 4px solid transparent;
-}
-.settingsSidenavItem:hover{
-	background-color: var(--sideNavItemBackgroundHover);
+	padding-left: 22px;
 }
 .list_home::before {
 	font-family: 'icomoon';

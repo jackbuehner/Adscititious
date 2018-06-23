@@ -133,3 +133,6 @@ p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover; {
 		opacity:1
 	}
 }
+.section-animation-fix {
+	margin-top: -4px;
+}
