@@ -4,10 +4,15 @@
 .home_head {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	text-align: center;
-	font-weight: 400;
-	padding: 32px 0 6px 0;
+	font-weight: 300;
+	padding: 44px 0px 6px 0;
 	color: var(--bodyTextColor);
 	cursor: default;
+	position: fixed;
+	margin-left: 0px;
+	margin-top: -128px;
+	width: 662px;
+	background-color: var(--bodyBackgroundColor);
 }
 .home_button {
 	display: inline-block;
@@ -28,6 +33,7 @@
 }
 .descriptionbox {
 	padding: 10px;
+	margin-top: 0px;
 }
 .desch {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
@@ -41,4 +47,39 @@
 }
 a {
 	color: #0063b1;
+}
+.pageButton {
+	width: 310px;
+	height: 100px;
+	background-color: var(--bodyBackgroundColor);
+	cursor: default;
+}
+.pageButton:hover {
+	outline: 2px solid #212121;
+}
+.pageButtonIcon {
+	height: 38px;
+	padding: 16px 0 0 16px;
+}
+.pageButtonName {
+	font-family: "Segoe UI";
+	font-weight: 400;
+	margin: -43px 0 0 78px;
+	color: Var(--bodyTextColor);
+}
+.pageButtonDesc {
+	font-family: "Segoe UI";
+	font-weight: 400;
+	letter-spacing: -0.3px;
+	margin: 6px 0 0 78px;
+	line-height: 1.2;
+	color: var(--subTextColor);
+}
+.btn-border {
+	margin: 9px 7px;
+	display: inline-block;
+	cursor: default;
+}
+.btn-border	.btn {
+	margin: 2px;
 }

@@ -12,6 +12,7 @@
 	/*visibility of element when dark theme*/
 	--showDark: inherit;
 	--regTextColor: rgb(189,189,189);
+	--subTextColor: rgba(130,130,130,1.00);
 }
 
 /*sidenav*/
@@ -211,6 +212,7 @@
 	border-color: var(--themeButton);
 	border-style: solid;
 	float: right;
+	position: fixed;
 	margin-left: 8px;
 	margin-top: 14px;
 	color: var(--bodyTextColor);

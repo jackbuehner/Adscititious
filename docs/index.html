@@ -9,7 +9,7 @@
 	<script type="text/javascript" src="javascript/theme_switch.js"> </script>
 </head>
 
-<body class="body" onLoad="restoreTheme()">
+<body class="body" style="margin-top: 20px;" onLoad="restoreTheme()">
 	<borderC class="titlebar_container titlebar_container_background">
 		<focuscolor class="titlebar">Adscititious: Windows 10 Customization</focuscolor>
   	</borderC>
@@ -28,25 +28,67 @@
 		<input name="theme" type="submit" class="theme_b" id="light" onclick="lightTheme()" value="Enable Light Theme">
 		<input name="theme" type="submit" class="theme_b" id="dark" onclick="darkTheme()" value="Enable Dark Theme">
 	</div>
-<section class="home_container animate-zoom">
-  <h1 class="home_head">Adscititious: Windows 10 Customization</h1>
-  <section class="buttonbox">
-		<a href="ms-settings:system"><img src="images/settings buttons/home/system.png" alt="" width="313" height="109" class="home_button"/></a>
-		<a href="ms-settings:devices"><img src="images/settings buttons/home/devices.png" alt="" width="313" height="109" class="home_button"/></a>
-		<a href="peronalization_background.html"><img src="images/settings buttons/home/personalization.png" alt="" width="313" height="109" class="home_button"/></a>
-		<a href="app_center_home2.html" target="_blank"><img src="images/settings buttons/home/app_center.png" alt="" width="313" height="109" class="home_button"/></a>
-		<a href="accounts_onedrive.html"><img src="images/settings buttons/home/accounts.png" alt="" width="313" height="109" class="home_button"/></a>
-		<a href="themes.html"><img src="images/settings buttons/home/theme center.png" alt="" width="313" height="109" class="home_button"/></a>  &nbsp;
-	</section>
-	<section class="descriptionbox">
-	  	<h3 class="desch">What is the purpose of Adscititious?</h3>
-	  		<p class="descp">Adscititious guides users through the process of personalizing their Windows 10 device when administrators have blocked personalization features and the Microsoft Store. Adscititious provides pages with detailed, step-by-step instructions on setting up and personalizing Windows 10.</p>
-	  		<p class="descp"><a href="https://en.oxforddictionaries.com/definition/adscititious">Adscititious</a> /ˌadsɪˈtɪʃəs/ (adj) -&nbsp;Forming an addition or supplement; not integral.</p>
-	  	<h3 class="desch">What is the App Center?</h3>
-			<p class="descp">The App Center is a hub for various programs used on Windows 10. If a device does not have access to the Microsoft Store, the App Center can be used to install apps on Windows 10. Most apps in the App Center are the APPX format. <a href="learn_to_install.html">Learn how to install APPX files</a>.</p>
-		<h3 class="desch">What is the Theme center?</h3>
-			<p class="descp">The Theme Center is a showcase for userstyles that modify the design of the website ussing css styles. Each userstyle is installed using the Stylish browser extension. <a href="themes_learn_to_install.html">Learn how to enable themes</a>.</p>
-	</section>
-</section>
+	
+	<div class="effect-group-container" style="cursor: default;">
+		<section class="home_container animate-zoom" style="padding-top: 140px;">
+			<h2 class="home_head">Adscititious: Windows 10 Customization
+			</h2>
+			<div>	
+			<div class="btn-border">
+				<a href="ms-settings:system.html" class="anu"><div class="btn pageButton">
+					<img src="images/system.svg" class=pageButtonIcon>
+					<h3 class="pageButtonName">System</h3>
+					<p class="pageButtonDesc">Display, sound, notifications, power</p>
+				</div></a>
+			</div>
+			<div class="btn-border">
+				<a href="ms-settings:devices" class="anu"><div class="btn pageButton">
+					<img src="images/devices.svg" class=pageButtonIcon>
+					<h3 class="pageButtonName">Devices</h3>
+					<p class="pageButtonDesc">Bluetooth, printers, mouse &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+				</div></a>
+			</div>
+			<div class="btn-border">
+				<a href="peronalization_background.html" class="anu"><div class="btn pageButton">
+					<img src="images/personalization.svg" class=pageButtonIcon>
+					<h3 class="pageButtonName">Personalization</h3>
+					<p class="pageButtonDesc">Background, lock screen, colors&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				</div></a>
+			</div>
+			<div class="btn-border">
+				<a href="app_center_home2.html" target="_blank" class="anu"><div class="btn pageButton">
+					<img src="images/app-center.svg" class=pageButtonIcon>
+					<h3 class="pageButtonName">App Center</h3>
+					<p class="pageButtonDesc">Install, uninstall, optional &nbsp; features</p>
+				</div></a>
+			</div>
+			<div class="btn-border">
+				<a href="accounts_onedrive.html" class="anu"><div class="btn pageButton">
+					<img src="images/accounts.svg" class=pageButtonIcon>
+					<h3 class="pageButtonName">Accounts</h3>
+					<p class="pageButtonDesc">Your accounts, email, sync, work, family</p>
+				</div></a>
+			</div>
+			<div class="btn-border">
+				<a href="themes.html" target="_blank" class="anu"><div class="btn pageButton">
+					<img src="images/theme-center.svg" class=pageButtonIcon>
+					<h3 class="pageButtonName">Theme Center</h3>
+					<p class="pageButtonDesc">Install, enable, disable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+				</div></a>
+			</div>
+				
+			<section class="descriptionbox">
+				<h3 class="desch">What is the purpose of Adscititious?</h3>
+					<p class="descp">Adscititious guides users through the process of personalizing their Windows 10 device when administrators have blocked personalization features and the Microsoft Store. Adscititious provides pages with detailed, step-by-step instructions on setting up and personalizing Windows 10.</p>
+					<p class="descp"><a href="https://en.oxforddictionaries.com/definition/adscititious">Adscititious</a> /ˌadsɪˈtɪʃəs/ (adj) -&nbsp;Forming an addition or supplement; not integral.</p>
+				<h3 class="desch">What is the App Center?</h3>
+					<p class="descp">The App Center is a hub for various programs used on Windows 10. If a device does not have access to the Microsoft Store, the App Center can be used to install apps on Windows 10. Most apps in the App Center are the APPX format. <a href="learn_to_install.html">Learn how to install APPX files</a>.</p>
+				<h3 class="desch">What is the Theme center?</h3>
+					<p class="descp">The Theme Center is a showcase for userstyles that modify the design of the website ussing css styles. Each userstyle is installed using the Stylish browser extension. <a href="themes_learn_to_install.html">Learn how to enable themes</a>.</p>
+			</section>
+		</section>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="javascript/fluent_reveal.js"></script>
 </body>
 </html>

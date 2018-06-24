@@ -87,8 +87,7 @@ __WEBPACK_IMPORTED_MODULE_0__lib_js_main___default.a.applyEffect(".settingsTab",
 	lightColor: "rgba(255,255,255,0.13)",
 	gradientSize: 250,
 	clickEffect: true
-	
-});
+});	
 	
 //toolbar
 __WEBPACK_IMPORTED_MODULE_0__lib_js_main___default.a.applyEffect(".toolbar", {
@@ -105,14 +104,14 @@ __WEBPACK_IMPORTED_MODULE_0__lib_js_main___default.a.applyEffect(".toolbar > .bt
 //buttons in container; these buttons have outline effect
 __WEBPACK_IMPORTED_MODULE_0__lib_js_main___default.a.applyEffect(".effect-group-container", {
 	clickEffect: true,
-	lightColor: "rgba(255,255,255,0.6)",
+	lightColor: "rgba(255,255,255,0.23)",
 	gradientSize: 80,
 	isContainer: true,
 	children: {
 		borderSelector: ".btn-border",
 		elementSelector: ".btn",
-		lightColor: "rgba(255,255,255,0.3)",
-		gradientSize: 150
+		lightColor: "rgba(255,255,255,0.1)",
+		gradientSize: 250
 	}
 });
 
