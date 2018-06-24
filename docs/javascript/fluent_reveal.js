@@ -84,7 +84,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 //settings tabs
 __WEBPACK_IMPORTED_MODULE_0__lib_js_main___default.a.applyEffect(".settingsTab", {
-	lightColor: "rgba(255,255,255,0.13)",
+	lightColor: "rgba(136,136,136,0.30)",
 	gradientSize: 250,
 	clickEffect: true
 });	
@@ -104,13 +104,13 @@ __WEBPACK_IMPORTED_MODULE_0__lib_js_main___default.a.applyEffect(".toolbar > .bt
 //buttons in container; these buttons have outline effect
 __WEBPACK_IMPORTED_MODULE_0__lib_js_main___default.a.applyEffect(".effect-group-container", {
 	clickEffect: true,
-	lightColor: "rgba(255,255,255,0.23)",
+	lightColor: "rgba(136,136,136,0.33)",
 	gradientSize: 80,
 	isContainer: true,
 	children: {
 		borderSelector: ".btn-border",
 		elementSelector: ".btn",
-		lightColor: "rgba(255,255,255,0.1)",
+		lightColor: "rgba(136,136,136,0.20)",
 		gradientSize: 250
 	}
 });

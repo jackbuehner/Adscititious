@@ -1,5 +1,6 @@
 :root {
 	--imageButtons: none;
+	--pageButtonHover: rgba(33,33,33,1.00);
 }
 .home_head {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
@@ -55,7 +56,7 @@ a {
 	cursor: default;
 }
 .pageButton:hover {
-	outline: 2px solid #212121;
+	outline: 2px solid var(--pageButtonHover);
 }
 .pageButtonIcon {
 	height: 38px;

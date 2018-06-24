@@ -48,6 +48,7 @@ function darkTheme() {
 	document.body.style.setProperty("--appCardBackground", "rgb(31,31,31)");
 	document.body.style.setProperty("--appCardBackgroundHover", "rgb(0,0,0)");
 	document.body.style.setProperty("--appCardTextColor", "rgb(255,255,255)");
+	document.body.style.setProperty("--pageButtonHover", "rgb(33,33,33)");
 	document.cookie="theme=dark; max-age=31536000;";
 	document.cookie="theme=light; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 }
@@ -69,6 +70,7 @@ function lightTheme() {
 	document.body.style.setProperty("--appCardBackground", "rgb(250,250,250)");
 	document.body.style.setProperty("--appCardBackgroundHover", "rgb(255,255,255)");
 	document.body.style.setProperty("--appCardTextColor", "rgb(17,17,17)");
+	document.body.style.setProperty("--pageButtonHover", "rgb(230,230,230)");
 	document.cookie="theme=light";
 	document.cookie="theme=dark; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 }
