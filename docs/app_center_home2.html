@@ -5,6 +5,7 @@
 <title>App Center</title>
 <link href="css/standardui.css" rel="stylesheet" type="text/css">
 <link href="css/ac_home.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript" src="javascript/theme_switch.js"> </script>
 </head>
 
@@ -29,34 +30,38 @@
 	<div>
 		<a href="#" onclick="history.back();return false"><img src="images/back.svg" alt="" class="back"></a>
 	</div>
-<section class="top_section">
-	<div class="large_banner">
-  		<a href="apps/uwp/arm64/Apps/OneNote/OneNote.AppxBundle" download class="banner_link">
-  		<img src="images/appBanners/onenote.png" alt="amazon_music" class="large_banner_image" style="width:100%;">
- 		<div class="large-bottom-center">OneNote</div></a>
+	<div id="content">
+		<section class="top_section">
+			<div class="large_banner">
+				<a href="apps/uwp/arm64/Apps/OneNote/OneNote.AppxBundle" download class="banner_link">
+				<img src="images/appBanners/onenote.png" alt="amazon_music" class="large_banner_image" style="width:100%;">
+				<div class="large-bottom-center">OneNote</div></a>
+			</div>
+			<div class="small_banner">
+				<img src="images/appBanners/itunes.jpg" alt="amazon_music" class="small_banner_image">
+				<div class="bottom-center">iTunes</div>
+			</div>
+			<div class="small_banner">
+				<img src="images/appBanners/spirality.jpg" alt="amazon_music" class="small_banner_image">
+				<div class="bottom-center">Spirality</div>
+			</div>
+			<div class="small_banner">
+				<img src="images/appBanners/drawboard_pdf.jpg" alt="amazon_music" class="small_banner_image" style="width:100%;">
+				<div class="bottom-center">Drawboard PDF</div>
+			</div>
+			<div class="small_banner"> 
+				<img src="images/appBanners/amazon_music.jpg" alt="amazon_music" class="small_banner_image" style="width:100%;">
+				<div class="bottom-center">Amazon Music</div>
+			</div>
+			<div class="button_holder">
+				<a href="app_center_UWP apps.html" class="topnavlink"><p class="banner_button-1">View all Universal Windows apps</p></a>
+				<a href="app_center_browsers.html" class="topnavlink"><p class="banner_button-1">View all browsers</p></a>
+				<a href="app_center_win32.html" class="topnavlink"><p class="banner_button-1">View all classic apps</p></a>
+			</div>
+		</section>
 	</div>
-	<div class="small_banner">
-		<img src="images/appBanners/itunes.jpg" alt="amazon_music" class="small_banner_image">
-  		<div class="bottom-center">iTunes</div>
-	</div>
-	<div class="small_banner">
-		<img src="images/appBanners/spirality.jpg" alt="amazon_music" class="small_banner_image">
-  		<div class="bottom-center">Spirality</div>
-	</div>
-	<div class="small_banner">
-  		<img src="images/appBanners/drawboard_pdf.jpg" alt="amazon_music" class="small_banner_image" style="width:100%;">
-  		<div class="bottom-center">Drawboard PDF</div>
-	</div>
-	<div class="small_banner"> 
-		<img src="images/appBanners/amazon_music.jpg" alt="amazon_music" class="small_banner_image" style="width:100%;">
-  		<div class="bottom-center">Amazon Music</div>
-	</div>
-	<div class="button_holder">
-		<a href="app_center_UWP apps.html" class="topnavlink"><p class="banner_button-1">View all Universal Windows apps</p></a>
-		<a href="app_center_browsers.html" class="topnavlink"><p class="banner_button-1">View all browsers</p></a>
-		<a href="app_center_win32.html" class="topnavlink"><p class="banner_button-1">View all classic apps</p></a>
-	</div>
-</section>
 <section class="collections_section"> </section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="javascript/script.js"></script>
 </body>
 </html>
