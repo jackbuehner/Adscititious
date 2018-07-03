@@ -46,13 +46,13 @@
 	-webkit-app-region: no-drag;
 }
 .topnav_container {
-	margin: -89px 0 0 -8px;
+	margin: -88px 0 0 -9px;
 	padding: 44px 0 14px 0;
 	filter: opacity(96%);
 	position: fixed;
 	z-index: 4;
 	background-color: var(--appbarBackgroundColor);
-	width: 100%;
+	width: calc(100% - 2px);
 	-webkit-user-select: none;
 	-webkit-app-region: drag;
 	border: 1px solid #0063B1;
