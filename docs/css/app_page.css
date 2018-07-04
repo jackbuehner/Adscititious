@@ -1,0 +1,202 @@
+@charset "utf-8";
+:root {
+	--invertImage100: invert(100%);
+}
+.appbar_win_buttons {
+	float: right;
+	height: 32px;
+	width: 138px;
+	margin: -47px 0 0 85.2%;
+	-webkit-user-select: none;
+	-webkit-app-region: no-drag;
+}
+.window_buttons {
+	display: inline-block;
+	float: right;
+	height: 14px;
+	padding: 9px 16px;
+	filter: var(--invertImage100);
+	-webkit-app-region: no-drag;
+}
+.window_buttons:hover {
+	background-color: #17EEDC;
+	filter: invert(100%);
+	-webkit-app-region: no-drag;
+}
+.window_buttons_b {
+	display: inline-block;
+	float: right;
+	height: 10px;
+	padding: 11px 18px;
+	filter: var(--invertImage100);
+	-webkit-app-region: no-drag;
+}
+.window_buttons_b:hover {
+	background-color: hsla(0,0%,0%,0.12);
+	-webkit-app-region: no-drag;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+
+
+:root {
+	--bodyTextColor: rgb(238,238,238);
+	--appbodyBackgroundColor: rgb(46,46,46);
+	--appbarBackgroundColor: rgb(50,50,50);
+	--regTextColor: rgb(189,189,189);
+	--invertImage100: invert(0%);
+}
+.title {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	display: inline-block;
+	margin-left: 12px;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 32px;
+	color: var(--bodyTextColor);
+}
+.back {
+	width: 16px;
+	padding: 15px;
+	position: fixed;
+	margin: -56px 0 0 -8px;
+	z-index: 6;
+	filter: var(--invertImage100);
+	-webkit-app-region: no-drag;
+}
+.back:hover {
+	background-color: hsla(0,0%,0%,0.10);
+	-webkit-app-region: no-drag;
+}
+.topnav_container {
+	margin: -33px 0 0 -1px;
+	padding: 44px 0 14px 0;
+	filter: opacity(96%);
+	position: fixed;
+	z-index: 4;
+	background-color: var(--appbarBackgroundColor);
+	width: calc(100% - 2px);
+	-webkit-user-select: none;
+	-webkit-app-region: drag;
+	border: 1px solid #0063B1;
+	border-bottom: none;
+}
+@supports (-webkit-backdrop-filter: blur(22px)) or (backdrop-filter: blur(22px)) {
+	.topnav_container {
+		filter: opacity(80%);
+		backdrop-filter: blur(22px);
+		-webkit-backdrop-filter: blur(22px);
+	}
+}
+.topnav {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: normal;
+	margin: 0 0 -5px 37px;
+	display: inline-block;
+	font-size: 15px;
+	-webkit-app-region: no-drag;
+}
+.topnavlink {
+	color: var(--bodyTextColor);
+	text-decoration: none;
+	filter: contrast(60%);
+	-webkit-app-region: no-drag;
+	margin: 0 0px 0 20px;
+}
+.topnavlink:hover {
+	filter: contrast(90%);
+	-webkit-app-region: no-drag;
+}
+.topnavlink_selected {
+	filter: contrast(100%);
+	border-bottom: 2px solid #0078D7;
+	padding-bottom: 8px;
+	-webkit-app-region: no-drag;
+}
+.topnavright {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: normal;
+	float: right;
+	margin-right: 12px;
+	margin-bottom: -5px;
+	font-size: 15px;
+	-webkit-app-region: no-drag;
+}
+
+
+
+
+
+html {
+	background-color: rgb(31,31,31);
+	border: 1px solid #0078D7;
+}
+.appPage {
+    font-family: "Segoe UI", sans-serif;
+	color: white;
+	padding-top: 80px;
+}
+.appPage>div {
+    position: relative;
+    padding: 30px 10px;
+    background-color: rgb(31, 31, 31);
+}
+.appPage>div>h1 {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -10px;
+    padding-left: 20px;
+    padding-top: 0px;
+}
+.appPage>div>p {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -138px;
+    padding-top: 018px;
+}
+.appPage>div>h3 {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -161px;
+    padding-top: 46px;
+}
+.downloadButton {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -40px;
+    margin-top: 104px;
+    border: 2px solid #0078D7;
+    background-color: #0078D7;
+    color: #fff;
+    padding: 2px 30px 2px 30px;
+    text-decoration: none;
+}
+.appPage>div>div2>h2 {
+    padding-top: 10px;
+}
+.appPage>div>div2>div {
+    background-color: rgb(24, 24, 24);
+    padding: 1px 20px;
+}
+.appPage>div>divs>p {
+    background-color: rgb(46, 46, 46);
+    padding: 100px 16px;
+}
+.appPage>div>div3 {
+    width: calc(50% - 10px);
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+}
+.appPage>div>div4 {
+    width: calc(50% - 10px);
+    display: inline-block;
+    padding-left: 10px;
+}
+.appPage>div>div5>p {
+    border-bottom: 1px solid rgb(60, 60, 60);
+    padding-bottom: 6px;
+    margin-top: -10px;
+}
