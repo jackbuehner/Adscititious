@@ -86,6 +86,7 @@ if (prevType != e.type) {   //  reduce double fire issues
 			$("buttonfocuscolor").css("opacity", ".5");
 			$("html").css("border-color", "#373737")
 			$("borderC").css("border-color", "#373737")
+			$("border_c").css("border-color", "#373737")
 			$("buttonfocuscolor").css("border-color", "#373737")
 			$("borderCB").css("background-color", "#373737")
 			break;
@@ -94,6 +95,7 @@ if (prevType != e.type) {   //  reduce double fire issues
 			$("buttonfocuscolor").css("opacity", "1");
 			$("html").css("border-color", "#0063B1")
 			$("borderC").css("border-color", "#0063B1")
+			$("border_c").css("border-color", "#0063B1")
 			$("buttonfocuscolor").css("border-color", "#0063B1")
 			$("borderCB").css("background-color", "#0063B1")
 			break;
