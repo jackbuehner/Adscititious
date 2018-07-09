@@ -1,43 +1,42 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>App Center</title>
-<link href="css/standardui.css" rel="stylesheet" type="text/css">
-<script type="text/javascript" src="javascript/theme_switch.js"> </script>
+	<meta charset="utf-8">
+	<title>App Center</title>
+	<link href="css/app_center_standardui.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="javascript/theme_switch.js"> </script>
 </head>
 
-<body id="bodyhome" onLoad="restoreTheme()">
-<section class="appbar_container"> <a href="#" onclick="history.back();return false"><img src="images/left_arrow1600.png" alt="" width="1600" height="1600" class="apparrow"></a>
-  <header class="appbar">App Center</header>
-  <nav class="topnav"><a href="app_center.html" class="topnavlink"><strong>Home</strong></a> &nbsp; <a href="app_center_UWP apps.html" class="topnavlink">UWP Apps</a> &nbsp; &nbsp; <a href="app_center_win32.html" class="topnavlink">Classic Apps</a> &nbsp; &nbsp; <a href="app_center_games.html" class="topnavlink">Games</a> &nbsp; &nbsp; <a href="app_center_browsers.html" class="topnavlink">Browsers</a> &nbsp; &nbsp; <a href="app_center_framework.html" class="topnavlink">Frameworks &amp; Extensions</a> &nbsp; &nbsp; &nbsp; &nbsp; <a href="learn_to_install.html" class="topnavright topnavlink">Help</a></nav>
-	&nbsp;
-</section>
-<section class="top_section">
-<div class="large_banner">
-  <a href="apps/uwp/arm64/Apps/OneNote/OneNote.AppxBundle" download class="banner_link">
-  <img src="images/appBanners/onenote.png" alt="amazon_music" class="large_banner_image" style="width:100%;">
-  <div class="large-bottom-center">OneNote</div></a>
-</div>
-<div class="small_banner"><img src="images/appBanners/itunes.jpg" alt="amazon_music" class="small_banner_image">
-  <div class="bottom-center">iTunes</div>
-</div>
-<div class="small_banner"><img src="images/appBanners/spirality.jpg" alt="amazon_music" class="small_banner_image">
-  <div class="bottom-center">Spirality</div>
-</div>
-<div class="small_banner">
-  <img src="images/appBanners/drawboard_pdf.jpg" alt="amazon_music" class="small_banner_image" style="width:100%;">
-  <div class="bottom-center">Drawboard PDF</div>
-</div>
-<div class="small_banner"> <img src="images/appBanners/amazon_music.jpg" alt="amazon_music" class="small_banner_image" style="width:100%;">
-  <div class="bottom-center">Amazon Music</div>
-</div>
-<a href="app_center_UWP apps.html" class="topnavlink"><p class="banner_button-1">View all Universal Windows apps</p></a>
-<a href="app_center_browsers.html" class="topnavlink"><p class="banner_button-1">View all browsers</p></a>
-<a href="app_center_win32.html" class="topnavlink"><p class="banner_button-1">View all classic apps</p></a>
-</section>
-<section class="collections_section">
-	<h2 class="section_head">Collections</h2>
-</section>
+<body onLoad="restoreTheme()">
+	<topnav>
+		<div>
+			<header>App Center</header>
+		</div>
+		<nav>
+			<a href="app_center_home2.html">Home</a>
+			<a href="app_center_UWP apps.html" class="topnavlink_selected">UWP Apps</a>
+			<a href="app_center_win32.html">Classic Apps</a>
+			<a href="app_center_games.html">Games</a>
+			<a href="app_center_browsers.html">Browsers</a>
+			<a href="app_center_framework.html">Frameworks &amp; Extensions</a>
+		</nav>
+		<nav class="navright">
+			<a href="learn_to_install.html">Help</a>
+		</nav>
+		<back>
+			<a href="#" onclick="history.back();return false"><img src="images/back.svg" alt="" class="back"></a>
+		</back>
+	</topnav>
+	<borders>
+		<bordertop></bordertop>
+		<borderbottom></borderbottom>
+		<borderleft></borderleft>
+		<borderright></borderright>
+	</borders>
+	<window_buttons>
+		<a href="#" onclick="window.close()"><img src="images/close.svg" alt="" class="window_buttons"></a>
+		<a href="#" onclick="window.maximize()"><img src="images/maximize.svg" alt="" class="window_buttons_b"></a>
+		<a href="#" onclick="window.minimize()"><img src="images/minimize.svg" alt="" class="window_buttons_b"></a>
+	</div>
 </body>
 </html>

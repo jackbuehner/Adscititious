@@ -89,6 +89,7 @@ if (prevType != e.type) {   //  reduce double fire issues
 			$("border_c").css("border-color", "#373737")
 			$("buttonfocuscolor").css("border-color", "#373737")
 			$("borderCB").css("background-color", "#373737")
+			$("border_bottom").css("background-color", "#373737")
 			break;
 		case "focus":
 			$("focuscolor").css("color", "var(--bodyTextColor)");
@@ -98,6 +99,7 @@ if (prevType != e.type) {   //  reduce double fire issues
 			$("border_c").css("border-color", "#0063B1")
 			$("buttonfocuscolor").css("border-color", "#0063B1")
 			$("borderCB").css("background-color", "#0063B1")
+			$("border_bottom").css("background-color", "#0063B1")
 			break;
 	}
 }

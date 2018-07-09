@@ -1,0 +1,128 @@
+@charset "utf-8";
+:root {
+	--bodyTextColor: rgb(238,238,238);
+	--appbodyBackgroundColor: rgb(46,46,46);
+	--invertImage100: invert(100%);
+}
+body {
+	margin: 0;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color: var(--bodyTextColor);
+	background-color: var(--appbodyBackgroundColor);
+}
+/*//TITLEBAR and NAVIGATION//*/
+topnav {
+	position: fixed;
+	width: 100%;
+}
+/*titlebar*/
+topnav>div>header {
+	font-size: 0.75em;
+	padding-left: 12px;
+	font-weight: 500;
+	line-height: 250%;
+}
+/*navigation bar*/
+topnav>nav {
+	font-size: 0.94em;
+	display: inline-block;
+	-webkit-app-region: no-drag;
+	padding: 14px 0 14px 50px;
+}
+/*navigation bar link*/
+topnav>nav a {
+	text-decoration: none;
+	color: var(--bodyTextColor);
+	padding: 0 10px 0 10px;
+	filter: contrast(60%);
+}
+topnav>nav a:hover {
+	filter: contrast(90%);
+}
+/*navigation bar - right side*/
+.navright {
+	font-size: 0.94em;
+	-webkit-app-region: no-drag;
+	float: right;
+	z-index: 2;
+	width: auto;
+}
+/*back button*/
+.back {
+	width: 16px;
+	padding: 16px;
+	filter: var(--invertImage100);
+	-webkit-app-region: no-drag;
+	margin: 0 0 0 -658px;
+	position: fixed;
+}
+.back:hover {
+	background-color: hsla(0,0%,0%,0.10);
+}
+/*close button*/
+.window_buttons {
+	display: inline-block;
+	float: right;
+	height: 14px;
+	padding: 9px 16px;
+	filter: var(--invertImage100);
+	-webkit-app-region: no-drag;
+}
+.window_buttons:hover {
+	background-color: #17EEDC;
+	filter: invert(100%);
+	-webkit-app-region: no-drag;
+}
+/*maximize and minimize buttons*/
+.window_buttons_b {
+	display: inline-block;
+	float: right;
+	height: 10px;
+	padding: 11px 18px;
+	filter: var(--invertImage100);
+	-webkit-app-region: no-drag;
+}
+.window_buttons_b:hover {
+	background-color: hsla(0,0%,0%,0.12);
+	-webkit-app-region: no-drag;
+}
+/*----------*/
+/*//WINDOW BORDERS//*/
+borders>bordertop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background-color: #0063B1;
+	z-index: 5;
+}
+borders>borderbottom {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background-color: #0063B1;
+	z-index: 5;
+}
+borders>borderleft {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 1px;
+	background-color: #0063B1;
+	z-index: 5;
+}
+borders>borderright {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 1px;
+	background-color: #0063B1;
+	z-index: 5;
+}
+/*----------*/
+
