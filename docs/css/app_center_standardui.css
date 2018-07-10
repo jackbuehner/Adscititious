@@ -9,6 +9,7 @@ body {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	color: var(--bodyTextColor);
 	background-color: var(--appbodyBackgroundColor);
+	-webkit-user-select: none;
 }
 /*//TITLEBAR and NAVIGATION//*/
 topnav {
@@ -58,6 +59,13 @@ topnav>nav a:hover {
 }
 .back:hover {
 	background-color: hsla(0,0%,0%,0.10);
+}
+/*navigation buttons container*/
+window_buttons {
+	float: right;
+	height: 32px;
+	width: 138px;
+	-webkit-app-region: no-drag;
 }
 /*close button*/
 .window_buttons {
