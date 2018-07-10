@@ -2,42 +2,49 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>App Center - Classic Apps</title>
-	<link href="css/app_center.css" rel="stylesheet" type="text/css">
-	<link href="css/appListing.css" rel="stylesheet" type="text/css">
-	<link href="css/standardui.css" rel="stylesheet" type="text/css">
+	<title>App Center</title>
+	<link href="css/app_center_standardui.css" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="javascript/theme_switch.js"> </script>
 </head>
 
-<body id="body" onLoad="restoreTheme()">
-	<div class="appbar_titlebar">
-		<header class="title">App Center</header>
-	</div>
-	<section class="topnav_container">
-  		<nav class="topnav"><a href="app_center_home2.html" class="topnavlink">Home</a>&nbsp;<a href="app_center_UWP apps.html" class="topnavlink">UWP Apps</a>&nbsp;<a href="app_center_win32.html" class="topnavlink topnavlink_selected">Classic Apps</a>&nbsp;<a href="app_center_games.html" class="topnavlink">Games</a>&nbsp;<a href="app_center_browsers.html" class="topnavlink">Browsers</a>&nbsp;<a href="app_center_framework.html" class="topnavlink">Frameworks &amp; Extensions</a></nav>
-		<nav class="topnavright">
-		<a href="learn_to_install.html" class="topnavlink">Help</a>
-    	</nav>
-	</section>
-	<borderCB class="bBorder"></borderCB>
-	<div style="position:fixed;width:100%;margin-left:-8px;height:1px;z-index:99;margin-top:9px;">
-		<div class="appbar_win_buttons">
-			<a href="#" onclick="window.close()"><img src="images/close.svg" alt="" class="window_buttons"></a>
-			<a href="#" onclick="window.maximize()"><img src="images/maximize.svg" alt="" class="window_buttons_b"></a>
-			<a href="#" onclick="window.minimize()"><img src="images/minimize.svg" alt="" class="window_buttons_b"></a>
+<body onLoad="restoreTheme()">
+	<topnav>
+		<div>
+			<header>App Center</header>
+		</div>
+		<nav>
+			<a href="app_center_home2.html" id="home">Home</a>
+			<a href="app_center_UWP apps.html#UWPapps" id="UWPapps">UWP Apps</a>
+			<a href="app_center_win32.html#win32" id="win32">Classic Apps</a>
+			<a href="app_center_games.html#games" id="games">Games</a>
+			<a href="app_center_browsers.html#browsers" id="browsers">Browsers</a>
+			<a href="app_center_framework.html#framework" id="framework">Frameworks &amp; Extensions</a>
+		</nav>
+		<nav class="navright">
+			<a href="learn_to_install.html#help" id="help">Help</a>
+		</nav>
+		<back>
+			<a href="#" onclick="history.back();return false"><img src="images/back.svg" alt="" class="back"></a>
+		</back>
+	</topnav>
+	<borders>
+		<bordertop></bordertop>
+		<borderbottom></borderbottom>
+		<borderleft></borderleft>
+		<borderright></borderright>
+	</borders>
+	<div>
+		<div class="app_section">
+			<section>
+				<h2 class="sectionh">Classic (Win32) Apps</h2>
+				<a href="https://www.dotpdn.com/files/paint.net.4.0.21.install.zip" class="applink"><section class="appListing">
+					<img class="app_image" alt="paint.net" src="https://store-images.s-microsoft.com/image/apps.18942.13517568566615301.d27c0db0-fb9f-445c-ad28-db81569ea038.3fe8ddc9-6be8-43d7-8e26-1516f13ece6d?w=150&amp;h=150&amp;q=90&amp;mode=crop" style="background:#0078D7"></img>
+				  <h3 class="app_name">paint.net</h3>
+					<p class="ratingValue" aria-hidden="true">4.5 Stars</p>
+					<p class="price"> Free </p>
+				</section></a>
+			</section>
 		</div>
 	</div>
-	<div>
-		<a href="#" onclick="history.back();return false"><img src="images/back.svg" alt="" class="back"></a>
-	</div>
-<section>
-	<h2 class="sectionh">Classic (Win32) Apps</h2>
-	<a href="https://www.dotpdn.com/files/paint.net.4.0.21.install.zip" class="applink"><section class="appListing">
-		<img class="app_image" alt="paint.net" src="https://store-images.s-microsoft.com/image/apps.18942.13517568566615301.d27c0db0-fb9f-445c-ad28-db81569ea038.3fe8ddc9-6be8-43d7-8e26-1516f13ece6d?w=150&amp;h=150&amp;q=90&amp;mode=crop" style="background:#0078D7"></img>
-	  <h3 class="app_name">paint.net</h3>
-		<p class="ratingValue" aria-hidden="true">4.5 Stars</p>
-	  	<p class="price"> Free </p>
-	</section></a>
-</section>
 </body>
-</html>
