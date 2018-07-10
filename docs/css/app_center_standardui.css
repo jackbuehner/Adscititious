@@ -23,6 +23,7 @@ topnav {
 	margin-top: -80px;
 	background-color: var(--appbodyBackgroundColor);
 	filter: opacity(94%);
+	z-index: 5;
 }
 @supports (-webkit-backdrop-filter: blur(22px)) or (backdrop-filter: blur(22px)) {
 	topnav {
@@ -85,7 +86,6 @@ topnav>nav a:focus {
 }
 /*navigation buttons container*/
 window_buttons {
-	float: right;
 	height: 32px;
 	width: 138px;
 	-webkit-app-region: no-drag;
@@ -236,4 +236,14 @@ borders>borderright {
 /*hide scrollbar*/
 ::-webkit-scrollbar {
     width: 0px;
+}
+/*page frame*/
+.iframe_a {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	border: none;
+	background: hsla(0,0%,0%,0.00);
+	margin-top: -80px;
+	z-index: 99;
 }

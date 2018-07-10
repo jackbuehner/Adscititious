@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<title>App Center</title>
 	<link href="css/app_center_standardui.css" rel="stylesheet" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="javascript/theme_switch.js"> </script>
 </head>
 
@@ -34,10 +33,13 @@
 		<borderleft></borderleft>
 		<borderright></borderright>
 	</borders>
-	<window_buttons>
-		<a href="#" onclick="window.close()"><img src="images/close.svg" alt="" class="window_buttons"></a>
-		<a href="#" onclick="window.maximize()"><img src="images/maximize.svg" alt="" class="window_buttons_b"></a>
-		<a href="#" onclick="window.minimize()"><img src="images/minimize.svg" alt="" class="window_buttons_b"></a>
-	</window_buttons>
+	<div style="position:fixed;width:100%;margin-top:-79px;height:0px;z-index:9999;">
+		<window_buttons>
+			<a href="#" onclick="window.close()"><img src="images/close.svg" alt="" class="window_buttons"></a>
+			<a href="#" onclick="window.maximize()"><img src="images/maximize.svg" alt="" class="window_buttons_b"></a>
+			<a href="#" onclick="window.minimize()"><img src="images/minimize.svg" alt="" class="window_buttons_b"></a>
+		</window_buttons>
+	</div>
+	<iframe src="app_center_home2.html" class="iframe_a"></iframe>
 </body>
 </html>
