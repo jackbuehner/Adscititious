@@ -10,11 +10,26 @@ body {
 	color: var(--bodyTextColor);
 	background-color: var(--appbodyBackgroundColor);
 	-webkit-user-select: none;
+	margin-top: 80px;
+}
+p, a, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
 }
 /*//TITLEBAR and NAVIGATION//*/
 topnav {
 	position: fixed;
 	width: 100%;
+	-webkit-app-region: drag;
+	margin-top: -80px;
+	background-color: var(--appbodyBackgroundColor);
+	filter: opacity(94%);
+}
+@supports (-webkit-backdrop-filter: blur(22px)) or (backdrop-filter: blur(22px)) {
+	topnav {
+		filter: opacity(80%);
+		backdrop-filter: blur(22px);
+		-webkit-backdrop-filter: blur(22px);
+	}
 }
 /*titlebar*/
 topnav>div>header {
@@ -66,6 +81,11 @@ window_buttons {
 	height: 32px;
 	width: 138px;
 	-webkit-app-region: no-drag;
+	z-index: 999;
+	margin-top: -80px;
+}
+window_buttons:hover {
+	opacity: 1 !important;
 }
 /*close button*/
 .window_buttons {
@@ -131,6 +151,74 @@ borders>borderright {
 	width: 1px;
 	background-color: #0063B1;
 	z-index: 5;
+}
+/*----------*/
+/*page banner solid*/
+.page_banner {
+	background-color:#0078D7;
+	padding: 1.8% 18%;
+	text-align: center;
+	line-height: 260%
+}
+.page_banner>h1 {
+	font-weight: 600;
+}
+/*area with apps*/
+.app_section {
+	padding: 0 25px 0 25px;
+}
+/*app section headers*/
+.app_section>h2, .sectionh {
+	font-weight: 600;
+	padding-bottom: 18px;
+	padding-top: 40px;
+}
+/*//APP CARDS//*/
+.app_name {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 16px;
+	text-decoration: none;
+	line-height: 1;
+	margin: 16px 0 4px 8px;
+	font-weight: 600;
+}
+.app_image {
+	margin: -8px 0px -12px 0px;
+}
+.price {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 14px;
+	line-height: 4;
+	margin-left: 8px;
+	margin-top: 26px;
+	margin-bottom: -100px;
+}
+.price_double {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 14px;
+	line-height: 1.7;
+	margin-left: 8px;
+}
+.ratingValue {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 11px;
+	margin-left: 8px;
+	line-height: 1;
+}
+.appListing {
+	width: 150px;
+	background-color: var(--appCardBackground);
+	min-height: 248px;
+	display: inline-block;
+	margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 12px;
+}
+.appListing:hover {
+	background-color: var(--appCardBackgroundHover);
+}
+.applink {
+	color: var(--appCardTextColor);
 }
 /*----------*/
 
