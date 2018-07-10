@@ -39,6 +39,43 @@ a:hover {
 .sb-speciaL {
 	margin-right: 0 !important;
 }
+@media only screen and (max-width: 1000px) {
+	.sb-speciaL {
+		visibility: 0;
+	}
+	.small-banner {
+		width: 48.9%;
+	}
+	.sb-special2 {
+		margin-right: 0 !important;
+	}
+}
+@media only screen and (max-width: 690px) {
+	.sb-speciaL {
+		visibility: 0;
+	}
+	.small-banner {
+		width: 48.8%;
+	}
+	.sb-special2 {
+		margin-right: 0 !important;
+	}
+	.large-bottom-center {
+		padding-top: 128px;
+	}
+	.large-bottom-center2 {
+		padding-bottom: 26px;
+	}
+}
+@media only screen and (max-width: 550px) {
+	.sb-speciaL {
+		visibility: 0;
+	}
+	.small-banner {
+		width: 100%;
+		margin-right: 0 !important;
+	}
+}
 .small-banner:hover {
 	background: var(--appCardBackgroundHover);
 }
