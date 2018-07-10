@@ -5083,6 +5083,7 @@ function createMainWindow(inpOptions, onAppQuit, setDockBadge) {
     tabbingIdentifier: nativeTabsSupported() ? options.name : undefined,
     webPreferences: {
       javascript: true,
+	  experimentalFeatures: true,
       plugins: true,
       // node globals causes problems with sites like messenger.com
       nodeIntegration: false,
@@ -5096,6 +5097,7 @@ function createMainWindow(inpOptions, onAppQuit, setDockBadge) {
     frame: !options.hideWindowFrame,
     width: mainWindowState.width,
     height: mainWindowState.height,
+	webPreferences: { experimentalFeatures: true},
     minWidth: options.minWidth,
     minHeight: options.minHeight,
     maxWidth: options.maxWidth,

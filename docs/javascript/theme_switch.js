@@ -83,19 +83,33 @@ if (prevType != e.type) {   //  reduce double fire issues
 	switch (e.type) {
 		case "blur":
 			$("focuscolor").css("color", "#888");
+			$("topnav>div>header").css("color", "#888");
 			$("buttonfocuscolor").css("opacity", ".5");
-			$("html").css("border-color", "#373737")
-			$("borderC").css("border-color", "#373737")
-			$("buttonfocuscolor").css("border-color", "#373737")
-			$("borderCB").css("background-color", "#373737")
+			$("window_buttons").css("opacity", ".5");
+			$("html").css("border-color", "#373737");
+			$("borderC").css("border-color", "#373737");
+			$("border_c").css("border-color", "#373737");
+			$("buttonfocuscolor").css("border-color", "#373737");
+			$("borderCB").css("background-color", "#373737");
+			$("bordertop").css("background-color", "#373737");
+			$("borderbottom").css("background-color", "#373737");
+			$("borderleft").css("background-color", "#373737");
+			$("borderright").css("background-color", "#373737");
 			break;
 		case "focus":
 			$("focuscolor").css("color", "var(--bodyTextColor)");
+			$("topnav>div>header").css("color", "var(--bodyTextColor)");
 			$("buttonfocuscolor").css("opacity", "1");
-			$("html").css("border-color", "#0063B1")
-			$("borderC").css("border-color", "#0063B1")
-			$("buttonfocuscolor").css("border-color", "#0063B1")
-			$("borderCB").css("background-color", "#0063B1")
+			$("window_buttons").css("opacity", "1");
+			$("html").css("border-color", "#0063B1");
+			$("borderC").css("border-color", "#0063B1");
+			$("border_c").css("border-color", "#0063B1");
+			$("buttonfocuscolor").css("border-color", "#0063B1");
+			$("borderCB").css("background-color", "#0063B1");
+			$("bordertop").css("background-color", "#0063B1");
+			$("borderbottom").css("background-color", "#0063B1");
+			$("borderleft").css("background-color", "#0063B1");
+			$("borderright").css("background-color", "#0063B1");
 			break;
 	}
 }
