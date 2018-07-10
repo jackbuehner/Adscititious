@@ -166,7 +166,8 @@ borders>borderright {
 	background-color:#0078D7;
 	padding: 1.8% 18%;
 	text-align: center;
-	line-height: 260%
+	line-height: 260%;
+	color: #fff;
 }
 .page_banner>h1 {
 	font-weight: 600;
