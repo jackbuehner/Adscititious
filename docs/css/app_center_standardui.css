@@ -171,6 +171,10 @@ borders>borderright {
 .page_banner>h1 {
 	font-weight: 600;
 }
+.page_banner>p {
+	line-height: 1.5;
+	padding: 9px 0;
+}
 /*area with apps*/
 .app_section {
 	padding: 0 25px 0 25px;
