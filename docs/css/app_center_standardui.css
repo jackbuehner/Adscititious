@@ -55,6 +55,11 @@ topnav>nav a {
 topnav>nav a:hover {
 	filter: contrast(90%);
 }
+topnav>nav a:target {
+	border-bottom: 2px solid #0063B1;
+	padding-bottom: 10px;
+	filter: contrast(100%);
+}
 /*navigation bar - right side*/
 .navright {
 	font-size: 0.94em;
