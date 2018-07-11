@@ -19,6 +19,7 @@ html {
     margin-top: -10px;
     padding-left: 20px;
     padding-top: 0px;
+	font-weight: 600;
 }
 .appPage>div>p {
     display: inline-block;
@@ -31,6 +32,7 @@ html {
     vertical-align: top;
     margin-left: -161px;
     padding-top: 46px;
+	font-weight: 400;
 }
 .downloadButton {
     display: inline-block;
@@ -45,10 +47,14 @@ html {
 }
 .appPage>div>div2>h2 {
     padding-top: 10px;
+	font-weight: 600;
 }
 .appPage>div>div2>div {
     background-color: rgb(24, 24, 24);
     padding: 1px 20px;
+}
+.appPage>div>divs>h2 {
+	font-weight: 600;
 }
 .appPage>div>divs>p {
     background-color: rgb(46, 46, 46);
@@ -60,15 +66,24 @@ html {
     float: left;
     padding-right: 10px;
 }
+.appPage>div>div3>h2 {
+	font-weight: 600;
+}
 .appPage>div>div4 {
     width: calc(50% - 10px);
     display: inline-block;
     padding-left: 10px;
 }
+.appPage>div>div4>h2 {
+	font-weight: 600;
+}
 .appPage>div>div5>p {
     border-bottom: 1px solid rgb(60, 60, 60);
     padding-bottom: 6px;
     margin-top: -10px;
+}
+.appPage>div>div5>h2 {
+	font-weight: 600;
 }
 
 /*~~~//TITLEBAR CSS EXCERPT (from app_center_standardui.css//~~~*/
