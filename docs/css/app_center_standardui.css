@@ -25,6 +25,8 @@ topnav {
 	background-color: var(--appbodyBackgroundColor);
 	filter: opacity(94%);
 	z-index: 5;
+	color: var(--bodyTextColor);
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 }
 @supports (-webkit-backdrop-filter: blur(22px)) or (backdrop-filter: blur(22px)) {
 	topnav {
@@ -86,7 +88,37 @@ topnav>nav a:focus {
 .back:hover {
 	background-color: hsla(0,0%,0%,0.10);
 }
-/*navigation buttons container*/
+/*navigation dropdown*/
+select {
+	display: none;
+	height: 48px;
+	background-color: var(--appbodyBackgroundColor);
+	color: var(--bodyTextColor);
+	border: none;
+	-webkit-app-region: no-drag;
+	font-size: 0.94em;
+}
+select:focus {
+	outline: none;
+}
+select::after {
+	background-color: var(--appbodyBackgroundColor);
+	color: var(--bodyTextColor);
+}
+/*switch to dropdown on smaller screen size*/
+@media only screen and (max-width: 760px) {
+	select {
+		display: block;
+		margin-left: 48px;
+	}
+	topnav>nav {
+		display: none;
+	}
+	.back {
+		margin: -48px 0 0 1px;
+	}
+}
+/*window buttons container*/
 window_buttons {
 	height: 32px;
 	width: 138px;
@@ -249,31 +281,4 @@ borders>borderright {
 	background: hsla(0,0%,0%,0.00);
 	margin-top: -80px;
 	z-index: 99;
-}
-select {
-	display: none;
-	height: 48px;
-	background-color: var(--appbodyBackgroundColor);
-	color: var(--bodyTextColor);
-	border: none;
-	-webkit-app-region: no-drag;
-}
-select:focus {
-	outline: none;
-}
-select::after {
-	background-color: var(--appbodyBackgroundColor);
-	color: var(--bodyTextColor);
-}
-@media only screen and (max-width: 760px) {
-	select {
-		display: block;
-		margin-left: 48px;
-	}
-	topnav>nav {
-		display: none;
-	}
-	.back {
-		margin: -48px 0 0 1px;
-	}
 }
