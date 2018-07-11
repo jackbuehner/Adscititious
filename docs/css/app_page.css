@@ -13,37 +13,52 @@ html {
     padding: 30px 25px;
     background-color: rgb(31, 31, 31);
 }
-.appPage>div>h1 {
-    display: inline-block;
+.appPage>div>div {
+	display: inline-block;
+	height: 180px;
+	vertical-align: top;
+}
+.appPage>div>div>h1 {
     vertical-align: top;
     margin-top: -10px;
     padding-left: 20px;
     padding-top: 0px;
 	font-weight: 600;
 }
-.appPage>div>p {
-    display: inline-block;
+.appPage>div>div>p {
     vertical-align: top;
-    margin-left: -138px;
-    padding-top: 018px;
+    margin-top: -22px;
+	padding-left: 20px;
 }
-.appPage>div>h3 {
-    display: inline-block;
+.appPage>div>div>h3 {
     vertical-align: top;
-    margin-left: -161px;
-    padding-top: 46px;
+	margin-top: -6px;
 	font-weight: 400;
+	padding-left: 20px;
 }
 .downloadButton {
     display: inline-block;
-    vertical-align: top;
-    margin-left: -40px;
-    margin-top: 104px;
-    border: 2px solid #0078D7;
+    text-decoration: none;
+	margin-left: -24px;
+	visibility: hidden;
+}
+.downloadButton::after {
+    content: 'Install';
+	visibility: visible;
+	text-align: center;
+	border: 2px solid #0078D7;
     background-color: #0078D7;
     color: #fff;
-    padding: 2px 30px 2px 30px;
+    padding: 3px 26px 3px 26px;
     text-decoration: none;
+	margin-left: 20px;
+}
+.downloadButton:hover::after {
+	border: 2px solid rgba(255,255,255,0.30)
+}
+.downloadButton:active::after {
+	background-color: #808080;
+	border: 2px solid #808080;
 }
 .appPage>div>div2>h2 {
     padding-top: 10px;
