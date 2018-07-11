@@ -1,0 +1,219 @@
+body {
+	margin: 0;
+}
+html {
+	background-color: rgb(31,31,31);
+}
+.appPage {
+    font-family: "Segoe UI", sans-serif;
+	color: white;
+}
+.appPage>div {
+    position: relative;
+    padding: 30px 25px;
+    background-color: rgb(31, 31, 31);
+}
+.appPage>div>h1 {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -10px;
+    padding-left: 20px;
+    padding-top: 0px;
+}
+.appPage>div>p {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -138px;
+    padding-top: 018px;
+}
+.appPage>div>h3 {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -161px;
+    padding-top: 46px;
+}
+.downloadButton {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -40px;
+    margin-top: 104px;
+    border: 2px solid #0078D7;
+    background-color: #0078D7;
+    color: #fff;
+    padding: 2px 30px 2px 30px;
+    text-decoration: none;
+}
+.appPage>div>div2>h2 {
+    padding-top: 10px;
+}
+.appPage>div>div2>div {
+    background-color: rgb(24, 24, 24);
+    padding: 1px 20px;
+}
+.appPage>div>divs>p {
+    background-color: rgb(46, 46, 46);
+    padding: 100px 16px;
+}
+.appPage>div>div3 {
+    width: calc(50% - 10px);
+    display: inline-block;
+    float: left;
+    padding-right: 10px;
+}
+.appPage>div>div4 {
+    width: calc(50% - 10px);
+    display: inline-block;
+    padding-left: 10px;
+}
+.appPage>div>div5>p {
+    border-bottom: 1px solid rgb(60, 60, 60);
+    padding-bottom: 6px;
+    margin-top: -10px;
+}
+
+/*~~~//TITLEBAR CSS EXCERPT (from app_center_standardui.css//~~~*/
+:root {
+	--bodyTextColor: rgb(238,238,238);
+	--appbodyBackgroundColor: rgb(46,46,46);
+	--invertImage100: invert(100%);
+}
+/*//TITLEBAR and NAVIGATION//*/
+topnav {
+	position: fixed;
+	width: 100%;
+	-webkit-app-region: drag;
+	background-color: var(--appbodyBackgroundColor);
+	filter: opacity(94%);
+	z-index: 5;
+	color: var(--bodyTextColor);
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+}
+@supports (-webkit-backdrop-filter: blur(22px)) or (backdrop-filter: blur(22px)) {
+	topnav {
+		filter: opacity(80%);
+		backdrop-filter: blur(22px);
+		-webkit-backdrop-filter: blur(22px);
+	}
+}
+/*titlebar*/
+topnav>div>header {
+	font-size: 0.75em;
+	padding-left: 12px;
+	font-weight: 500;
+	line-height: 250%;
+}
+/*navigation bar*/
+topnav>nav {
+	font-size: 0.94em;
+	display: inline-block;
+	-webkit-app-region: no-drag;
+	padding: 14px 0 14px 50px;
+}
+/*navigation bar link*/
+topnav>nav a {
+	text-decoration: none;
+	color: var(--bodyTextColor);
+	margin: 0 10px 0 10px;
+	filter: contrast(60%);
+	padding-bottom: 10px;
+}
+topnav>nav a:hover {
+	filter: contrast(90%);
+}
+topnav>nav a:target {
+	border-bottom: 2px solid #0063B1;
+	filter: contrast(100%);
+}
+topnav>nav a:focus {
+	outline: none;
+}
+/*navigation bar - right side*/
+.navright {
+	font-size: 0.94em;
+	-webkit-app-region: no-drag;
+	float: right;
+	z-index: 2;
+	width: auto;
+}
+/*back button*/
+.back {
+	width: 16px;
+	padding: 16px;
+	filter: var(--invertImage100);
+	-webkit-app-region: no-drag;
+	margin: 0 0 0 -658px;
+	position: fixed;
+	cursor: default;
+}
+.back:hover {
+	background-color: hsla(0,0%,0%,0.10);
+}
+/*navigation dropdown*/
+select {
+	display: none;
+	height: 48px;
+	background-color: var(--appbodyBackgroundColor);
+	color: var(--bodyTextColor);
+	border: none;
+	-webkit-app-region: no-drag;
+	font-size: 0.94em;
+}
+select:focus {
+	outline: none;
+}
+select::after {
+	background-color: var(--appbodyBackgroundColor);
+	color: var(--bodyTextColor);
+}
+/*switch to dropdown on smaller screen size*/
+@media only screen and (max-width: 760px) {
+	select {
+		display: block;
+		margin-left: 48px;
+	}
+	topnav>nav {
+		display: none;
+	}
+	.back {
+		margin: -48px 0 0 1px;
+	}
+}
+/*//WINDOW BORDERS//*/
+borders>bordertop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background-color: #0063B1;
+	z-index: 5;
+}
+borders>borderbottom {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background-color: #0063B1;
+	z-index: 5;
+}
+borders>borderleft {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 1px;
+	background-color: #0063B1;
+	z-index: 5;
+}
+borders>borderright {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 1px;
+	background-color: #0063B1;
+	z-index: 5;
+}
+/*----------*/
+/*~~~//----------//~~~*/
