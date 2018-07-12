@@ -96,7 +96,7 @@
 }
 .baseBody {
 	-webkit-user-select: none;
-	background-color: var(--bodyBackgroundColor);
+	background-color: rgba(0, 0, 0, 0);
 }
 html {
 	border-left: 1px solid #0063B1;
