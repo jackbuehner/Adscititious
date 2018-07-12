@@ -5097,12 +5097,14 @@ function createMainWindow(inpOptions, onAppQuit, setDockBadge) {
     frame: !options.hideWindowFrame,
     width: mainWindowState.width,
     height: mainWindowState.height,
-	webPreferences: { experimentalFeatures: true},
+    webPreferences: {
+        experimentalFeatures: true
+    },
     minWidth: options.minWidth,
     minHeight: options.minHeight,
     maxWidth: options.maxWidth,
     maxHeight: options.maxHeight,
-	backgroundColor: '#111111',
+    transparent: true,
     x: options.x,
     y: options.y,
     autoHideMenuBar: !options.showMenuBar,
