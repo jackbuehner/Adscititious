@@ -25,6 +25,7 @@
 a {
 	text-decoration: none;
 	color: white;
+	cursor: default;
 }
 .banner_link:hover {
 	text-decoration: underline;

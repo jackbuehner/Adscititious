@@ -4,6 +4,9 @@ body {
 html {
 	background-color: var(--appBodyBackgroundColor);
 }
+a {
+	cursor: default;
+}
 .appPage {
     font-family: "Segoe UI", sans-serif;
 	color: var(--bodyTextColor);
