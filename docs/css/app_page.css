@@ -3,6 +3,7 @@ body {
 }
 html {
 	background-color: var(--appBodyBackgroundColor);
+	overflow-x: hidden;
 }
 a {
 	cursor: default;
@@ -79,12 +80,21 @@ a {
     background-color: var(--appbodyContrastColor);
     padding: 100px 16px;
 }
+.appPage>div>divs {
+	overflow: hidden;
+	white-space:nowrap;
+}
+.appPage>div>divs>img {
+	height: 200px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
 .appPage>div>div3 {
     width: calc(50% - 10px);
     display: inline-block;
     float: left;
     padding-right: 10px;
-}
+}s
 .appPage>div>div3>h2 {
 	font-weight: 600;
 }
