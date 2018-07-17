@@ -38,6 +38,7 @@ a:hover {
 }
 .small-banner a:hover {
     text-decoration: none;
+	var(--regTextColor);
 }
 .sb-speciaL {
 	margin-right: 0 !important;
