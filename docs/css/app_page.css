@@ -2,16 +2,16 @@ body {
 	margin: 0;
 }
 html {
-	background-color: rgb(31,31,31);
+	background-color: var(--appBodyBackgroundColor);
 }
 .appPage {
     font-family: "Segoe UI", sans-serif;
-	color: white;
+	color: var(--bodyTextColor);
 }
 .appPage>div {
     position: relative;
     padding: 30px 25px;
-    background-color: rgb(31, 31, 31);
+    background-color: var(--appBodyBackgroundColor);
 }
 .appPage>div>div {
 	display: inline-block;
@@ -52,9 +52,10 @@ html {
     padding: 3px 26px 3px 26px;
     text-decoration: none;
 	margin-left: 20px;
+	transition: 0.2s;
 }
 .downloadButton:hover::after {
-	border: 2px solid rgba(255,255,255,0.30)
+	box-shadow: 0 4px 8px 0 var(--cardShadowColor);
 }
 .downloadButton:active::after {
 	background-color: #808080;
@@ -65,14 +66,14 @@ html {
 	font-weight: 600;
 }
 .appPage>div>div2>div {
-    background-color: rgb(24, 24, 24);
+	background-color: var(--appbodyContrastColor);
     padding: 1px 20px;
 }
 .appPage>div>divs>h2 {
 	font-weight: 600;
 }
 .appPage>div>divs>p {
-    background-color: rgb(46, 46, 46);
+    background-color: var(--appbodyContrastColor);
     padding: 100px 16px;
 }
 .appPage>div>div3 {
@@ -93,7 +94,7 @@ html {
 	font-weight: 600;
 }
 .appPage>div>div5>p {
-    border-bottom: 1px solid rgb(60, 60, 60);
+    border-bottom: 1px solid var(--appbodyContrastColor);
     padding-bottom: 6px;
     margin-top: -10px;
 }
