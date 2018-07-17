@@ -35,6 +35,7 @@ function darkTheme() {
 	document.body.style.setProperty("--sideNavBackground", "rgb(33,33,33)");
 	document.body.style.setProperty("--bodyBackgroundColor", "rgb(17,17,17)");
 	document.body.style.setProperty("--appbodyBackgroundColor", "rgb(46,46,46)");
+	document.body.style.setProperty("--appbodyContrastColor", "rgb(56,56,56)");
 	document.body.style.setProperty("--appbarBackgroundColor", "rgb(50,50,50)");
 	document.body.style.setProperty("--sideNavItemBackgroundHover", "rgb(64,64,64)");
 	document.body.style.setProperty("--bodyTextColor", "rgb(238,238,238)");
@@ -45,9 +46,10 @@ function darkTheme() {
 	document.body.style.setProperty("--regTextColor", "rgb(189,189,189)");
 	document.body.style.setProperty("--subTextColor", "rgb(130,130,130)");
 	document.body.style.setProperty("--imageButtons", "invert(94%) hue-rotate(190deg) saturate(320%)");
-	document.body.style.setProperty("--appCardBackground", "rgb(31,31,31)");
-	document.body.style.setProperty("--appCardBackgroundHover", "rgb(0,0,0)");
+	document.body.style.setProperty("--appCardBackground", "rgb(42,42,42)");
+	document.body.style.setProperty("--appCardBackgroundHover", "rgb(36,36,36)");
 	document.body.style.setProperty("--appCardTextColor", "rgb(255,255,255)");
+	document.body.style.setProperty("--cardShadowColor", "rgba(0,0,0,.6)");
 	document.body.style.setProperty("--pageButtonHover", "rgb(33,33,33)");
 	document.cookie="theme=dark; max-age=31536000;";
 	document.cookie="theme=light; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
@@ -57,6 +59,7 @@ function lightTheme() {
 	document.body.style.setProperty("--sideNavBackground", "rgb(230,230,230)");
 	document.body.style.setProperty("--bodyBackgroundColor", "rgb(255,255,255)");
 	document.body.style.setProperty("--appbodyBackgroundColor", "rgb(240,240,240)");
+	document.body.style.setProperty("--appbodyContrastColor", "rgb(225,225,225)");
 	document.body.style.setProperty("--appbarBackgroundColor", "rgb(236,236,236)");
 	document.body.style.setProperty("--sideNavItemBackgroundHover", "rgb(199,199,199)");
 	document.body.style.setProperty("--bodyTextColor", "rgb(17,17,17)");
@@ -70,6 +73,7 @@ function lightTheme() {
 	document.body.style.setProperty("--appCardBackground", "rgb(250,250,250)");
 	document.body.style.setProperty("--appCardBackgroundHover", "rgb(255,255,255)");
 	document.body.style.setProperty("--appCardTextColor", "rgb(17,17,17)");
+	document.body.style.setProperty("--cardShadowColor", "rgba(0,0,0,.2)");
 	document.body.style.setProperty("--pageButtonHover", "rgb(230,230,230)");
 	document.cookie="theme=light";
 	document.cookie="theme=dark; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";

@@ -36,9 +36,9 @@ a:hover {
 	margin-right: 1.5%;
 	margin-top: 5%;
 }
-.small-banner a:hover {
-    text-decoration: none;
-	var(--regTextColor);
+.small-banner a {
+	color: var(--regTextColor);
+	text-decoration: none;
 }
 .sb-speciaL {
 	margin-right: 0 !important;
@@ -82,6 +82,7 @@ a:hover {
 }
 .small-banner:hover {
 	background: var(--appCardBackgroundHover);
+	box-shadow: 0 4px 8px 0 var(--cardShadowColor);
 }
 .small-banner-image {
 	width: 100%;

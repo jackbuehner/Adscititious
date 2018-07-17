@@ -260,9 +260,11 @@ borders>borderright {
 	margin-left: auto;
     margin-right: auto;
 	margin-bottom: 12px;
+	transition: 0.1s ease-in-out;
 }
 .appListing:hover {
 	background-color: var(--appCardBackgroundHover);
+	box-shadow: 0 4px 8px 0 var(--cardShadowColor);
 }
 .applink {
 	color: var(--appCardTextColor);
