@@ -36,6 +36,9 @@ a:hover {
 	margin-right: 1.5%;
 	margin-top: 5%;
 }
+.small-banner a:hover {
+    text-decoration: none;
+}
 .sb-speciaL {
 	margin-right: 0 !important;
 }
