@@ -1,0 +1,24 @@
+.animate-zoom {
+	animation: animatezoom 0.2s, opac 0s;
+	animation-timing-function: ease-out;
+
+}
+@keyframes animatezoom {
+	from {
+    	transform: scale(0.98)
+    }
+    to {
+    	transform: scale(1)
+    }
+}
+@keyframes opac {
+	from {
+		opacity:0.5
+	}
+	to {
+		opacity:1
+	}
+}
+.section-animation-fix {
+	margin-top: -4px;
+}
