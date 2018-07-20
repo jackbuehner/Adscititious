@@ -190,7 +190,7 @@ topnav>nav a:focus {
 	padding: 16px;
 	filter: var(--invertImage100);
 	-webkit-app-region: no-drag;
-	margin: 0 0 0 -658px;
+	margin: 0 0 0 -636px;
 	position: fixed;
 	cursor: default;
 }
