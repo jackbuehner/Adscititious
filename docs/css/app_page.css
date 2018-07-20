@@ -13,6 +13,9 @@ a {
     font-family: "Segoe UI", sans-serif;
 	color: var(--bodyTextColor);
 }
+.app_image {
+	margin-top: 28px;
+}
 .appPage>div {
     position: relative;
     padding: 30px 25px;
@@ -22,6 +25,7 @@ a {
 	display: inline-block;
 	height: 180px;
 	vertical-align: top;
+	margin-top: 28px;
 }
 .appPage>div>div>h1 {
     vertical-align: top;

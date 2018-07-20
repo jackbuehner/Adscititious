@@ -11,7 +11,6 @@ body {
 	color: var(--bodyTextColor);
 	-webkit-user-select: none;
 	cursor: default;
-	margin-top: 80px;
 }
 p, a, h1, h2, h3, h4, h5, h6 {
 	margin: 0;
@@ -22,7 +21,6 @@ topnav {
 	position: fixed;
 	width: 100%;
 	-webkit-app-region: drag;
-	margin-top: -80px;
 	background-color: var(--appbodyBackgroundColor);
 	filter: opacity(94%);
 	z-index: 5;
