@@ -290,6 +290,5 @@ borders>borderright {
 	width: 100%;
 	border: none;
 	background: hsla(0,0%,0%,0.00);
-	margin-top: -80px;
 	z-index: 99;
 }
