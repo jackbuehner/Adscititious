@@ -20,7 +20,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
 topnav {
 	position: fixed;
 	width: 100%;
-	-webkit-app-region: drag;
+	/*-webkit-app-region: drag;*/
 	background-color: var(--appbodyBackgroundColor);
 	filter: opacity(94%);
 	z-index: 5;
@@ -40,6 +40,8 @@ topnav>div>header {
 	padding-left: 12px;
 	font-weight: 500;
 	line-height: 250%;
+	width: calc(100% - 138px);
+	-webkit-app-region: drag;
 }
 /*navigation bar*/
 topnav>nav {
