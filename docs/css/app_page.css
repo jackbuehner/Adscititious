@@ -88,6 +88,7 @@ a {
 .appPage>div>divs {
 	overflow: hidden;
 	white-space:nowrap;
+	display: block;
 }
 .appPage>div>divs>img {
 	height: 200px;
