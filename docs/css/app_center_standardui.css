@@ -30,7 +30,7 @@ topnav {
 @supports (-webkit-backdrop-filter: blur(22px)) or (backdrop-filter: blur(22px)) {
 	topnav {
 		filter: opacity(80%);
-		backdrop-filter: blur(22px);
+		backdrop-filter: blur(22px) contrast(1.5);
 		-webkit-backdrop-filter: blur(22px);
 	}
 }
