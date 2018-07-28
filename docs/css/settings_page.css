@@ -28,11 +28,11 @@
     padding-top: 20px;
 	/*margin-top: 28px;*/
 	border-left: 1px solid #0063B1;
-	transition: 0.5s;
+	transition: width 0.5s;
 }
 .main {
     margin-left: 330px; /* Same as the width of the sidenav */
-	transition: 0.5s;
+	transition: margin-left 0.5s;
 }
 
 @media screen and (max-width: 790px) {
