@@ -86,7 +86,7 @@ a {
     padding: 100px 16px;
 }
 .appPage>div>divs {
-	overflow: hidden;
+	overflow: scroll;
 	white-space:nowrap;
 	display: block;
 }
