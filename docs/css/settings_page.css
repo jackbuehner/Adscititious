@@ -28,13 +28,36 @@
     padding-top: 20px;
 	/*margin-top: 28px;*/
 	border-left: 1px solid #0063B1;
+	transition: 0.5s;
 }
 .main {
     margin-left: 330px; /* Same as the width of the sidenav */
+	transition: 0.5s;
 }
-@media screen and (max-height: 450px) {
-	.sidenav {padding-top: 15px;}
-	.sidenav a {font-size: 18px;}
+
+@media screen and (max-width: 790px) {
+	.sidenav {
+		width: 270px;
+	}
+	.main {
+		margin-left: 270px;
+	}
+}
+@media screen and (max-width: 730px) {
+	.sidenav {
+		width: 210px;
+	}
+	.main {
+		margin-left: 210px;
+	}
+}
+@media screen and (max-width: 670px) {
+	.sidenav {
+		width: 180px;
+	}
+	.main {
+		margin-left: 180px;
+	}
 }
 /*page title text style*/
 .page_title {
