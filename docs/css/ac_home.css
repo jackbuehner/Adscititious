@@ -3,6 +3,7 @@
 	--imageButtons: none;
 }
 .app_section {
+	transition: 0.1s ease-in-out;
 }
 .large_banner {
     text-align: center;
@@ -81,6 +82,9 @@ a {
 	.small-banner {
 		width: 100%;
 		margin-right: 0 !important;
+	}
+	.app_section {
+		padding: 0 8px;
 	}
 }
 .small-banner:hover {
