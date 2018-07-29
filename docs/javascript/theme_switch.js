@@ -68,7 +68,7 @@ function lightTheme() {
 	document.body.style.setProperty("--themeButton", "rgb(230,230,230)");
 	document.body.style.setProperty("--invertImage100", "invert(0%)");
 	document.body.style.setProperty("--regTextColor", "rgb(33,33,33)");
-	document.body.style.setProperty("--subTextColor", "rgb(92,92,92,)");
+	document.body.style.setProperty("--subTextColor", "rgb(92,92,92)");
 	document.body.style.setProperty("--imageButtons", "none");
 	document.body.style.setProperty("--appCardBackground", "rgb(250,250,250)");
 	document.body.style.setProperty("--appCardBackgroundHover", "rgb(255,255,255)");
