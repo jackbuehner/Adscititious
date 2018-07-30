@@ -122,4 +122,8 @@ $(this).data("prevType", e.type);
 })
 
 
-
+function appCenter () {
+	alert("button was clicked");
+	window.open(appcenter.html);
+	ipcRenderer.send('open-calc');
+}
