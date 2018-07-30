@@ -1,23 +1,21 @@
 {
-  "name": "electron-quick-start",
+  "name": "Adscititious",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "",
   "keywords": [
     "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
+    "Adscititious"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "jackbuehner",
+  "license": "",
   "devDependencies": {
-    "electron": "^2.0.0"
+    "electron": "^2.0.0",
+    "electron-packager": "^12.1.0"
   },
   "dependencies": {
     "npm": "^6.2.0"
