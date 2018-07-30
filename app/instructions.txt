@@ -1,2 +1,0 @@
-1. start powershell in this directory
-2. run nativefier --hide-window-frame --name Adscititious --icon settings_stock.png httpsjackbuehner.github.ioAdscititious
