@@ -13,22 +13,37 @@ function createWindow () {
     height: 1000,
     width: 1200,
 	frame: false,
+	backgroundColor: '#111111',
     webPreferences: {
-      experimentalFeatures: true
+      experimentalFeatures: true,
+	  nativeWindowOpen: true
     }
   })
 
-  secondWindow = new BrowserWindow({
-    height: 800,
-    width: 1100,
-	frame: false,
-	show: true,
-    webPreferences: {
-      experimentalFeatures: true
+//  secondWindow = new BrowserWindow({
+//    height: 800,
+//    width: 1100,
+//	frame: false,
+//	show: true,
+//    webPreferences: {
+//      experimentalFeatures: true
+//    }
+//  })
+
+  mainWindow.webContents.on('new-window', (event, url, frameName, disposition, options, additionalFeatures) => {
+    {
+      event.preventDefault()
+      Object.assign(options, {
+        modal: false,
+        parent: mainWindow,
+        width: 1100,
+        height: 800
+      })
+      event.newGuest = new BrowserWindow(options)
     }
   })
 	
-  secondWindow.loadFile('./docs/app_center.html')
+//  secondWindow.loadFile('./docs/app_center.html')
 
   // and load the index.html of the app.
   mainWindow.loadFile('./docs/index.html')
