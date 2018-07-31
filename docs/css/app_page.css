@@ -131,18 +131,20 @@ a {
 topnav {
 	position: fixed;
 	width: 100%;
-	-webkit-app-region: drag;
+	/*-webkit-app-region: drag;*/
 	background-color: var(--appbodyBackgroundColor);
 	filter: opacity(94%);
 	z-index: 5;
 	color: var(--bodyTextColor);
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 }
-@supports (-webkit-backdrop-filter: blur(22px)) or (backdrop-filter: blur(22px)) {
+@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
 	topnav {
-		filter: opacity(80%);
-		backdrop-filter: blur(22px);
-		-webkit-backdrop-filter: blur(22px);
+		filter: opacity(100%);
+    		backdrop-filter: blur(20px) saturate(100%);
+    		-webkit-backdrop-filter: blur(22px);
+    		background-color: rgba(45,45,45,.6);
+    		background-image: url(http://api.thumbr.it/whitenoise-362x370.png?background=ffffff00&noise=a0a0a0&density=35&opacity=4);
 	}
 }
 /*titlebar*/
@@ -151,6 +153,8 @@ topnav>div>header {
 	padding-left: 12px;
 	font-weight: 500;
 	line-height: 250%;
+	width: calc(100% - 138px);
+	-webkit-app-region: drag;
 }
 /*navigation bar*/
 topnav>nav {
@@ -163,17 +167,27 @@ topnav>nav {
 topnav>nav a {
 	text-decoration: none;
 	color: var(--bodyTextColor);
-	margin: 0 10px 0 10px;
 	filter: contrast(60%);
-	padding-bottom: 10px;
+	padding: 10px;
+	transition: box-shadow 0.05s ease-in-out;
 }
 topnav>nav a:hover {
 	filter: contrast(90%);
+	margin: 0;
+	padding: 10px;
+	/*box-shadow: 0 4px 8px 0 var(--cardShadowColor);
+	outline: 1px solid rgba(128,128,128,0.1);*/
 }
 topnav>nav a:target {
 	border-bottom: 2px solid #0063B1;
 	filter: contrast(100%);
+	margin: 0 10px;
+	padding: 10px 0;
 }
+/*topnav>nav a:target:hover {
+	box-shadow: none;
+	outline: none;
+}*/
 topnav>nav a:focus {
 	outline: none;
 }
@@ -228,6 +242,45 @@ select::after {
 		margin: -48px 0 0 1px;
 	}
 }
+/*window buttons container*/
+window_buttons {
+	height: 32px;
+	width: 138px;
+	-webkit-app-region: no-drag;
+	z-index: 999;
+	margin-top: -80px;
+}
+window_buttons:hover {
+	opacity: 1 !important;
+}
+/*close button*/
+.window_buttons {
+	display: inline-block;
+	float: right;
+	height: 14px;
+	padding: 9px 16px;
+	filter: var(--invertImage100);
+	-webkit-app-region: no-drag;
+}
+.window_buttons:hover {
+	background-color: #17EEDC;
+	filter: invert(100%);
+	-webkit-app-region: no-drag;
+}
+/*maximize and minimize buttons*/
+.window_buttons_b {
+	display: inline-block;
+	float: right;
+	height: 10px;
+	padding: 11px 18px;
+	filter: var(--invertImage100);
+	-webkit-app-region: no-drag;
+}
+.window_buttons_b:hover {
+	background-color: hsla(0,0%,0%,0.12);
+	-webkit-app-region: no-drag;
+}
+/*----------*/
 /*//WINDOW BORDERS//*/
 borders>bordertop {
 	position: fixed;
