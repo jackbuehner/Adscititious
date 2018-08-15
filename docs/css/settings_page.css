@@ -156,7 +156,7 @@
 	font-weight: 550;
 	font-size: 15px;
 	line-height: 46px;
-	padding-left: 22px;
+	padding-left: 0px;
 }
 .list_home::before {
 	font-family: 'icomoon';
@@ -171,6 +171,7 @@
 	font-family: 'icomoon';
 	content: "\eaaf";
 	padding-right: 16px;
+	padding-left: 22px;
 	margin-left: -4px;
 	display: inline-block;
 	transform: translateY(3%); 
@@ -179,6 +180,7 @@
 	font-family: 'icomoon';
 	content: "\e900";
 	padding-right: 16px;
+	padding-left: 22px;
 	margin-left: -4px;
 	display: inline-block;
 	transform: translateY(3%); 
@@ -187,6 +189,7 @@
   	content: "\e902";
 	font-family: 'icomoon';
 	padding-right: 16px;
+	padding-left: 22px;
 	margin-left: -4px;
 	display: inline-block;
 	transform: translateY(3%);	
@@ -195,6 +198,7 @@
   	content: "\e903";
 	font-family: 'icomoon';
 	padding-right: 16px;
+	padding-left: 22px;
 	margin-left: -4px;
 	display: inline-block;
 	transform: translateY(3%);
@@ -203,6 +207,7 @@
   	content: "\e904";
 	font-family: 'icomoon';
 	padding-right: 16px;
+	padding-left: 22px;
 	margin-left: -4px;
 	display: inline-block;
 	transform: translateY(3%);
@@ -211,6 +216,7 @@
   	content: "\e905";
 	font-family: 'icomoon';
 	padding-right: 16px;
+	padding-left: 22px;
 	margin-left: -4px;
 	display: inline-block;
 	transform: translateY(3%);

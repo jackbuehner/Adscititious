@@ -37,6 +37,7 @@ function darkTheme() {
 	document.body.style.setProperty("--appbodyBackgroundColor", "rgb(46,46,46)");
 	document.body.style.setProperty("--appbodyContrastColor", "rgb(56,56,56)");
 	document.body.style.setProperty("--appbarBackgroundColor", "rgb(50,50,50)");
+	document.body.style.setProperty("--appbarBackgroundColorBlur", "rgba(45,45,45,0.6)");
 	document.body.style.setProperty("--sideNavItemBackgroundHover", "rgb(64,64,64)");
 	document.body.style.setProperty("--bodyTextColor", "rgb(238,238,238)");
 	document.body.style.setProperty("--showLight", "inherit");
@@ -61,6 +62,7 @@ function lightTheme() {
 	document.body.style.setProperty("--appbodyBackgroundColor", "rgb(240,240,240)");
 	document.body.style.setProperty("--appbodyContrastColor", "rgb(225,225,225)");
 	document.body.style.setProperty("--appbarBackgroundColor", "rgb(236,236,236)");
+	document.body.style.setProperty("--appbarBackgroundColorBlur", "rgba(215,215,215,0.6)");
 	document.body.style.setProperty("--sideNavItemBackgroundHover", "rgb(199,199,199)");
 	document.body.style.setProperty("--bodyTextColor", "rgb(17,17,17)");
 	document.body.style.setProperty("--showLight", "none");
@@ -122,4 +124,8 @@ $(this).data("prevType", e.type);
 })
 
 
-
+function appCenter () {
+	alert("button was clicked");
+	window.open(appcenter.html);
+	ipcRenderer.send('open-calc');
+}

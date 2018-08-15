@@ -4,40 +4,13 @@
 	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 	<title>App Center</title>
 	<link href="css/app_center_standardui.css" rel="stylesheet" type="text/css">
+	
 	<script type="text/javascript" src="javascript/theme_switch.js"> </script>
 </head>
 
-<body onLoad="restoreTheme()" style="background-color:var(--appbodyBackgroundColor);">
-	<topnav>
-		<div>
-			<header>App Center</header>
-		</div>
-		<nav>
-			<a href="app_center_home2#home.html" id="home">Home</a><a href="app_center_UWP apps.html#UWPapps" id="UWPapps">UWP Apps</a><a href="app_center_win32.html#win32" id="win32">Classic Apps</a><a href="app_center_games.html#games" id="games">Games</a><a href="app_center_browsers.html#browsers" id="browsers">Browsers</a><a href="app_center_framework.html#framework" id="framework">Frameworks &amp; Extensions</a>
-		</nav>
-		<select onChange="window.location.href=this.value">
-			<option value="app_center_home2.html#home">Home</option>
-			<option value="app_center_UWP apps.html#UWPapps">UWP Apps</option>
-			<option value="app_center_win32.html#win32">Classic Apps</option>
-			<option value="app_center_games.html#games">Games</option>
-			<option value="app_center_browsers#browsers">Browsers</option>
-			<option value="app_center_framework.html#framework">Frameworks &amp; Extensions</option>
-			<option value="learn_to_install#help">Help</option>
-		</select>
-		<nav class="navright">
-			<a href="learn_to_install.html#help" id="help">Help</a>
-		</nav>
-		<back>
-			<a href="#" onclick="history.back();return false"><img src="images/back.svg" alt="" class="back"></a>
-		</back>
-	</topnav>
-	<borders>
-		<bordertop></bordertop>
-		<borderbottom></borderbottom>
-		<borderleft></borderleft>
-		<borderright></borderright>
-	</borders>
-	<div style="position:fixed;width:100%;height:0px;z-index:9999;">
+<body onLoad="restoreTheme()" style="background-color:var(--appbodyBackgroundColor);" class="effect-group-container">
+	<topnav><div><header>App Center</header></div><div id='hamburger-button'><div class='btn'><p class='hamburgerMenuShow'>&#xE700;</p></div></div><nav id='sidenav'><div class='btn-border'><div class='btn'><a href='app_center_home2.html#home' id='home'>Home </a></div></div><div><div><a href='app_center_UWP apps.html#UWPapps' id='UWPapps' >UWP Apps </a></div></div><div><div><a href='app_center_win32.html#win32' id='win32' >Classic Apps </a></div></div><div><div><a href='app_center_games.html#games' id='games' >Games </a></div></div><div><div><a href='app_center_browsers.html#browsers' id='browsers' >Browsers </a></div></div><div><div><a href='app_center_framework.html#framework' id='framework'>Frameworks &amp; Extensions </a></div></div></nav><nav class='navright'><a href='learn_to_install.html#help' id='help'>Help</a></nav><back><a href='#' onclick='history.back();return false'><div class='btn'><!--<a href='#' onclick='history.back();return false'><img src='images/back.svg' alt='' class='back'></a>--><p class='back'>&#xE0C4</p></div></a></back></topnav><nav id='sidenav-ham'><div class='btn-border menuButtonMargin'><div class='btn sideButton'><p class='hamburgerMenuHide'>&#xE700;</p></div></div><a href='app_center_home2.html#home' ><div class='btn-border'><div class='btn sideButton'><p class='sideButtonText'>Home</p></div></div></a><a href='app_center_UWP apps.html#UWPapps' ><div class='btn-border'><div class='btn sideButton'><p class='sideButtonText'>UWP Apps</p></div></div></a><a href='app_center_win32.html#win32' ><div class='btn-border'><div class='btn sideButton'><p class='sideButtonText'>Classic Apps</p></div></div></a><a href='app_center_games.html#games' ><div class='btn-border'><div class='btn sideButton'><p class='sideButtonText'>Games</p></div></div></a><a href='app_center_browsers.html#browsers' ><div class='btn-border'><div class='btn sideButton'><p class='sideButtonText'>Browsers</p></div></div></a><a href='app_center_framework.html#framework' ><div class='btn-border'><div class='btn sideButton'><p class='sideButtonText'>Frameworks &amp; Extensions</p></div></div></a><a href='learn_to_install.html#help' ><div class='btn-border'><div class='btn sideButton'><p class='sideButtonText'>Help</p></div></div></a><a href='https://github.com/jackbuehner/Adscititious/issues' ><div class='btn-border' style='position:absolute;bottom:10px;margin-left:calc(-1*var(--sidenav-ham-width));margin-bottom:80px;'><div class='btn sideButton'><p class='sideButtonText'>Feedback</p></div></div></a><a href='https://github.com/jackbuehner/Adscititious' ><div class='btn-border' style='position:absolute;bottom:10px;margin-left:calc(-1*var(--sidenav-ham-width));margin-bottom:40px;'><div class='btn sideButton'><p class='sideButtonText'>About</p></div></div></a><a href='settings.html#settings' ><div class='btn-border' style='position:absolute;bottom:10px;margin-left:calc(-1*var(--sidenav-ham-width));'><div class='btn sideButton'><p class='sideButtonText'>Settings</p></div></div></a></nav><borders><bordertop></bordertop><borderbottom></borderbottom><borderleft></borderleft><borderright></borderright></borders>"
+	<div style="position:fixed;width:100%;height:0px;z-index:9999;margin-top:-20px;">
 		<window_buttons>
 			<a href="#" onclick="window.close()"><img src="images/close.svg" alt="" class="window_buttons"></a>
 			<a href="#" onclick="window.maximize()"><img src="images/maximize.svg" alt="" class="window_buttons_b"></a>
@@ -45,5 +18,7 @@
 		</window_buttons>
 	</div>
 	<iframe src="app_center_home2.html" class="iframe_a"></iframe>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="javascript/fluent_reveal.js"></script>
 </body>
 </html>
