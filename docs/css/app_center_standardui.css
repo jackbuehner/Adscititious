@@ -4,6 +4,10 @@
 	--bodyTextColor: rgb(238,238,238);
 	--appbodyBackgroundColor: rgb(46,46,46);
 	--invertImage100: invert(100%);
+	--sidenav-ham-width: 256px;
+}
+html {
+	min-height: 100%;
 }
 body {
 	margin: 0;
@@ -26,12 +30,15 @@ topnav {
 	z-index: 5;
 	color: var(--bodyTextColor);
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	height: 78px;
 }
-@supports (-webkit-backdrop-filter: blur(22px)) or (backdrop-filter: blur(22px)) {
+@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
 	topnav {
-		filter: opacity(80%);
-		backdrop-filter: blur(22px);
-		-webkit-backdrop-filter: blur(22px);
+		filter: opacity(100%);
+    	backdrop-filter: blur(20px) saturate(100%);
+    	-webkit-backdrop-filter: blur(22px);
+    	background-color: var(--appbarBackgroundColorBlur);
+    	background-image: url(http://api.thumbr.it/whitenoise-362x370.png?background=ffffff00&noise=a0a0a0&density=35&opacity=4);
 	}
 }
 /*titlebar*/
@@ -44,38 +51,41 @@ topnav>div>header {
 	-webkit-app-region: drag;
 }
 /*navigation bar*/
-topnav>nav {
+#sidenav {
 	font-size: 0.94em;
 	display: inline-block;
 	-webkit-app-region: no-drag;
 	padding: 14px 0 14px 50px;
 }
+#sidenav>div {
+	display: inline-block;
+}
 /*navigation bar link*/
-topnav>nav a {
+#sidenav a, .navright a {
 	text-decoration: none;
 	color: var(--bodyTextColor);
 	filter: contrast(60%);
 	padding: 10px;
 	transition: box-shadow 0.05s ease-in-out;
 }
-topnav>nav a:hover {
+#sidenav a:hover, .navright a:hover {
 	filter: contrast(90%);
 	margin: 0;
 	padding: 10px;
 	/*box-shadow: 0 4px 8px 0 var(--cardShadowColor);
 	outline: 1px solid rgba(128,128,128,0.1);*/
 }
-topnav>nav a:target {
+#sidenav a:target, .navright a:target {
 	border-bottom: 2px solid #0063B1;
 	filter: contrast(100%);
 	margin: 0 10px;
 	padding: 10px 0;
 }
-/*topnav>nav a:target:hover {
+#sidenav a:target:hover {
 	box-shadow: none;
 	outline: none;
-}*/
-topnav>nav a:focus {
+}
+/*#sidenav a:focus {
 	outline: none;
 }
 /*navigation bar - right side*/
@@ -85,19 +95,29 @@ topnav>nav a:focus {
 	float: right;
 	z-index: 2;
 	width: auto;
+	margin-top: 14px;
 }
-/*back button*/
-.back {
+/*back button svg*/
+/*.back {
 	width: 16px;
 	padding: 16px;
 	filter: var(--invertImage100);
 	-webkit-app-region: no-drag;
-	margin: 0 0 0 -636px;
+	margin: 0 0 0 -657px;
 	position: fixed;
 	cursor: default;
 }
 .back:hover {
 	background-color: hsla(0,0%,0%,0.10);
+}*/
+/*back button unicode*/
+back {
+	display: inline-block;
+	position: fixed;
+	margin: 0 0 0 -636px;
+}
+.back {
+    color: var(--bodyTextColor);
 }
 /*navigation dropdown*/
 select {
@@ -116,17 +136,94 @@ select::after {
 	background-color: var(--appbodyBackgroundColor);
 	color: var(--bodyTextColor);
 }
-/*switch to dropdown on smaller screen size*/
+/*side navigation hamburger menu*/
+#hamburger-button {
+	display: none;
+	position: fixed;
+	margin: 0 0 0 48px;
+}
+#sidenav-ham {
+	background-color: #111;
+	background-color: rgba(45,45,45,.6);
+	height: 100vh;
+	width: var(--sidenav-ham-width);
+	position: fixed;
+	transition: margin-left 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
+	margin-left: -256px;
+	z-index: 5;
+	background-color: var(--appbodyBackgroundColor);
+	filter: opacity(94%);
+}
+@supports (-webkit-backdrop-filter: blur(20px)) or (backdrop-filter: blur(20px)) {
+	#sidenav-ham {
+		filter: opacity(100%);
+    	backdrop-filter: blur(20px) saturate(100%);
+    	-webkit-backdrop-filter: blur(22px);
+    	background-color: var(--appbarBackgroundColorBlur);
+    	background-image: url(http://api.thumbr.it/whitenoise-362x370.png?background=ffffff00&noise=a0a0a0&density=35&opacity=4);
+	}
+}
+#sidenav-ham a:target {
+	border-left: 4px solid #0063b1;
+}
+#sidenav-ham .btn {
+	margin: 1px;
+}
+.sideButton {
+	background-color: #111;
+	background-color: transparent;
+	trasition: none;
+	transition: 0.1s background-color;
+}
+.sideButton:hover {
+	background-color: transparent;
+	background-color: rgba(136,136,136,0.30);
+}
+.btn-border {
+	display: inline-block;
+}
+#sidenav-ham .sideButtonText {
+	color: var(--bodyTextColor);
+	margin: 0;
+	line-height: 38px;
+	width: 218px;
+	padding: 0 18px;
+	font-size: 1em;
+}
+.hamburgerMenuShow, .hamburgerMenuHide, .back {
+	width: 48px;
+	line-height: 48px;
+	margin: 0;
+	text-align: center;
+	font-family: 'Segoe MDL2 Assets';
+	display: inline-block;
+	trasition: none;
+	transition: 0.1s background-color;
+}
+.hamburgerMenuShow:hover, .back:hover {
+	background-color: transparent;
+	background-color: rgba(136,136,136,0.30);
+}
+#sidenav-ham .menuButtonMargin {
+	margin: 28px 0px 8px 0px;
+}
+/*switch to dropdown or sidenav-ham on smaller screen size*/
 @media only screen and (max-width: 760px) {
 	select {
 		display: block;
 		margin-left: 48px;
 	}
-	topnav>nav {
+	#sidenav {
 		display: none;
 	}
-	.back {
-		margin: -48px 0 0 1px;
+	.navright {
+		display: none;
+	}
+	back {
+		margin: 0 0 0 1px;
+	}
+	#hamburger-button {
+		display: inline-block;
 	}
 }
 /*window buttons container*/
@@ -293,4 +390,32 @@ borders>borderright {
 	border: none;
 	background: hsla(0,0%,0%,0.00);
 	z-index: 99;
+	    margin: 0 0 0 -6px;
 }
+
+/*@media only screen and (max-width: 900px) {
+	topnav > nav {
+		padding: 0;
+		margin: 40px 0 0 0;
+		background-color: rgba(46,46,46,1.00);
+		z-index: 99999;
+	}
+	topnav > nav > a {
+		display: block;
+		margin-left: 0;
+	}
+	.settingsTab {
+		background-image: image();
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.settingsTab {
+	background-image: none !important;
+}
+}
+
+#sidenav>div {
+	padding: 10px;
+}
+#sidenav>*/
