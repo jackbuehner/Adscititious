@@ -1,10 +1,12 @@
 {
   "name": "Adscititious",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "description": "",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . app --platform win32 --arch x64 --out dist/",
+    "setup": "electron-installer-windows --src dist/app-win32-x64/ --dest dist/installers/"
   },
   "repository": "",
   "keywords": [
@@ -15,9 +17,12 @@
   "license": "",
   "devDependencies": {
     "electron": "^2.0.0",
+    "electron-installer-windows": "^1.1.0",
     "electron-packager": "^12.1.0"
   },
   "dependencies": {
-    "npm": "^6.2.0"
+    "npm": "^6.3.0",
+    "electron-packager": "*",
+    "electron-prebuilt": "*"
   }
 }
