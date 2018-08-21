@@ -41,6 +41,7 @@
 }
 .titlebar_container_background {
 	background-color: var(--bodyBackgroundColor);
+	background-color: transparent;
 }
 .titlebar_button {
 	-webkit-app-region: no-drag;
@@ -91,6 +92,8 @@
 .body, #body, #bodyhome {
 	-webkit-user-select: none;
 	background-color: var(--bodyBackgroundColor);
+	background-color: transparent;
+	margin: 0;
 }
 html {
 	border-left: 1px solid #0063B1;

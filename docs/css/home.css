@@ -24,6 +24,11 @@
 	filter: var(--imageButtons);
 	cursor: default;
 }
+.effect-group-container {
+	background-color: deepskyblue;
+	overflow: scroll;
+	height: 90vh;
+}
 .home_container {
 	max-width: 662px;
     margin-left: auto;
