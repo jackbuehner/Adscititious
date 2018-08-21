@@ -46,7 +46,7 @@ function createWindow () {
 //  secondWindow.loadFile('./docs/app_center.html')
 
   // and load the index.html of the app.
-  mainWindow.loadFile('./docs/index.html')
+  mainWindow.loadURL(`file://${__dirname}/docs/index.html`)
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
