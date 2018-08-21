@@ -29,9 +29,15 @@
 	/*margin-top: 28px;*/
 	border-left: 1px solid #0063B1;
 	transition: width 0.5s;
+	background: transparent;
+}
+#content {
+	background: gray;
+	height: 100vh;
+	margin: 0 0 0 320px;
 }
 .main {
-    margin-left: 330px; /* Same as the width of the sidenav */
+    margin-left: 14px; /* Same as the width of the sidenav */
 	transition: margin-left 0.5s;
 }
 
@@ -157,6 +163,9 @@
 	font-size: 15px;
 	line-height: 46px;
 	padding-left: 0px;
+}
+.settingsSidenavItem:hover {
+    background-color: rgba(132, 132, 132, 0.2);
 }
 .list_home::before {
 	font-family: 'icomoon';
