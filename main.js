@@ -1,6 +1,7 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
 const {ipcMain} = require('electron')
+var electronVibrancy = require('electron-vibrancy');
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -10,15 +11,23 @@ let secondWindow
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    height: 1000,
+    show: false,
+	height: 1000,
     width: 1200,
 	frame: false,
-	backgroundColor: '#111111',
+	//backgroundColor: '#111111',
+	transparent: true,
     webPreferences: {
       experimentalFeatures: true,
-	  nativeWindowOpen: true
-    }
+	  nativeWindowOpen: true,
+	  webSecurity: false
+    }	
   })
+  mainWindow.once('ready-to-show', () => {
+    mainWindow.show();
+    electronVibrancy.SetVibrancy(mainWindow, 0)
+  })
+
 
 //  secondWindow = new BrowserWindow({
 //    height: 800,
@@ -37,7 +46,8 @@ function createWindow () {
         modal: false,
         parent: mainWindow,
         width: 1100,
-        height: 800
+        height: 800,
+		show: true
       })
       event.newGuest = new BrowserWindow(options)
     }
