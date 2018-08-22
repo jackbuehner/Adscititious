@@ -85,7 +85,7 @@ topnav>div>header {
 	box-shadow: none;
 	outline: none;
 }
-/*#sidenav a:focus {
+#sidenav a:focus {
 	outline: none;
 }
 /*navigation bar - right side*/
