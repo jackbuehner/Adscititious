@@ -16,7 +16,8 @@
   "license": "",
   "devDependencies": {
     "electron": "^2.0.8",
-    "electron-packager": "^12.1.0"
+    "electron-packager": "^12.1.0",
+    "electron-winstaller": "^2.6.4"
   },
   "dependencies": {
     "electron-packager": "*",
