@@ -5,8 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . app --platform win32 --arch x64 --out dist/",
-    "setup": "electron-installer-windows --src dist/app-win32-x64/ --dest dist/installers/"
+    "build": "electron-packager . app --platform win32 --arch x64 --out dist/"
   },
   "repository": "",
   "keywords": [
@@ -17,7 +16,6 @@
   "license": "",
   "devDependencies": {
     "electron": "^2.0.8",
-    "electron-installer-windows": "^1.1.0",
     "electron-packager": "^12.1.0"
   },
   "dependencies": {
