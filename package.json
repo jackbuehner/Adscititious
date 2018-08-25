@@ -1,14 +1,14 @@
 {
   "name": "Adscititious",
-  "version": "1.4.0-testing-4",
+  "version": "1.4.0-testing-5",
   "description": "Customization for Windows 10 devices and an APPX-powered app center",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "build-win": "electron-packager . --platform=win32 --arch=x64 --icon=icon/icon-16-24-32-48-64-96-128-256-1100.ico --out dist/ --overwrite",
     "make-exe": "npm run build-win && node winBuild.js",
-	"build": "build --win",
-	"ship": "build --win -p always"
+    "build": "build --win",
+    "ship": "build --win -p always"
   },
   "repository": "https://github.com/jackbuehner/Adscititious",
   "keywords": [
@@ -19,12 +19,12 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^2.0.8",
+    "electron-builder": "^20.28.2",
     "electron-packager": "^12.1.0",
     "electron-winstaller": "^2.6.4"
   },
   "dependencies": {
     "electron-packager": "*",
-    "electron-prebuilt": "*",
     "electron-squirrel-startup": "^1.0.0",
     "electron-updater": "^3.1.1",
     "npm": "^6.4.0",
