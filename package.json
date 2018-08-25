@@ -1,11 +1,11 @@
 {
   "name": "Adscititious",
   "version": "1.3.0",
-  "description": "",
+  "description": "Customization for Windows 10 devices and an APPX-powered app center",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-packager . app --platform win32 --arch x64 --out dist/"
+    "build-win": "electron-packager . --platform=win32 --arch=x64 --icon=icon/icon-16-24-32-48-64-96-128-256-1100.ico --out dist/ --overwrite"
   },
   "repository": "",
   "keywords": [
@@ -22,6 +22,7 @@
   "dependencies": {
     "electron-packager": "*",
     "electron-prebuilt": "*",
+    "electron-squirrel-startup": "^1.0.0",
     "npm": "^6.4.0"
   }
 }
