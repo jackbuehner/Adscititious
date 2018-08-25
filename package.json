@@ -7,13 +7,13 @@
     "start": "electron .",
     "build-win": "electron-packager . --platform=win32 --arch=x64 --icon=icon/icon-16-24-32-48-64-96-128-256-1100.ico --out dist/ --overwrite"
   },
-  "repository": "",
+  "repository": "https://github.com/jackbuehner/Adscititious",
   "keywords": [
     "Electron",
     "Adscititious"
   ],
   "author": "jackbuehner",
-  "license": "",
+  "license": " CC0-1.0",
   "devDependencies": {
     "electron": "^2.0.8",
     "electron-packager": "^12.1.0",
