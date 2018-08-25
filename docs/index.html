@@ -23,6 +23,13 @@
             var container = document.getElementById('ready');
             container.innerHTML = "new version ready!";
         })
+		
+		//updateCheck
+		ipcRenderer.on('updateCheck', function(event, text) {
+            // changes the text of the button
+            var container = document.getElementById('ready');
+            container.innerHTML = "checking for updates...";
+        })
 	</script>
 </head>
 

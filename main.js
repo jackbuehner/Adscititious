@@ -36,7 +36,7 @@ function createWindow () {
   mainWindow.loadURL(`file://${__dirname}/docs/index.html`)
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
@@ -58,6 +58,11 @@ app.on('ready', function() {
 // when the update has been downloaded and is ready to be installed, notify the BrowserWindow
 autoUpdater.on('update-downloaded', (info) => {
   win.webContents.send('updateReady')
+})
+
+//notify checking for updates
+autoUpdater.on('update-downloaded', (info) => {
+  win.webContents.send('updateCheck')
 })
 
 // Quit when all windows are closed.
