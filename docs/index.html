@@ -13,6 +13,20 @@
 		function myFunction() {
 			window.open("./app_center.html");
 			}
+		
+		function testFunction() {
+			const {remote} = require('electron').remote;
+			const {BrowserWindow} = remote.BrowserWindow;
+
+			var win2 = new BrowserWindow({ width: 800, height: 600 });
+			win2.loadURL('https://github.com');
+		}
+		
+		function testFunction2() {
+			const {BrowserWindow} = require('electron').remote
+  			let win = new BrowserWindow({width: 800, height: 600})
+  			win.loadURL('https://github.com')
+		}
 	</script>
 </head>
 
