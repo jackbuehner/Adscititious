@@ -48,7 +48,7 @@ function createWindow () {
   win.loadURL(`file://${__dirname}/docs/home.html#v${app.getVersion()}`)
 
   // Open the DevTools.
-  win.webContents.openDevTools()
+  // win.webContents.openDevTools()
 
   // Emitted when the window is closed.
   win.on('closed', function () {
