@@ -24,6 +24,34 @@
 		</buttonfocuscolor>
 	</div>
 
-	<iframe class="iframe_a" src="index.html" name="iframe_a"></iframe>
+	<iframe class="iframe_a" src="index.html" name="iframe_a" id="iframe_a"></iframe>
+	
+	<div id="updater-info" style="margin: 0px 20px 0 20px;">
+		<p style="display: inline-block;">Current version:</p> <span id="version">vX.Y.Z</span>
+  	<div id="messages"></div>
+	</div>
+	
+	<script>
+		// Display the current version
+		let version = window.location.hash.substring(1);
+		document.getElementById('version').innerText = version;
 
+		// Listen for messages
+		const {ipcRenderer} = require('electron');
+		ipcRenderer.on('message', function(event, text) {
+		  var container = document.getElementById('messages');
+		  var message = document.createElement('div');
+		  message.innerHTML = text;
+		  container.appendChild(message);
+		})
+	</script>
+	
+	<script>
+const {ipcRenderer} = require('electron')
+ipcRenderer.on('changeColor', (event,disp) => {
+    var element = document.getElementById('iframe_a');
+    element.style.display = disp;
+})
+</script>
+	
 	</body>

@@ -13,23 +13,6 @@
 		function myFunction() {
 			window.open("./app_center.html");
 			}
-		
-		
-		const ipcRenderer = require('electron').ipcRenderer;
-		
-        // wait for an updateReady message
-        ipcRenderer.on('updateReady', function(event, text) {
-            // changes the text of the button
-            var container = document.getElementById('ready');
-            container.innerHTML = "new version ready!";
-        })
-		
-		//updateCheck
-		ipcRenderer.on('updateCheck', function(event, text) {
-            // changes the text of the button
-            var container = document.getElementById('ready');
-            container.innerHTML = "checking for updates...";
-        })
 	</script>
 </head>
 
@@ -112,7 +95,6 @@
 			</section>
 		</section>
 	</div>
-	<button id="ready" onClick="ipcRenderer.send('quitAndInstall')">no updates ready</button>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="javascript/fluent_reveal.js"></script>
 </body>

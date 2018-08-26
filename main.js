@@ -1,14 +1,26 @@
 // Modules to control application life and create native browser window
-const {app, BrowserWindow, ipcMain} = require('electron')
+const {app, BrowserWindow, ipcMain, globalShortcut} = require('electron')
 const {autoUpdater} = require("electron-updater")
+
+const log = require('electron-log');
+
+autoUpdater.logger = log;
+autoUpdater.logger.transports.file.level = 'info';
+log.info('App starting...');
+
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
-let mainWindow
+let win
+
+function sendStatusToWindow(text) {
+  log.info(text);
+  win.webContents.send('message', text);
+}
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({
+  win = new BrowserWindow({
     height: 1000,
     width: 1200,
 	frame: false,
@@ -19,12 +31,12 @@ function createWindow () {
     }
   })
 
-  mainWindow.webContents.on('new-window', (event, url, frameName, disposition, options, additionalFeatures) => {
+  win.webContents.on('new-window', (event, url, frameName, disposition, options, additionalFeatures) => {
     {
       event.preventDefault()
       Object.assign(options, {
         modal: false,
-        parent: mainWindow,
+        parent: win,
         width: 1100,
         height: 800
       })
@@ -33,37 +45,60 @@ function createWindow () {
   })
 	
   // and load the index.html of the app.
-  mainWindow.loadURL(`file://${__dirname}/docs/index.html`)
+  win.loadURL(`file://${__dirname}/docs/home.html#v${app.getVersion()}`)
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  win.webContents.openDevTools()
 
   // Emitted when the window is closed.
-  mainWindow.on('closed', function () {
+  win.on('closed', function () {
     // Dereference the window object, usually you would store windows
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
-    mainWindow = null
+    win = null
   })
 }
+
+
+//electron-builder update statuses
+//after each status change, a message is sent using ipcMain
+autoUpdater.on('checking-for-update', () => {
+  sendStatusToWindow('Checking for update...');
+})
+autoUpdater.on('update-available', (info) => {
+  sendStatusToWindow('Update available.');
+})
+autoUpdater.on('update-not-available', (info) => {
+  sendStatusToWindow('Update not available.');
+})
+autoUpdater.on('error', (err) => {
+  sendStatusToWindow('Error in auto-updater. ' + err);
+})
+autoUpdater.on('download-progress', (progressObj) => {
+  let log_message = "Download speed: " + progressObj.bytesPerSecond;
+  log_message = log_message + ' - Downloaded ' + progressObj.percent + '%';
+  log_message = log_message + ' (' + progressObj.transferred + "/" + progressObj.total + ')';
+  sendStatusToWindow(log_message);
+})
+autoUpdater.on('update-downloaded', (info) => {
+  sendStatusToWindow('Update downloaded');
+  sendStatusToWindow('Restart Adscititious to install update');
+});
+
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.on('ready', function() {
   createWindow()
-  autoUpdater.checkForUpdates();
+  autoUpdater.checkForUpdatesAndNotify();
+  globalShortcut.register('Control+Shift+U', () => {
+	//keyboard shortcut for viewing updates info
+    win.webContents.send('hideIFrame','none');
+	console.log('Control+Shift+U is pressed; hiding frame and showing update info');
+	win.webContents.insertCSS('.iframe_a{display:none;}#updater-info{color:white;}');
+  });
 });
-
-// when the update has been downloaded and is ready to be installed, notify the BrowserWindow
-autoUpdater.on('update-downloaded', (info) => {
-  win.webContents.send('updateReady')
-})
-
-//notify checking for updates
-autoUpdater.on('update-downloaded', (info) => {
-  win.webContents.send('updateCheck')
-})
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {
@@ -82,7 +117,7 @@ ipcMain.on("quitAndInstall", (event, arg) => {
 app.on('activate', function () {
   // On OS X it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
-  if (mainWindow === null) {
+  if (win === null) {
     createWindow()
   }
 })
