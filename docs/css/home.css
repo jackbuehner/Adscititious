@@ -59,6 +59,9 @@ a {
 .pageButton:hover {
 	outline: 2px solid var(--pageButtonHover);
 }
+.unavailable:hover {
+	background: url(../images/unavailable.png) !important;
+}
 .pageButtonIcon {
 	height: 38px;
 	padding: 16px 0 0 16px;
