@@ -32,13 +32,13 @@ function restoreTheme() {
 }
 //dark theme changes
 function darkTheme() {
-	document.body.style.setProperty("--sideNavBackground", "rgb(33,33,33)");
-	document.body.style.setProperty("--bodyBackgroundColor", "rgb(17,17,17)");
+	document.body.style.setProperty("--sideNavBackground", "rgb(17,17,17)");
+	document.body.style.setProperty("--bodyBackgroundColor", "rgb(0,0,0)");
 	document.body.style.setProperty("--appbodyBackgroundColor", "rgb(46,46,46)");
 	document.body.style.setProperty("--appbodyContrastColor", "rgb(56,56,56)");
 	document.body.style.setProperty("--appbarBackgroundColor", "rgb(50,50,50)");
 	document.body.style.setProperty("--appbarBackgroundColorBlur", "rgba(45,45,45,0.6)");
-	document.body.style.setProperty("--sideNavItemBackgroundHover", "rgb(64,64,64)");
+	document.body.style.setProperty("--sideNavItemBackgroundHover", "rgb(38,38,38)");
 	document.body.style.setProperty("--bodyTextColor", "rgb(238,238,238)");
 	document.body.style.setProperty("--showLight", "inherit");
 	document.body.style.setProperty("--showDark", "none");
