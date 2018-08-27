@@ -36,7 +36,7 @@ function createWindow () {
       event.preventDefault()
       Object.assign(options, {
         modal: false,
-        width: 1100,
+        width: 1128,
         height: 800
       })
       event.newGuest = new BrowserWindow(options)
