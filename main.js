@@ -36,7 +36,6 @@ function createWindow () {
       event.preventDefault()
       Object.assign(options, {
         modal: false,
-        parent: win,
         width: 1100,
         height: 800
       })
