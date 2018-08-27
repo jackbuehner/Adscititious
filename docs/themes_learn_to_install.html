@@ -2,28 +2,36 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>Theme Installation Tutorial</title>
-	  <script>//This is the service worker with the Cache-first network
-
-//Add this below content to your HTML page, or add the js file to your page at the very top to register sercie worker
-if (navigator.serviceWorker.controller) {
-  console.log('[PWA Builder] active service worker found, no need to register')
-} else {
-
-//Register the ServiceWorker
-  navigator.serviceWorker.register('pwabuilder-sw.js', {
-    scope: './'
-  }).then(function(reg) {
-    console.log('Service worker has been registered for scope:'+ reg.scope);
-  });
-}</script>
+    <title>Theme Center</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript/theme_switch.js"> </script>
+	<link href="css/standardui.css" rel="stylesheet" type="text/css">
   </head>
-  <body style="background-color: #f5f7fa;">
+	
+	<borderC class="titlebar_container titlebar_container_background">
+		<focuscolor class="titlebar">Adscititious: Windows 10 Customization</focuscolor>
+  	</borderC>
+	<buttonfocuscolor class="titlebar_button reg_cursor">
+		<a href="#" onclick="history.back();return false"><img src="images/back.svg" alt="" class="backarrow titlebar_button reg_cursor"></a>
+	</buttonfocuscolor>
+	<div style="position:fixed;width:100%;margin-left:-8px;height:32px;z-index:99;margin-top:-40px;">
+		<buttonfocuscolor class="titlebar_win_buttons reg_cursor">
+			<a href="#" onclick="window.close()"><img src="images/close.svg" alt="" class="window_buttons reg_cursor"></a>
+			<a href="#" onclick="window.maximize()"><img src="images/maximize.svg" alt="" class="window_buttons_b reg_cursor"></a>
+			<a href="#" onclick="window.minimize()"><img src="images/minimize.svg" alt="" class="window_buttons_b reg_cursor"></a>
+		</buttonfocuscolor>
+	</div>
+	<borderCB class="bBorder"></borderCB>
+	
+	
+	
+	
+<body style="background-color: #f5f7fa;">
     <p style="background-color: #f5f7fa;"><span style="font-family: Segoe UI;"><a
 
-          href="themes.html"><img src="images/left_arrow1600.png" alt="" style="width: 27px; height: 27px;"></a></span>
+          href="themes.html"></a></span>
     </p>
-    <p style="background-color: #f5f7fa;"><span style="font-family: Segoe UI;">How
+    <p style="background-color: #f5f7fa;"><span style="font-family: Segoe UI;"><br><br>How
         to install css Themes<br>
       </span></p>
     <p style="background-color: #f5f7fa;"><span style="font-family: Segoe UI;">1.
@@ -39,4 +47,7 @@ if (navigator.serviceWorker.controller) {
         Click <em>Install</em></span></p>
     <img src="images/styles_install.PNG" alt="" style="width: 499px; height: 86px;">
   </body>
+	
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </html>
