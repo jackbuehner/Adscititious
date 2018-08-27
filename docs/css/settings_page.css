@@ -71,7 +71,7 @@
 .sidebar_title {
 	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 	padding-left: 14px;
-	font-weight: 700;
+	font-weight: 500;
 	color: var(--bodyTextColor);
 }
 /*heading text style*/
