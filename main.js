@@ -66,6 +66,7 @@ autoUpdater.on('checking-for-update', () => {
 })
 autoUpdater.on('update-available', (info) => {
   sendStatusToWindow('Update available.');
+  sendStatusToWindow('Attempting to download update...');
 })
 autoUpdater.on('update-not-available', (info) => {
   sendStatusToWindow('Update not available.');
