@@ -24,7 +24,7 @@ function createWindow () {
     height: 1000,
     width: 1200,
 	frame: false,
-	backgroundColor: '#111111',
+	backgroundColor: '#000000',
     webPreferences: {
       experimentalFeatures: true,
 	  nativeWindowOpen: true

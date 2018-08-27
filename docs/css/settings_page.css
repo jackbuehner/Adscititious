@@ -158,6 +158,9 @@
 	line-height: 46px;
 	padding-left: 0px;
 }
+.settingsSidenavItem:hover, .settingsSidenavHome:hover {
+    background: var(--sideNavItemBackgroundHover);
+}
 .list_home::before {
 	font-family: 'icomoon';
 	content: "\e901";
