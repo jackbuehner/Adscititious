@@ -1,6 +1,6 @@
 {
   "name": "Adscititious",
-  "version": "1.4.2",
+  "version": "1.5.0",
   "description": "Customization for Windows 10 devices and an APPX-powered app center",
   "main": "main.js",
   "scripts": {
