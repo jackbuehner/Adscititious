@@ -3,7 +3,7 @@ body {
 	margin: 0;
 }
 html {
-	background-color: var(--appBodyBackgroundColor);
+	background-color: var(--appbodyBackgroundColor);
 	overflow-x: hidden;
 }
 a {
