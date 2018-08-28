@@ -224,6 +224,15 @@
 	display: inline-block;
 	transform: translateY(3%);
 }
+.pen:before {
+  	content: "\e104";
+	font-family: 'Segoe MDL2 Assets';
+	padding-right: 16px;
+	padding-left: 22px;
+	margin-left: -4px;
+	display: inline-block;
+	transform: translateY(3%);
+}
 .sidenav_list_item_active {
 	border: solid transparent;
 	border-width: 0 0 0 4px;
@@ -264,3 +273,51 @@
 a {
 	color: #0063b1;
 }
+/*//APP CARDS//*/
+.app_name {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 16px;
+	text-decoration: none;
+	line-height: 1;
+	margin: 16px 0 4px 8px;
+	font-weight: 600;
+}
+.app_image {
+	margin: -8px 0px -12px 0px;
+}
+.price {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 14px;
+	line-height: 4;
+	margin-left: 8px;
+	margin-bottom: -100px;
+}
+.price_double {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 14px;
+	line-height: 1.7;
+	margin-left: 8px;
+}
+.ratingValue {
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 11px;
+	margin-left: 8px;
+	margin-top: 10px;
+	line-height: 1;
+}
+.appListing {
+	width: 150px;
+	background-color: var(--appCardBackground);
+	min-height: 248px;
+	display: inline-block;
+	margin: 20px auto 12px auto;
+	transition: 0.1s ease-in-out;
+}
+.appListing:hover {
+	background-color: var(--appCardBackgroundHover);
+	box-shadow: 0 4px 8px 0 var(--cardShadowColor);
+}
+.applink {
+	color: var(--appCardTextColor);
+}
+/*----------*/
