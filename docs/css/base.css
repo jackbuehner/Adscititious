@@ -27,6 +27,8 @@
 	filter: var(--invertImage100);
 	margin: -8px 0 0 -8px;
 	padding: 11px 18px 9px 18px;
+	/*z-index: 999999 !important;
+	background-color: var(--bodyTextColor);*/
 }
 .backarrowBase:hover {
 	background-color: hsla(0,0%,0%,0.15);
@@ -54,7 +56,7 @@
 }
 .titlebar_win_buttonsBase {
 	float: right;
-	height: 20px;
+	height: 32px;
 	width: 138px;
 	margin: 33px 2px 0 85.2%;
 	-webkit-user-select: none;
@@ -62,6 +64,7 @@
 	border: 1px hidden #0063B1;
 	border-bottom: none;
 	border-left: none;
+	background-color: var(--bodyBackgroundColor);
 }
 .titlebar_win_buttonsBase:hover {
 	opacity: 1 !important;
